@@ -1,4 +1,5 @@
 import React from "react"
+import {Link} from "react-router-dom"
 
 class Login extends React.Component {
     constructor(props) {
@@ -10,6 +11,7 @@ class Login extends React.Component {
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this)
         this.loginDemoUser = this.loginDemoUser.bind(this);
+        this.signupButton = this.signupButton.bind(this)
     }
 
     componentDidMount() {
@@ -25,7 +27,12 @@ class Login extends React.Component {
     handleSubmit(e) {
         e.preventDefault()
         this.props.login(this.state)
-        .then(() => this.props.history.push("/")) //change this to the frontend route for user's profile
+        .then(() => this.props.history.push("/account"))
+    }
+
+    signupButton(e) {
+        e.preventDefault()
+        this.props.history.push("/signup")
     }
 
     loginDemoUser(e) {
@@ -34,7 +41,7 @@ class Login extends React.Component {
             email: "DemoUser",
             password: "123456"
         }, () => this.props.login(this.state)
-        .then(() => this.props.history.push("/")))
+        .then(() => this.props.history.push("/account")))
         //setState is asynch, so passed in the login as a cb
     }
 
@@ -54,20 +61,23 @@ class Login extends React.Component {
 
     render() {
         return (
-            <div className="session-form">
-                <h2>Log In!</h2>
-                <div>{this.renderErrors()}</div>
-                <form>
-                    <label>Email:
-                        <input type="text" value={this.state.email} onChange={this.handleChange('email')} />
-                    </label>
-                    <label>Password:
-                        <input type="password" value={this.state.password} onChange={this.handleChange('password')} />
-                    </label>
-                    <button onClick={this.handleSubmit}>Log In</button>
+            <div>
+                <div className="login-side">
+                    <h2>Log In</h2>
+                    <div>{this.renderErrors()}</div>
+                    <form>
+                        <input type="text" value={this.state.email} placeholder="Email" onChange={this.handleChange('email')} />
+                        <input type="password" value={this.state.password} placeholder="Password" onChange={this.handleChange('password')} />
+                        <button onClick={this.handleSubmit}>Log In</button>
 
-                    <button onClick={this.loginDemoUser}>Demo User</button>
-                </form>
+                        <button onClick={this.loginDemoUser}>Demo User</button>
+                    </form>
+                </div>
+
+                <div>
+                    <h2>New Account</h2>
+                    <button onClick={this.signupButton}>Create Account</button>
+                </div>
             </div>
         )
     }

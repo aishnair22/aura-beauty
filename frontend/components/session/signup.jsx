@@ -1,4 +1,5 @@
 import React from "react"
+import {Link} from "react-router-dom"
 
 class Signup extends React.Component {
     constructor(props) {
@@ -26,7 +27,7 @@ class Signup extends React.Component {
     handleSubmit(e) {
         e.preventDefault()
         this.props.createNewUser(this.state)
-            .then(() => this.props.history.push("/")) //frontend route for user's profile
+            .then(() => this.props.history.push("/account")) //frontend route for user's profile
     }
 
     renderErrors() {
@@ -45,23 +46,16 @@ class Signup extends React.Component {
 
     render() {
         return (
-            <div className="session-form">
-                <h2>Sign Up!</h2>
+            <div>
+                <h2>Create an Account</h2>
                 <div>{this.renderErrors()}</div>
                 <form>
-                    <label>First Name:
-                        <input type="text" value={this.state.first_name} onChange={this.handleChange('first_name')} />
-                    </label>
-                    <label>Last Name:
-                        <input type="text" value={this.state.last_name} onChange={this.handleChange('last_name')} />
-                    </label>
-                    <label>Email:
-                        <input type="text" value={this.state.email} onChange={this.handleChange('email')} />
-                    </label>
-                    <label>Password:
-                        <input type="password" value={this.state.password} onChange={this.handleChange('password')} />
-                    </label>
-                    <button onClick={this.handleSubmit}>Sign Up</button>
+                    <input type="text" value={this.state.first_name} placeholder="First Name" onChange={this.handleChange('first_name')} />
+                    <input type="text" value={this.state.last_name} placeholder="Last Name" onChange={this.handleChange('last_name')} />
+                    <input type="text" value={this.state.email} placeholder="Email" onChange={this.handleChange('email')} />
+                    <input type="password" placeholder="Password" value={this.state.password} onChange={this.handleChange('password')} />
+                    <button onClick={this.handleSubmit}>Register</button>
+                    <Link to="/login">Already have an account? Login here.</Link>
                 </form>
             </div>
         )

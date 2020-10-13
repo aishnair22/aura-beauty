@@ -1,27 +1,41 @@
 import React from 'react';
+import { render } from 'react-dom';
 import { Link } from 'react-router-dom';
 
-const Header = ({ currentUserId, logout }) => {
-    const display = currentUserId ? (
-        <div>
-            <button onClick={logout}>Log Out</button>
-        </div>
-    ) : (
-        <div>
-            {/* <Link to="/account/:currentUserId">icon</Link> */}
-            <Link className="btn" to="/signup">Sign Up</Link>
-            <Link className="btn" to="/login">Log In</Link>
-        </div>
-    )
+class Header extends React.Component {
+    constructor(props) {
+        super(props)
+        this.handleAccount = this.handleAccount.bind(this)
+        this.handleLogo = this.handleLogo.bind(this)
+    }
 
-    return (
-        <header className="nav-bar">
-            <h1 className="logo">Aura Beauty</h1>
-            <div>
-                {display}
-            </div>
-        </header>
-    );
-};
+    handleAccount(e) {
+        e.preventDefault()
+        this.props.currentUser ? (
+            this.props.history.push("/account")
+        ) : (
+            this.props.history.push("/login")
+        )
+    }
+
+    handleLogo(e) {
+        e.preventDefault()
+        this.props.history.push("/")
+    }
+
+    render() {
+    
+        return (
+            <header>
+                <h1 onClick={this.handleLogo}>Aura Beauty</h1>
+                <img onClick={this.handleAccount} src={window.accountIcon} width="25" height="25"/> 
+                {/* access to window.accountIcon in application.html.erb */}
+            </header>
+        );
+    }
+} 
+
+
+
 
 export default Header
