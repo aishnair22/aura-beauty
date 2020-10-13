@@ -1,13 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const NavBar = ({ currentUserId, logout }) => {
+const Header = ({ currentUserId, logout }) => {
     const display = currentUserId ? (
         <div>
             <button onClick={logout}>Log Out</button>
         </div>
     ) : (
         <div>
+            {/* <Link to="/account/:currentUserId">icon</Link> */}
             <Link className="btn" to="/signup">Sign Up</Link>
             <Link className="btn" to="/login">Log In</Link>
         </div>
@@ -23,4 +24,4 @@ const NavBar = ({ currentUserId, logout }) => {
     );
 };
 
-export default NavBar
+export default Header

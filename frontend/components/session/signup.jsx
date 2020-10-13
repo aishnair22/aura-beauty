@@ -13,6 +13,10 @@ class Signup extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this)
     }
 
+    componentDidMount() {
+        this.props.clearErrors()
+    }
+
     handleChange(type) {
         return (e) => {
             this.setState({ [type]: e.target.value })
@@ -25,10 +29,25 @@ class Signup extends React.Component {
             .then(() => this.props.history.push("/")) //frontend route for user's profile
     }
 
+    renderErrors() {
+        if (!this.props.errors) {
+            return null
+        } else {
+            return (
+                <ul>
+                    {this.props.errors.map((error, idx) => {
+                        return <li key={idx} >{error}</li>
+                    })}
+                </ul>
+            )
+        }
+    }
+
     render() {
         return (
             <div className="session-form">
                 <h2>Sign Up!</h2>
+                <div>{this.renderErrors()}</div>
                 <form>
                     <label>First Name:
                         <input type="text" value={this.state.first_name} onChange={this.handleChange('first_name')} />

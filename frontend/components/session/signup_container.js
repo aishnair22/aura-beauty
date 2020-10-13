@@ -1,13 +1,18 @@
 import { connect } from "react-redux"
-import { createNewUser } from '../../actions/session'
+import { createNewUser, clearErrors } from '../../actions/session_actions'
 import Signup from './signup'
 
-//no mapStateToProps bc we don't need access to any part of state in our Signup Component
+const mapStateToProps = (state) => {
+    return {
+        errors: state.errors.session
+    };
+};
 
 const mapDispatchToProps = (dispatch) => {
     return ({
-        createNewUser: (formUser) => dispatch(createNewUser(formUser))
+        createNewUser: (formUser) => dispatch(createNewUser(formUser)),
+        clearErrors: () => dispatch(clearErrors())
     })
 }
 
-export default connect(null, mapDispatchToProps)(Signup)
+export default connect(mapStateToProps, mapDispatchToProps)(Signup)
