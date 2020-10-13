@@ -1,6 +1,4 @@
 import React from 'react';
-import { render } from 'react-dom';
-import { Link } from 'react-router-dom';
 
 class Header extends React.Component {
     constructor(props) {
@@ -26,9 +24,9 @@ class Header extends React.Component {
     render() {
     
         return (
-            <header>
-                <h1 onClick={this.handleLogo}>Aura Beauty</h1>
-                <img onClick={this.handleAccount} src={window.accountIcon} width="25" height="25"/> 
+            <header className="header">
+                <h1 className="logo" onClick={this.handleLogo}>Aura Beauty</h1>
+                <img onClick={this.handleAccount} src={window.accountIcon} /> 
                 {/* access to window.accountIcon in application.html.erb */}
             </header>
         );

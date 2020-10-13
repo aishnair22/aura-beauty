@@ -46,10 +46,10 @@ class Signup extends React.Component {
 
     render() {
         return (
-            <div>
-                <h2>Create an Account</h2>
+            <div className="signup">
+                <h2>Create Account</h2>
                 <div>{this.renderErrors()}</div>
-                <form>
+                <form className="form">
                     <input type="text" value={this.state.first_name} placeholder="First Name" onChange={this.handleChange('first_name')} />
                     <input type="text" value={this.state.last_name} placeholder="Last Name" onChange={this.handleChange('last_name')} />
                     <input type="text" value={this.state.email} placeholder="Email" onChange={this.handleChange('email')} />
