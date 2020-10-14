@@ -1,17 +1,14 @@
-/* titles: font-family: 'Cormorant Garamond', serif; */
-/* all caps links: font-family: 'Cantarell', sans-serif; */
-/* body: font-family: 'Roboto', sans-serif; */
 
 .signup {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #FDFBF8;
+    background: $light-pink;
     height: 1000px;
 }
 
 .signup > h2 {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: $title;
     font-size: 55px;
     margin-top: 100px;
     padding: 30px;
@@ -23,11 +20,11 @@
 }
 
 .form > input {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: $title;
     font-size: 20px;
     border: none;
-    border-bottom: 1px solid #7F2549;
-    background: #FDFBF8;
+    border-bottom: 1px solid $maroon;
+    background: $light-pink;
     height: 20px;
     width: 370px;
     padding-top: 10px;
@@ -43,29 +40,29 @@ input[type="password"] {
 }
 
 ::placeholder {
-    color: #7F2549;
+    color: $maroon;
 }
 
 input[placeholder="First Name"] {
-    color: #7F2549;
+    color: $maroon;
 }
 
 input[placeholder="Last Name"] {
-    color: #7F2549;
+    color: $maroon;
 }
 
 input[placeholder="Email"] {
-    color: #7F2549;
+    color: $maroon;
 }
 
 input[placeholder="Password"] {
-    color: #7F2549;
+    color: $maroon;
     margin-bottom: 40px;
 }
 
 .form > button {
-    background: #7F2549;
-    font-family: 'Cantarell', sans-serif;
+    background: $maroon;
+    font-family: $all-caps-links;
     letter-spacing: 5px;
     font-size: 10px;
     color: white;
@@ -80,14 +77,14 @@ input[placeholder="Password"] {
 .form > button:hover {
     cursor: pointer;
     background-color: white;
-    color: #7F2549;
-    border: 1px solid #7F2549;
+    color: $maroon;
+    border: 1px solid $maroon;
     transition: all 0.8s ease
 }
 
 .signup-link {
-    color: #464545;
-    font-family: 'Roboto', sans-serif;
+    color: $dark-gray;
+    font-family: $body;
     font-size: 14px;
     padding-top: 15px;
 }
@@ -102,7 +99,7 @@ input[placeholder="Password"] {
 
 .error {
     font-size: 14px;
-    font-family: 'Roboto', sans-serif;
+    font-family: $body;
     color: #E20000;
     padding: 10px;
 }

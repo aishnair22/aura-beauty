@@ -1,11 +1,7 @@
-/* titles: font-family: 'Cormorant Garamond', serif; */
-/* all caps links: font-family: 'Cantarell', sans-serif; */
-/* body: font-family: 'Roboto', sans-serif; */
-
 .login {
     display: flex;
     justify-content: center;
-    background: #FDFBF8;
+    background: $light-pink;
     height: 1000px;
 }
 
@@ -17,7 +13,7 @@
 }
 
 .login-side > h2 {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: $title;
     font-size: 55px;
     margin-bottom: 30px;
 }
@@ -28,14 +24,14 @@
 }
 
 .signup-side > h2 {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: $title;
     font-size: 55px;
     margin-bottom: 30px;
 }
 
 .signup-side > button {
-    background: #7F2549;
-    font-family: 'Cantarell', sans-serif;
+    background: $maroon;
+    font-family: $all-caps-links;
     letter-spacing: 5px;
     font-size: 10px;
     color: white;
@@ -50,13 +46,13 @@
 .signup-side > button:hover {
     cursor: pointer;
     background-color: white;
-    color: #7F2549;
-    border: 1px solid #7F2549;
+    color: $maroon;
+    border: 1px solid $maroon;
     transition: all 0.8s ease
 }
 
 .vertical-line {
-    border-left: 1px solid #5E5C5C;
+    border-left: 1px solid $light-gray;
     height: 300px;
     margin-top: 190px;
 }

@@ -2,14 +2,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #FDFBF8;
+    background-color: $light-pink;
     height: 900px;
 }
 
 .not-found > h2 {
-    font-family: 'Roboto', sans-serif;
+    font-family: $body;
     font-size: 28px;
     margin-bottom: 30px;
-    color: #464545;
+    color: $light-gray;
     margin-top: 130px;
 }

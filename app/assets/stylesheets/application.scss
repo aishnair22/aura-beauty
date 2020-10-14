@@ -10,6 +10,24 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
  *= require_self
  */
+
+// CSS Reset
+@import "./reset.scss";
+
+//Colors and Fonts
+@import "./base/fonts.scss";
+@import "./base/colors.scss";
+
+//Splash
+@import "./splash/splash.scss";
+
+// Not Found Page
+@import "./not_found/not_found.scss";
+
+// Header
+@import "./header/header.scss";
+@import "./header/signup_and_login_forms/account.scss";
+@import "./header/signup_and_login_forms/login.scss";
+@import "./header/signup_and_login_forms/signup.scss";

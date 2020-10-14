@@ -1,12 +1,12 @@
 .account-all {
     display: flex;
     flex-direction: column;
-    background: #FDFBF8;
+    background: $light-pink;
     height: 1000px;
 }
 
 .account-all > h1 {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: $title;
     font-size: 55px;
     margin-left: 90px;
     margin-top: 150px;
@@ -14,12 +14,11 @@
 
 .account {
     display: flex;
-    /* justify-content: center; */
-    background: #FDFBF8;
+    background: $light-pink;
 }
 
 .account-sidebar {
-    border-right: 1px solid #464545;
+    border-right: 1px solid $dark-gray; 
     margin-left: 90px;
     margin-top: 30px;
     padding-right: 20px;
@@ -27,8 +26,8 @@
 }
 
 .account-sidebar > button {
-    background: #7F2549;
-    font-family: 'Roboto', sans-serif;
+    background: $maroon;
+    font-family: $body;
     font-size: 15px;
     color: white;
     border: none;
@@ -41,8 +40,8 @@
 .account-sidebar > button:hover {
     cursor: pointer;
     background-color: white;
-    color: #7F2549;
-    border: 1px solid #7F2549;
+    color: $maroon;
+    border: 1px solid $maroon;
     transition: all 0.8s ease
 }
 
@@ -53,7 +52,7 @@
 }
 
 .account-main > h1 {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: $title;
     font-size: 55px;
     margin-top: 30px;
     margin-bottom: 20px;
@@ -61,7 +60,7 @@
 
 
 .account-main > h3 {
-    font-family: 'Roboto', sans-serif;    
+    font-family: $body;
     font-size: 14px;
     font-weight: bold;
     padding-bottom: 10px;

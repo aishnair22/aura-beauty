@@ -1,16 +1,15 @@
 .header {
-    background: #FDFBF8;
+    background: $light-pink;
     display: flex;
     position: fixed;
     top: 0;
     width: 100%;
     height: 60px;
-    /* justify-content: space-between; */
 }
 
 .header > h1 {
     display: flex;
-    color: #7F2549;
+    color: $maroon;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 32px;
     float: none;
