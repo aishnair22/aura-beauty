@@ -37,7 +37,7 @@ class Login extends React.Component {
     loginDemoUser(e) {
         e.preventDefault()
         this.setState({
-            email: "DemoUser",
+            email: "demouser@aurabeauty.com",
             password: "123456"
         }, () => this.props.login(this.state)
         .then(() => this.props.history.push("/account")))

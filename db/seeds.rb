@@ -10,4 +10,4 @@
 User.destroy_all
 User.connection.execute('ALTER SEQUENCE users_id_seq RESTART WITH 1')
 
-demouser = User.create!(first_name: 'DemoUser', last_name: 'DemoUser', email: 'DemoUser', password: '123456')
+demouser = User.create!(first_name: 'Demo', last_name: 'User', email: 'demouser@aurabeauty.com', password: '123456')
