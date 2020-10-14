@@ -8,7 +8,8 @@ import { AuthRoute } from '../util/route_utils'
 
 export default () => (
     <div>
-        <Route path="/" component={HeaderContainer} />
+        <Route path="/" component={HeaderContainer} /> 
+        {/* above is rendered on all pages bc / is on all */}
         <Route path="/account" component={AccountContainer}/>
         {/* <Route exact path="/" component={Home} /> */}
         {/* <ProtectedRoute path="/chirps" component={ChirpIndexContainer} /> */}

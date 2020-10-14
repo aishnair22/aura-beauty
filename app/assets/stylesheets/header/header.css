@@ -1,16 +1,23 @@
 .header {
     background: #FDFBF8;
     display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    /* justify-content: space-between; */
 }
 
 .header > h1 {
     display: flex;
     color: #7F2549;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 30px;
-    height: 60px;
-    margin: 0 auto;
-    align-items: center;
+    font-size: 32px;
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .header > h1:hover {
@@ -22,11 +29,10 @@
 }
 
 .header > img {
-    display: flex;
-    margin-top: 20px;
-    margin-right: 60px;
-    margin-left: 0px;
-    margin-bottom: 20px;
+    top: 50%;
+    right: 10%;
+    position: absolute;
+    transform: translate(-50%, -50%);
     width: 25px;
     height: 25px;
 }

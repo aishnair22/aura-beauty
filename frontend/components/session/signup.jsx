@@ -35,9 +35,9 @@ class Signup extends React.Component {
             return null
         } else {
             return (
-                <ul>
+                <ul className="errors">
                     {this.props.errors.map((error, idx) => {
-                        return <li key={idx} >{error}</li>
+                        return <li className="error" key={idx} >{error}</li>
                     })}
                 </ul>
             )
@@ -54,8 +54,8 @@ class Signup extends React.Component {
                     <input type="text" value={this.state.last_name} placeholder="Last Name" onChange={this.handleChange('last_name')} />
                     <input type="text" value={this.state.email} placeholder="Email" onChange={this.handleChange('email')} />
                     <input type="password" placeholder="Password" value={this.state.password} onChange={this.handleChange('password')} />
-                    <button onClick={this.handleSubmit}>Register</button>
-                    <Link to="/login">Already have an account? Login here.</Link>
+                    <button onClick={this.handleSubmit}>REGISTER</button>
+                    <Link className="signup-link" to="/login">Already have an account? Login here.</Link>
                 </form>
             </div>
         )

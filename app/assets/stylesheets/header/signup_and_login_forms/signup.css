@@ -1,0 +1,108 @@
+/* titles: font-family: 'Cormorant Garamond', serif; */
+/* all caps links: font-family: 'Cantarell', sans-serif; */
+/* body: font-family: 'Roboto', sans-serif; */
+
+.signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FDFBF8;
+    height: 1000px;
+}
+
+.signup > h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 55px;
+    margin-top: 100px;
+    padding: 30px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form > input {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid #7F2549;
+    background: #FDFBF8;
+    height: 20px;
+    width: 370px;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    padding: 10px;
+}
+
+input[type="password"] {
+    padding: 10px;
+}
+
+::placeholder {
+    color: #7F2549;
+}
+
+input[placeholder="First Name"] {
+    color: #7F2549;
+}
+
+input[placeholder="Last Name"] {
+    color: #7F2549;
+}
+
+input[placeholder="Email"] {
+    color: #7F2549;
+}
+
+input[placeholder="Password"] {
+    color: #7F2549;
+    margin-bottom: 40px;
+}
+
+.form > button {
+    background: #7F2549;
+    font-family: 'Cantarell', sans-serif;
+    letter-spacing: 5px;
+    font-size: 10px;
+    color: white;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    margin-top: 15px;
+    width: 390px;
+    height: 35px;
+}
+
+.form > button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #7F2549;
+    border: 1px solid #7F2549;
+    transition: all 0.8s ease
+}
+
+.signup-link {
+    color: #464545;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    padding-top: 15px;
+}
+
+.errors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FBE8E8;
+    width: 390px;
+}
+
+.error {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #E20000;
+    padding: 10px;
+}

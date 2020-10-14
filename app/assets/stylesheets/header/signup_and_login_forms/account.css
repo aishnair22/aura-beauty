@@ -1,0 +1,68 @@
+.account-all {
+    display: flex;
+    flex-direction: column;
+    background: #FDFBF8;
+    height: 1000px;
+}
+
+.account-all > h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 55px;
+    margin-left: 90px;
+    margin-top: 150px;
+}
+
+.account {
+    display: flex;
+    /* justify-content: center; */
+    background: #FDFBF8;
+}
+
+.account-sidebar {
+    border-right: 1px solid #464545;
+    margin-left: 90px;
+    margin-top: 30px;
+    padding-right: 20px;
+    height: 400px;
+}
+
+.account-sidebar > button {
+    background: #7F2549;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: left;
+    width: 300px;
+    height: 40px;
+}
+
+.account-sidebar > button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #7F2549;
+    border: 1px solid #7F2549;
+    transition: all 0.8s ease
+}
+
+
+.account-main {
+    margin-top: 30px;
+    margin-left: 70px;
+}
+
+.account-main > h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 55px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+.account-main > h3 {
+    font-family: 'Roboto', sans-serif;    
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}

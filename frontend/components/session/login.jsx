@@ -49,9 +49,9 @@ class Login extends React.Component {
             return null
         } else {
             return (
-                <ul>
+                <ul className="errors">
                     {this.props.errors.map((error, idx) => {
-                        return <li key={idx} >{error}</li>
+                        return <li className="error" key={idx} >{error}</li>
                     })}
                 </ul>
             )
@@ -62,20 +62,20 @@ class Login extends React.Component {
         return (
             <div className="login">
                 <div className="login-side">
-                    <h2>Log In</h2>
+                    <h2>Sign In</h2>
                     <div>{this.renderErrors()}</div>
                     <form className="form">
                         <input type="text" value={this.state.email} placeholder="Email" onChange={this.handleChange('email')} />
                         <input type="password" value={this.state.password} placeholder="Password" onChange={this.handleChange('password')} />
-                        <button onClick={this.handleSubmit}>Log In</button>
+                        <button onClick={this.handleSubmit}>SIGN IN</button>
 
-                        <button onClick={this.loginDemoUser}>Demo User</button>
+                        <button onClick={this.loginDemoUser}>DEMO USER</button>
                     </form>
                 </div>
-
-                <div>
+                <div className="vertical-line"></div>
+                <div className="signup-side">
                     <h2>New Account</h2>
-                    <button onClick={this.signupButton}>Create Account</button>
+                    <button onClick={this.signupButton}>CREATE ACCOUNT</button>
                 </div>
             </div>
         )
