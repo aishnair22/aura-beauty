@@ -1,0 +1,15 @@
+.not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FDFBF8;
+    height: 900px;
+}
+
+.not-found > h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #464545;
+    margin-top: 130px;
+}
