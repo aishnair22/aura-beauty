@@ -79,7 +79,7 @@ input[placeholder="Password"] {
     background-color: white;
     color: $maroon;
     border: 1px solid $maroon;
-    transition: all 0.8s ease
+    transition: all 0.6s ease
 }
 
 .signup-link {
@@ -101,5 +101,12 @@ input[placeholder="Password"] {
     font-size: 14px;
     font-family: $body;
     color: #E20000;
-    padding: 10px;
+    padding: 7px;
+}
+
+.error-login {
+    font-size: 14px;
+    font-family: $body;
+    color: #E20000;
+    padding: 20px;
 }

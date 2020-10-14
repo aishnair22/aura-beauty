@@ -37,7 +37,7 @@ class Signup extends React.Component {
             return (
                 <ul className="errors">
                     {this.props.errors.map((error, idx) => {
-                        return <li className="error" key={idx} >{error}</li>
+                        return <li className="error" key={idx} >{error}.</li>
                     })}
                 </ul>
             )

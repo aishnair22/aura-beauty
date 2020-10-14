@@ -13,12 +13,19 @@
 #
 class User < ApplicationRecord
     validates :email, presence:true, uniqueness:true
-    validates :password_digest, :first_name, :last_name, presence:true
+    validate :first_last_name_validation
+    validates :password_digest, presence:true
     validates :password, length: {minimum: 6, allow_nil: true}
     
     after_initialize :ensure_session_token
 
     attr_reader :password
+
+    def first_last_name_validation
+        if !first_name.present? || !last_name.present?
+            errors.add(:base, "First or Last Name can't be blank")
+        end
+    end
 
     def self.find_by_credentials(email, password)
         user = User.find_by(email: email)

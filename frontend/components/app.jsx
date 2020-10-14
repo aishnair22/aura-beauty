@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollToTop from './ScrollToTop'
 import HeaderContainer from './header/header_container';
 import SplashContainer from './splash/splash_container'
 import SignupContainer from './session/signup_container'
@@ -13,7 +14,7 @@ export default () => (
         <header>
             < HeaderContainer />
         </header>
-
+        <ScrollToTop />
         <Switch> 
             <Route exact path="/" component={SplashContainer} /> 
             {/* above is rendered on all pages bc / is on all */}
