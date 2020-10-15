@@ -29,6 +29,7 @@ gem 'jquery-rails'
 
 gem 'turbolinks'
 
+gem "aws-sdk-s3"
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 

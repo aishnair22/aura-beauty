@@ -4,7 +4,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    height: 60px;
+    height: 10vh;
 }
 
 .header > h1 {
@@ -14,8 +14,8 @@
     font-size: 32px;
     float: none;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 5vh;
+    left: 50vw;
     transform: translate(-50%, -50%);
 }
 
@@ -28,8 +28,9 @@
 }
 
 .header > img {
-    top: 50%;
-    right: 10%;
+    top: 5vh;
+    left: 90vw;
+    //can't do right bc of scroll bar!
     position: absolute;
     transform: translate(-50%, -50%);
     width: 25px;
