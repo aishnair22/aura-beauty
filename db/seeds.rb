@@ -35,6 +35,7 @@ foundation = Product.create!(
     ingredients: "Isohexadecane, Isododecane, C12-15 Alkyl Benzoate, Hydrogenated Polyisobutene, Isononyl Isononanoate, Synthetic Fluorphlogopite, PEG-10 Dimethicone, Trimethylsiloxysilicate, Disteardimonium Hectorite, Dimethicone, Silica, Propylene Carbonate, Triethoxycaprylylsilane, Helianthus Annuus (Sunflower) Seed Oil, Tocopherol, Gardenia Florida Fruit Extract, Nelumbo Nucifera (Sacred Lotus) Flower Extract, Nymphaea Odorata Root Extract, Phenoxyethanol, Achillea Millefolium Flower/Leaf/Stem Extract, Ascophyllum Nodosum Extract, Panax Ginseng Root Extract, Passiflora Edulis (Passion Fruit) Fruit Extract, Tilia Cordata (Linden) Flower Extract, Tussilago Farfara (Coltsfoot) Leaf Extract, [+/- May Contain/Peut Contenir: Titanium Dioxide (CI 77891), Iron Oxides (CI 77491, CI 77492, CI 77499)].",
     how_to_use: "Be sure to moisturize first, then prep skin with Always an Optimist Illuminating Primer for best results. Shake it up to make sure the pigments are evenly dispersed throughout. Use the convenient doe-foot applicator to dot foundation onto your cheeks, forehead, and chin. Blend with your fingers, our Liquid Touch Foundation Brush, or our Liquid Touch Multi-Tasking Sponge (use wet). Less is more: Add a second layer only where needed.",
     price: 29,
+    quote: "It just melts onto your skin, so you forget you're wearing anything.",
     category_id: face.id
 )
 
@@ -45,6 +46,7 @@ concealer = Product.create!(
     ingredients: "Water/Aqua/Eau, Dimethicone, Hydrogenated Didecene, Cetyl PEG/PPG-10/1 Dimethicone, Propanediol, Glycerin, Acrylates/Polytrimethylsiloxymethacrylate Copolymer, Boron Nitride, Polyglyceryl-4 Isostearate, Trimethylsiloxysilicate, Isododecane, Disodium Stearoyl Glutamate, Disteardimonium Hectorite, Hydroxyacetophenone, Oryza Sativa (Rice) Bran Wax, Sodium Chloride, Dimethicone Crosspolymer, Helianthus Annuus (Sunflower) Seed Oil, Caprylyl Glycol, 1,2-Hexanediol, Phenyl Trimethicone, Tocopheryl Acetate, Aluminum Hydroxide, Trisodium Ethylenediamine Disuccinate, Dimethiconol, Decyl Glucoside, Gardenia Florida Fruit Extract, Hexylene Glycol, Nelumbo Nucifera (Sacred Lotus) Flower Extract, Nymphaea Odorata Root Extract, Phenoxyethanol, [+/- MAY CONTAIN / PEUT CONTENIR : Titanium Dioxide (CI 77891), Iron Oxides (CI 77491, CI 77492, CI 77499)].",
     how_to_use: "TIP: Each concealer shade is made to be the perfect match to your Liquid Touch Weightless Foundation shade! Dot concealer anywhere your skin could use a little extra love, like dark circles, blemishes, redness, or discoloration. Then, blend using your fingers or our Liquid Touch Concealer Brush. The unique, oversized applicator has a flat edge to sweep concealer onto larger areas of the face, and a pointed tip for more precise application. For the most seamless, second-skin finish, try blending with our Liquid Touch Multi-tasking Sponge.",
     price: 19,
+    quote: "It's a quick and easy way to brighten dark areas or hide blemishes.",
     category_id: face.id
 )
 
@@ -55,6 +57,7 @@ blush = Product.create!(
     ingredients: "SHADES: HAPPY, GRATEFUL Hydrogenated Polyisobutene, Hydrogenated Poly(C6-14 Olefin), Mica, Octyldodecanol, Ethylene/Propylene/Styrene Copolymer, Trimethylsiloxysilicate, Isododecane, 1,2-Hexanediol, Disteardimonium Hectorite, Sorbitan Sesquioleate, Propylene Carbonate, Triethoxycaprylylsilane, Aluminum Hydroxide, Helianthus Annuus (Sunflower) Seed Oil, Gardenia Florida Fruit Extract, Nelumbo Nucifera (Sacred Lotus) Flower Extract, Nymphaea Odorata Root Extract. [+/- May Contain/Peut Contenir: Iron Oxides (CI 77491), Red 7 Lake (CI 15850), Yellow 6 Lake (CI 15985), Titanium Dioxide (CI 77891), Yellow 5 Lake (CI 19140), Red 28 Lake (CI 45410)]. SHADE: LOVE Isododecane, Silica, Dimethicone, Methyl Trimethicone, Diisostearyl Malate, Trimethylsiloxysilicate, Diphenyl Dimethicone, Mica, Cera Microcristallina/Microcrystalline Wax/Cire microcrystalline, Silica Silylate, Disteardimonium Hectorite, C30-45 Alkyl Dimethicone, Dimethicone/Vinyl Dimethicone Crosspolymer, Sorbitan Isostearate, Propylene Carbonate, Phenoxyethanol, Caprylyl Glycol, 1,2-Hexanediol, Propanediol, Helianthus Annuus (Sunflower) Seed Oil, Illicium Verum (Anise) Fruit Extract, Gardenia Florida Fruit Extract, Nelumbo Nucifera (Sacred Lotus) Flower Extract, Nymphaea Odorata Root Extract, [+/- May Contain/Peut Contenir: Titanium Dioxide (CI 77891), Red 28 Lake (CI 45410), Yellow 6 Lake (CI 15985), Iron Oxides (CI 77491), Iron Oxides (CI 77499), Red 7 Lake (CI 15850)]. SHADE: FAITH Isododecane, Methyl Trimethicone, Silica, Dimethicone, Diisostearyl Malate, Trimethylsiloxysilicate, Mica, Diphenyl Dimethicone, Cera Microcristallina/Microcrystalline Wax/Cire microcrystalline, Silica Silylate, Disteardimonium Hectorite, C30-45 Alkyl Dimethicone, Dimethicone/Vinyl Dimethicone Crosspolymer, Sorbitan Isostearate, Propylene Carbonate, Phenoxyethanol, Caprylyl Glycol, 1,2-Hexanediol, Propanediol, Helianthus Annuus (Sunflower) Seed Oil, Illicium Verum (Anise) Fruit Extract, Gardenia Florida Fruit Extract, Nelumbo Nucifera (Sacred Lotus) Flower Extract, Nymphaea Odorata Root Extract, Blue 1 Lake (CI 42090), Iron Oxides (CI 77491), Iron Oxides (CI 77499), Red 7 Lake (CI 15850), Titanium Dioxide (CI 77891), Yellow 6 Lake (CI 15985).",
     how_to_use: "Gently remove excess product from applicator. Use the doe-foot applicator and place 1-2 dots on each cheek. Use fingertips and gently pat into skin for a seamless finish.",
     price: 20,
+    quote: "There’s nothing like a soft hint of blush to add dimension and color to your look.",
     category_id: face.id
 )
 
@@ -65,6 +68,7 @@ highlight = Product.create!(
     ingredients: "Isododecane, Mica, Hydrogenated Polyisobutene, Hydrogenated Olive Oil Unsaponifiables, Hydrogenated Styrene/Isoprene Copolymer, Octyldodecanol, Dimethicone, Gardenia Florida Fruit Extract, Nelumbo Nucifera (Sacred Lotus) Flower Extract, Nymphaea Odorata Root Extract, Polyhydroxystearic Acid, Caprylic/Capric Triglyceride, Isostearic Acid, Helianthus Annuus (Sunflower) Seed Oil, Tin Oxide, Lecithin, Polyglyceryl-3 Polyricinoleate, Pentaerythrityl Tetra-di-t-butyl Hydroxyhydrocinnamate, [+/- May Contain: Titanium Dioxide (CI 77891), Iron Oxides (CI 77491, CI 77499)].",
     how_to_use: "Apply 1-2 dots directly over any areas you want to add a touch of glow—high points of cheeks, brow bone, the bridge of your nose. Blend with fingertips, brush, or our Liquid Touch Multi-tasking Sponge. TIP: For a soft, all-over glow, mix into your foundation or concealer.",
     price: 22,
+    quote: "It layers well with all formulas – liquid, powder, or cream. It's so versatile!",
     category_id: face.id
 )
 
@@ -75,6 +79,7 @@ mist = Product.create!(
     ingredients: "Water/Aqua/Eau, Caprylic/Capric Triglyceride, Glycerin, Dipropylene Glycol, Niacinamide, 1,2-Hexanediol, Butylene Glycol, Panthenol, Allantoin, Betaine, Sodium Chloride, Squalane, Ethylhexylglycerin, Trehalose, Sodium Benzoate, Disodium EDTA, Olea Europaea (Olive) Fruit Oil, Citrus Aurantium Bergamia (Bergamot) Fruit Oil, Lavandula Angustifolia (Lavender) Oil, Sodium Hyaluronate, Gardenia Florida Fruit Extract, Nelumbo Nucifera (Sacred Lotus) Flower Extract, Nymphaea Odorata Root Extract, Cananga Odorata Flower Oil, Citric Acid, Citrus Aurantium Dulcis (Orange) Oil, Cymbopogon Martini Oil, Pelargonium Graveolens Flower Oil, Michelia Alba Flower Oil, Eugenia Caryophyllus (Clove) Leaf Oil, Sodium Citrate, Eucalyptus Globulus Leaf Oil, Jasminum Officinale (Jasmine) Oil, Limonene, Linalool.",
     how_to_use: "Shake well to fully mix. With eyes closed, spritz 2-4 times at least 10 inches away from your face. This one's a true multitasker! Mist it on whenever, wherever: As a pre-makeup step, or in between layers of makeup to help everything meld together, or to set it all in place. And of course—throughout the day for a quick pick-me-up. You can use it without makeup, too!",
     price: 24,
+    quote: "I love to keep my skin hydrated, so I always keep this on me. It's so versatile!",
     category_id: face.id
 )
 
@@ -85,6 +90,7 @@ primer = Product.create!(
     ingredients: "Water/Aqua/Eau, Glycerin, Ethylhexyl Palmitate, Isohexadecane, Synthetic Fluorphlogopite, Acrylamide/Sodium Acryloyldimethyltaurate Copolymer, Caprylic/Capric Triglyceride, Helianthus Annuus (Sunflower) Seed Oil, Gardenia Florida Fruit Extract, Nelumbo Nucifera (Sacred Lotus) Flower Extract, Nymphaea Odorata Root Extract, Phenoxyethanol, 1,2-Hexanediol, Polysorbate 80, Sorbitan Oleate, Tin Oxide, Titanium Dioxide (CI 77891), Iron Oxides (CI 77491).",
     how_to_use: "Apply 1-2 pumps to clean, moisturized skin, blending in with fingers. Then, follow with foundation and/or concealer. TIP: Feel like skipping makeup? Try this primer on its own! It's made with ultra-fine pearls that bounce light to create the look of a more even skin tone.",
     price: 26,
+    quote: "It's essential for a long-lasting look and proper prep for your makeup.",
     category_id: face.id
 )
 
@@ -95,6 +101,7 @@ blot = Product.create!(
     ingredients: "Mica, Synthetic Fluorphlogopite, Silica, Squalane, Lauroyl Lysine, Triethoxycaprylylsilane, 1,2-Hexanediol, Glyceryl Caprylate, Iron Oxides (CI 77491), Iron Oxides (CI 77492), Iron Oxides (CI 77499).",
     how_to_use: "Touching up has never been this easy. Gently press an individual sheet of blotting paper over shiny areas of the face to absorb excess oil. Next, dab the pre-filled powder puff over shine-prone areas for a radiant, soft-focus finish.",
     price: 26,
+    quote: "I had to make this for myself and my friends. It's perfect for touching up!",
     category_id: face.id
 )
 
@@ -106,6 +113,7 @@ liner = Product.create!(
     ingredients: "Water/Aqua/Eau, Styrene/Acrylates Copolymer, Propylene Glycol, Laureth-21, Pentylene Glycol, PEG-40 Hydrogenated Castor Oil, Phenoxyethanol, Ammonium Acrylates Copolymer, Caprylyl Glycol, PPG-2-Deceth-30, Sodium Dehydroacetate, Sodium Lauryl Sulfate, Disodium Laureth Sulfosuccinate, Black 2 (CI 77266)[NANO].",
     how_to_use: "Shake well to activate. Glide tip along your lash line for instant definition. The flexible brush tip is super versatile: Apply light pressure for thin lines, and add more pressure for thicker lines. Remember to store with the tip down whenever possible so the brush stays wet and ready to go between uses!",
     price: 19,
+    quote: "I LOVE a bold winged liner look, and this liner makes it so easy to get it precise.",
     category_id: eye.id
 )
 
@@ -116,6 +124,7 @@ brow_pencil = Product.create!(
     ingredients: "BROW GEL SHADES: SOFT BLONDE, WARM BROWN, DEEP BROWN Water/Aqua/Eau, Butylene Glycol, Methyl Trimethicone, Acrylates Copolymer, Stearic Acid, Polyglyceryl-2 Triisostearate, Palmitic Acid, Ceresin, Synthetic Beeswax, Synthetic Wax, Hydrogenated Coco-Glycerides, Polysorbate 60, Caprylyl Glycol, Glycerin, 1,2-Hexanediol, Phenoxyethanol, Bentonite, Potassium Sorbate, Hydroxyethylcellulose, PVP, Sodium Benzoate, Tromethamine, Alcohol, Ethylhexylglycerin, Sodium Dehydroacetate, Triethoxycaprylylsilane. [+/- May Contain/Peut Contenir: Iron Oxides (CI 77492, CI 77499, CI 77491), Titanium Dioxide (CI 77891)]. BROW GEL SHADE:SOFT BLACK Water/Aqua/Eau, Butylene Glycol, Methyl Trimethicone, Acrylates Copolymer, Stearic Acid, Polyglyceryl-2 Triisostearate, Palmitic Acid, Ceresin, Synthetic Beeswax, Synthetic Wax, Hydrogenated Coco-Glycerides, Polysorbate 60, Caprylyl Glycol, Glycerin, 1,2-Hexanediol, Phenoxyethanol, Bentonite, Potassium Sorbate, Hydroxyethylcellulose, PVP, Sodium Benzoate, Tromethamine, Alcohol, Ethylhexylglycerin, Sodium Dehydroacetate. [+/- May Contain/Peut Contenir: Iron Oxides (CI 77499, CI 77491), Titanium Dioxide (CI 77891)]. BROW PENCIL C12-15 Alkyl Ethylhexanoate, Methyl Trimethicone, Polyethylene, Trimethylsiloxysilicate, Synthetic Wax, Ceresin, Polyisobutene, Synthetic Beeswax, Stearic Acid. [+/- May Contain/Peut Contenir: Iron Oxides (CI 77491, CI 77492, CI 77499), Titanium Dioxide (CI 77891)].",
     how_to_use: "To create definition: Twist pencil to reveal product (but don't twist too high—the pencil could break due to the creamy nature of the formula)! Hold the pencil so it's angled against the skin and then use small, short strokes to mimic the look of natural hairs. To create volume and set: Comb brow gel through brow hairs to set and hold.",
     price: 22,
+    quote: "I needed a brow pencil and gel that I could carry with me for touch ups on the go.",
     category_id: eye.id
 )
 
@@ -127,6 +136,7 @@ lip_balm = Product.create!(
     ingredients: "SHADES: EMPATHY, APPRECIATE, COMPLIMENT C12-15 Alkyl Ethylhexanoate, Diisostearyl Malate, Tridecyl Trimellitate, Ceresin, Bis-Diglyceryl Polyacyladipate-2, Butyrospermum Parkii (Shea) Butter, Vinyl Dimethicone/Methicone Silsesquioxane Crosspolymer, Hydrogenated Polyisobutene, Sorbitan Sesquioleate, 1,2-Hexanediol, Fragrance/Parfum, Helianthus Annuus (Sunflower) Seed Oil, Gardenia Florida Fruit Extract, Nelumbo Nucifera (Sacred Lotus) Flower Extract, Nymphaea Odorata Root Extract, Linalool [+/- May Contain/Peut Contenir: Titanium Dioxide (CI 77891), Iron Oxides (CI 77491, CI 77492, CI 77499), Red 7 Lake (CI 15850), Blue 1 Lake (CI 42090)]. SHADE: BLESSED C12-15 Alkyl Ethylhexanoate, Diisostearyl Malate, Tridecyl Trimellitate, Ceresin, Bis-Diglyceryl Polyacyladipate-2, Butyrospermum Parkii (Shea) Butter, Vinyl Dimethicone/Methicone Silsesquioxane Crosspolymer, Hydrogenated Polyisobutene, Sorbitan Sesquioleate, 1,2-Hexanediol, Fragrance/Parfum, Triethoxycaprylylsilane, Helianthus Annuus (Sunflower) Seed Oil, Gardenia Florida Fruit Extract, Nelumbo Nucifera (Sacred Lotus) Flower Extract, Nymphaea Odorata Root Extract, Linalool, Titanium Dioxide (CI 77891), Red 28 Lake (CI 45410), Yellow 5 Lake (CI 19140), Iron Oxides (CI 77492). SHADE: HONOR C12-15 Alkyl Ethylhexanoate, Diisostearyl Malate, Tridecyl Trimellitate, Ceresin, Bis-Diglyceryl Polyacyladipate-2, Dimethicone, Trimethylsiloxysilicate, Mica, Butyrospermum Parkii (Shea) Butter, Vinyl Dimethicone/Methicone Silsesquioxane Crosspolymer, Hydrogenated Polyisobutene, Sorbitan Sesquioleate, 1,2-Hexanediol, Fragrance/Parfum, Helianthus Annuus (Sunflower) Seed Oil, Gardenia Florida Fruit Extract, Nelumbo Nucifera (Sacred Lotus) Flower Extract, Nymphaea Odorata Root Extract, Linalool, Iron Oxides (CI 77491).",
     how_to_use: "Swipe it on whenever, wherever. Repeat for more color.",
     price: 16,
+    quote: "It keeps my lips super hydrated with a hint of shine. Honor is my go-to for every day.",
     category_id: lip.id
 )
 
@@ -137,6 +147,7 @@ lip_cream = Product.create!(
     ingredients: "SHADES: FEARLESS, THRILLING, MOTIVATE, INSPIRE, DARING Dimethicone, Methyl Trimethicone, Dimethicone Crosspolymer, Dimethicone/Vinyl Dimethicone Crosspolymer, Polyglyceryl-2 Triisostearate, Isododecane, 1,2-Hexanediol, Disteardimonium Hectorite, Phenoxyethanol, PEG-10 Dimethicone, Tocopheryl Acetate, Propylene Carbonate, Fragrance/Parfum, Linalool, Helianthus Annuus (Sunflower) Seed Oil, Gardenia Florida Fruit Extract, Nelumbo Nucifera (Sacred Lotus) Flower Extract, Nymphaea Odorata Root Extract, [+/- May Contain/Peut Contenir: Titanium Dioxide (CI 77891), Iron Oxides (CI 77491), Iron Oxides (CI 77499), Red 28 Lake (CI 45410), Red 27 (CI 45410), Red 7 Lake (CI 15850), Iron Oxides (CI 77492), Yellow 6 Lake (CI 15985), Yellow 5 Lake (CI 19140), Blue 1 Lake (CI 42090)]. SHADES: ASCEND, STRENGTHEN, HEROIC Dimethicone, Methyl Trimethicone, Polyglyceryl-2 Triisostearate, Dimethicone Crosspolymer, Dimethicone/Vinyl Dimethicone Crosspolymer, Isododecane, 1,2-Hexanediol, Disteardimonium Hectorite, Phenoxyethanol, PEG-10 Dimethicone, Tocopheryl Acetate, Propylene Carbonate, Fragrance/Parfum, Linalool, Helianthus Annuus (Sunflower) Seed Oil, Gardenia Florida Fruit Extract, Nelumbo Nucifera (Sacred Lotus) Flower Extract, Nymphaea Odorata Root Extract, [+/- May Contain/Peut Contenir: Red 27 (CI 45410), Red 28 Lake (CI 45410), Red 7 Lake (CI 15850), Titanium Dioxide (CI 77891), Blue 1 Lake (CI 42090), Iron Oxides (CI 77491).",
     how_to_use: "Apply directly onto clean, dry lips. Lay it all down in one bold swipe, or go in light and build it up—totally up to you!",
     price: 20,
+    quote: "It's so weightless, I forget that I'm wearing it until I look in the mirror!",
     category_id: lip.id
 )
 
@@ -148,6 +159,7 @@ foundation_brush = Product.create!(
     ingredients: "N/A",
     how_to_use: "Liquid Touch Foundation Brush can be used with all liquid, cream, and powder formulas. Use a sweeping motion for sheer coverage. Use a circular motion for medium coverage. Use a stippling motion for maximum coverage. To clean brush, use gentle soap and warm water.",
     price: 28,
+    quote: "Used with our Liquid Touch foundation, it gives you the most beautiful finish.",
     category_id: tools.id
 )
 
@@ -158,6 +170,7 @@ concealer_brush = Product.create!(
     ingredients: "N/A",
     how_to_use: "Liquid Touch Concealer Brush can be used with all liquid, cream and powder formulas. Use brush to gently press and and blend concealer under the eye and other areas of the face. Use a sweeping motion to gently blend and blur product into skin. Use a stippling motion to intensify coverage. Use the pointed tip of the brush to soften edges To clean brush, use gentle soap and warm water.",
     price: 16,
+    quote: "It mimics the shape of your fingertips and gives you so much control.",
     category_id: tools.id
 )
 
@@ -168,6 +181,7 @@ sponge = Product.create!(
     ingredients: "N/A",
     how_to_use: "Wet sponge with water before use. Gently squeeze out excess water (wrap in towel if necessary). This multi-tasking sponge can be used in a variety of ways: Diamond-shaped tip is perfect for strategic placement and detailing around the eye. Flat edges are perfect for sweeping and diffusing across the skin. Round edge is perfect for blending and softening edges. To Clean Sponge: Use gentle soap and water, and roll sponge between hands. Gently squeeze out excess water and air dry. Due to the unique porous texture of the sponge, do not squeeze sponge with nails. Use your fingertips to gently squeeze out excess water.",
     price: 14,
+    quote: "This is my go-to applicator - I love that I can use it with any formula.",
     category_id: tools.id
 )
 

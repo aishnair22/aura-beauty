@@ -9,12 +9,13 @@
 #  ingredients :text             not null
 #  how_to_use  :text             not null
 #  price       :integer          not null
+#  quote       :text             not null
 #  category_id :integer          not null
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
 #
 class Product < ApplicationRecord
-    validates :name, :description, :details, :ingredients, :how_to_use, :price, presence:true
+    validates :name, :description, :details, :ingredients, :how_to_use, :price, :quote, presence:true
 
     belongs_to :category,
     foreign_key: :category_id,
