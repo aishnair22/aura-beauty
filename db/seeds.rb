@@ -203,7 +203,7 @@ c_540C = Shade.create!(name: "540C", product_id: concealer.id)
 c_570N = Shade.create!(name: "570N", product_id: concealer.id)
 
 # blush:
-love = Shade.create!(name: "Love", product_id: blush.id)
+bliss = Shade.create!(name: "Bliss", product_id: blush.id)
 faith = Shade.create!(name: "Faith", product_id: blush.id)
 grateful = Shade.create!(name: "Grateful", product_id: blush.id)
 happy = Shade.create!(name: "Happy", product_id: blush.id)

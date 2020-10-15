@@ -16,9 +16,9 @@ class Shade < ApplicationRecord
     class_name: 'Product'
 
     #active storage associations:
-    has_one_attached :shade_photo
-    #Shade.first.shade_photo => active storage instance
-    #Shade.first.shade_photo.attached? => boolean
+    has_one_attached :swatch_photo
+    #Shade.first.swatch_photo => active storage instance
+    #Shade.first.swatch_photo.attached? => boolean
 
     has_one_attached :product_photo
 end
