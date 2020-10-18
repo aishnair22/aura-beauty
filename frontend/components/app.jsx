@@ -1,10 +1,18 @@
 import React from 'react';
 import ScrollToTop from './ScrollToTop'
 import HeaderContainer from './header/header_container';
+
 import SplashContainer from './splash/splash_container'
 import SignupContainer from './session/signup_container'
 import LoginContainer from './session/login_container'
 import AccountContainer from './header/account_container'
+
+import AllProductsContainer from './product/all_products_container'
+import FaceContainer from './product/face_container'
+import LipContainer from './product/lip_container'
+import EyeContainer from './product/eye_container'
+import ToolsContainer from './product/tools_container'
+
 import NotFoundPage from './not_found/not_found_page'
 import { Route, Switch } from 'react-router-dom';
 import { AuthRoute } from '../util/route_utils'
@@ -16,11 +24,15 @@ export default () => (
         </header>
         <ScrollToTop />
         <Switch> 
-            <Route exact path="/" component={SplashContainer} /> 
-            {/* above is rendered on all pages bc / is on all */}
+            <Route exact path="/" component={SplashContainer} />
+
+            <Route exact path="/collections/shop-all" component={AllProductsContainer} />
+            <Route exact path="/collections/face" component={FaceContainer} />
+            <Route exact path="/collections/lip" component={LipContainer} />
+            <Route exact path="/collections/eye" component={EyeContainer} />
+            <Route exact path="/collections/tools" component={ToolsContainer} />
+        
             <Route exact path="/account" component={AccountContainer}/>
-            {/* <Route exact path="/" component={Home} /> */}
-            {/* <ProtectedRoute path="/chirps" component={ChirpIndexContainer} /> */}
             <AuthRoute exact path="/signup" component={SignupContainer} />
             <AuthRoute exact path="/login" component={LoginContainer} />
             <Route exact path="/:anythingelse" component={NotFoundPage} />
