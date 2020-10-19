@@ -30,11 +30,12 @@
     font-family: $body;
     font-size: 15px;
     color: white;
-    border: none;
+    border: 1px solid transparent;
     padding: 10px 15px;
     text-align: left;
     width: 300px;
     height: 40px;
+    transition: all 0.6s ease;
 }
 
 .account-sidebar > button:hover {

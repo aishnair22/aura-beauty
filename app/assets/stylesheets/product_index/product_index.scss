@@ -1,3 +1,55 @@
 .product-index {
-    margin-top: 100px;
+    background-color: $light-pink; 
+    height: 100%; 
+    margin-top: 0; 
+    display: block;
+}
+
+.product-index-content {
+    margin: 60px 8vw;
+    height: 100%;
+
+    h1 {
+        font-size: 32px;
+        font-family: $title;
+        color: $maroon;
+        padding: 20px 0px;
+    }
+
+    h2 {
+        font-family: $all-caps-links;
+        font-size: 15px;
+        color: $maroon;
+    }
+
+    button {
+        background: $light-pink;
+        font-family: $all-caps-links;
+        letter-spacing: 2px;
+        font-size: 10px;
+        color: $maroon;
+        border: 1px solid $maroon;
+        padding: 0px 10px;
+        text-align: center;
+        margin-right: 10px;
+        margin-top: 10px;
+        height: 30px;
+        transition: all 0.6s ease;
+    }
+
+    button:visited {
+        text-decoration: underline;
+    }
+    
+    button:hover {
+        cursor: pointer;
+        background-color: $maroon;
+        color: white;
+        border: 1px solid transparent;
+        transition: all 0.6s ease
+    }
+    
+    button:active {
+        text-decoration: underline;
+    }
 }

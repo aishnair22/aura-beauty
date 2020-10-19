@@ -4,41 +4,44 @@ class ProductIndexItem extends React.Component {
     constructor(props) {
         // use fetchProduct in product show link
         super(props)
-        this.state = { photoUrl: "", selectedShade: true }
+        this.state = { photoUrl: "", selectedShadeName: "" }
         this.handleShadeClick = this.handleShadeClick.bind(this)
     }
 
     handleShadeClick(shade) {
-        this.setState({ photoUrl: shade.productPhoto, selectedShade: shade })
+        this.setState({ photoUrl: shade.productPhoto, selectedShadeName: shade.name })
     }
 
     render() {
-        // if (!this.props.productShades) {
-        //     debugger
-        //     // this.setState({ photoUrl: this.props.product.photoUrls[0] })
-        // } 
-        // else {
-        //     debugger
-        //     // this.setState({ photoUrl: this.props.productShades[0].productPhoto }) // first photo of first shade            
-        // }
+        let image
+        if (this.props.productShades.length === 0) {
+            image = <img className="index-item-product-img" src={this.props.product.photoUrls[0]} />
+        } else {
+            image = <img className="index-item-product-img" src={this.props.productShades[0].productPhoto} />
+            // this.setState({ selectedShadeName: this.props.productShades[0].name})
+            // ^^ makes it really slow on initial load
+        }
 
         return (
-            <div>
-                <br/>
-                <img src={this.state.photoUrl} height="50px" width="30px"/>
-                <h2>{this.state.selectedShade.name}</h2>
+            <div className="product-index-item">
+                <div className="index-item-img-caption">
+                    {/* sets initial image: */}
+                    {image}
+                    {/* sets image as we change the shade we click on */}
+                    {/* <img className="index-item-product-img" src={this.state.photoUrl} /> */}
+                    <h2>{this.state.selectedShadeName}</h2>
+                </div>
 
-                <p>{this.props.product.name}</p>
+                <h1>{this.props.product.name}</h1>
                 <p>${this.props.product.price}.00</p>
 
-                <p>shades carousel:</p>
-                {this.props.productShades.map((shade) => {
-                    return (
-                        <div>
-                            <img src={shade.swatchPhoto} onClick={() => this.handleShadeClick(shade)} key={shade.id} height="100px" width="60px"/>
-                        </div>
-                    )
-                })}
+                <div className="shades-carousel">
+                    {this.props.productShades.map((shade) => {
+                        return (
+                            <img className="carousel-swatch" src={shade.swatchPhoto} onClick={() => this.handleShadeClick(shade)} key={shade.id} />
+                        )
+                    })}
+                </div>
 
                 <button>ADD TO BAG</button>
                 {/* add an onclick to add to cart */}
