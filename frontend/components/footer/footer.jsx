@@ -9,18 +9,15 @@ class Footer extends React.Component {
     render() {
         return(
             <div className="footer">
-                <div className="footer-shop">
-                    <h1>SHOP</h1>
-                    <Link className="footer-link" to="/collections/all">ALL</Link>
-                    <Link className="footer-link" to="/collections/face">FACE</Link>
-                    <Link className="footer-link" to="/collections/eye">EYE</Link>
-                    <Link className="footer-link" to="/collections/lip">LIP</Link>
-                    <Link className="footer-link"to="/collections/tools">TOOLS</Link>
+                <div className="footer-about-me">
+                    <div className="footer-name">
+                        by Aishwarya Nair
+                    </div>
+                    <a className="footer-link" href="https://github.com/aishnair22/">GITHUB</a>
+                    <a className="footer-link" href="https://www.linkedin.com/in/aishwarya-nair22/">LINKEDIN</a>
                 </div>
-
-                <div className="footer-bottom">
-                    <p>© 2020 Aura Beauty</p>
-                    <p>all rights reserved</p>            
+                <div className="footer-logo">
+                    <p>Aura Beauty</p>
                 </div>
             </div>
         )

@@ -3,7 +3,7 @@ import React from 'react'
 class ProductShow extends React.Component {
     constructor(props) {
         super(props)
-        this.state = { photoUrl: "" }
+        this.state = { currentShade: this.props.shades[0], photoUrl: "" }
         this.handleShadeClick = this.handleShadeClick.bind(this)
         this.handlePhotoClick = this.handlePhotoClick.bind(this)
     }
@@ -12,6 +12,11 @@ class ProductShow extends React.Component {
         this.props.fetchCategories()
         this.props.fetchProduct(this.props.productId)
         this.props.fetchAllShades()
+        // if (!this.props.shades.length) {
+        //     this.setState({ photoUrl: this.props.product.photoUrls[0] })
+        // } else {
+        //     this.setState({ photoUrl: this.props.shades[0].productPhoto, currentShadeName: this.props.shades[0].name })
+        // }
     }
 
     handleShadeClick(shade) {
@@ -41,8 +46,7 @@ class ProductShow extends React.Component {
                     <div>
                         <h1>{product.name}</h1>
                         {shadeNameDisplay}
-                        <h3>{product.description}</h3>
-
+                        {/* <h3>{product.description}</h3> */}
                         {shades.map((shade) => {
                             return (
                                 <div key={shade.id}>
@@ -50,23 +54,21 @@ class ProductShow extends React.Component {
                                 </div>
                             )
                         })}
-
-                        <button>ADD TO CART • ${product.price}</button>
+                        {/* <button>ADD TO CART • ${product.price}</button> */}
                     </div>
 
                     <img className="selected-product-photo" src={this.state.photoUrl} />
                     
                     <div className="all-product-photos">
                         {/* <img className="dot" src={this.state.currentShade.productPhoto} /> */}
-                        {this.props.product.photoUrls.map((photoUrl) => {                    
-                            return <img className="dot" onClick={() => this.handlePhotoClick(photoUrl)} src={photoUrl} />
+                        {this.props.product.photoUrls.map((photoUrl, idx) => {                    
+                            return <img className="dot" onClick={() => this.handlePhotoClick(photoUrl)} src={photoUrl} key={idx}/>
                         })}
                         {/* <img className="dot" src={this.state.currentShade.swatchPhoto} /> */}
-
                     </div>
                 </div>
 
-                <div>
+                {/* <div>
                     <div className="product-details">
                         <img src={this.props.product.detailsPhoto} height="100px" width="100px"/>
                         <h1>Details</h1>
@@ -88,7 +90,7 @@ class ProductShow extends React.Component {
                         <p>"{product.quote}"</p>
                         <h1>SELENA GOMEZ</h1>
                     </div>
-                </div>
+                </div> */}
 
                 {/* Reviews */}
 

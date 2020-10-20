@@ -5,12 +5,13 @@
 
 .all-product-photos {
     position: relative;
-
+    display: flex;
+    flex-direction: column;
 }
 
 .selected-product-photo {
-    height: 200px;
-    width: 100px;
+    height: 300px;
+    width: 200px;
 }
 
 .dot {
@@ -19,4 +20,9 @@
     width: 100px;
     object-fit: cover;
     border-radius: 50%;
+}
+
+.product-side-info {
+    display: flex;
+    justify-content: space-around;
 }

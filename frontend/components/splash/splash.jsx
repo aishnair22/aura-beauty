@@ -26,12 +26,13 @@ class Splash extends React.Component {
                 </div>
 
                 <div className="splash-second-component">
-                    {/* <img src=""/> */}
-                    <div>
-                        <h1>About Me</h1>
-                        {/* <Link to="/about-me">MY STORY</Link> */}
-                    </div>
+                    <h1>FOUNDER QUOTE</h1>
+                    <h2 className="splash-quote">
+                        “Being rare is about being comfortable with yourself. I’ve stopped trying to be perfect. I just want to be me.”
+                    </h2>
+                    <h1>SELENA GOMEZ</h1>
                 </div>
+
             </div>
         )
     }

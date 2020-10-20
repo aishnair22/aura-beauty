@@ -1,12 +1,12 @@
 .splash-first-component {
     margin-top: 60px;
     background-color: $dark-pink;
-
+    padding-bottom: 60px;
+    
     h1 {
         font-family: $title;
         font-size: 55px;
-        margin: 10px 100px;
-        padding: 10px;
+        padding: 40px;
     }
 }
 
@@ -23,7 +23,7 @@
     font-family: $script;
     font-size: 80px;
     color: $maroon;
-    margin: 0px 30px;
+    margin: 0px 20px;
 }
 
 .splash-link:hover {
@@ -33,13 +33,13 @@
 
 .splash-img-tall {
     height: 400px;
-    width: 300px;
+    width: 320px;
     margin-bottom: 10px;
     transition: all 0.4s ease;
 }
 
 .splash-img-wide {
-    height: 300px;
+    height: 320px;
     width: 400px;
     margin-bottom: 10px;
     transition: all 0.4s ease;
@@ -47,18 +47,28 @@
 
 .splash-second-component {
     background-color: $light-pink;
-
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
     h1 {
-        font-family: $title;
-        font-size: 55px;
-        margin: 0px 100px;
-        padding: 50px 15px;
+        padding: 20px;
+        font-family: $all-caps-links;
+        font-size: 14px;
+        color: $maroon;
+        letter-spacing: 5px;
     }
+   
+}
 
-    h2 {
-        font-family: $script;
-        font-size: 55px;
-        margin: 0px 100px;
-        padding-top: 50px;
-    }
+.splash-quote {
+    display: flex;
+    width: 685px;
+    text-align: center;
+    font-family: $title;
+    color: black;
+    font-size: 60px;
+    line-height: 80px;
 }
