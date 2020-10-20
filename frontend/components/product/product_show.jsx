@@ -23,6 +23,7 @@ class ProductShow extends React.Component {
             // this.setState({ photoUrl: this.props.product.photoUrls[0] })
         }
     }
+    
 
     render() {
         if (!this.props.product && !this.props.shades.length) {
