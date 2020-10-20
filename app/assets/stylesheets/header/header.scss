@@ -39,13 +39,14 @@
 }
 
 .dropdown-shop {
-    top: 30px;
+    top: 35px;
     left: 4vw;
     position: absolute;
     transform: translate(-50%, -50%);
     font-family: $all-caps-links;
     color: $maroon;
-    font-size: 13px;
+    font-size: 12.5px;
+    letter-spacing: 2px;
     padding: 30px 0;
 }
 
@@ -68,9 +69,6 @@
     margin-top: 60px;
     height: 350px;
     width: 100vw;
-
-    opacity: 0;
-	transition: all 1s ease;
 }
 
 .dropdown-links {
@@ -83,8 +81,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    transition: all 1s ease;
-    opacity: 1;
 }
 
 .downdown-img {

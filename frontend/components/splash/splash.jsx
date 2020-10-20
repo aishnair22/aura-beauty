@@ -7,6 +7,7 @@ class Splash extends React.Component {
 
     render() {
         return(
+            
             <h1 className="splash">This is the Splash Component</h1>
         )
     }

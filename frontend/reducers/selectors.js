@@ -7,3 +7,9 @@ export const selectProductsByCategory = (state, categoryName) => {
         return product.category_id === categoryObject[0].id
     })
 }
+
+export const selectShadesByProduct = (shades, productId) => {
+    return Object.values(shades).filter((shade) => {
+        return shade.product_id === Number(productId)
+    })
+}

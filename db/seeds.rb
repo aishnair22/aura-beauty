@@ -370,12 +370,12 @@ f_100W.product_photo.attach(io: f_100W_product, filename: 'F-100W-product.jpg')
 ####################################################################
 
 
-f_140C = Shade.create!(name: "140C", product_id: foundation.id)
+# f_140C = Shade.create!(name: "140C", product_id: foundation.id)
 
-f_140C_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-140C-product.jpg')
-f_140C.product_photo.attach(io: f_140C_product, filename: 'F-140C-product.jpg')
-f_140C_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-140C-swatch.png')
-f_140C.swatch_photo.attach(io: f_140C_swatch, filename: 'F-140C-swatch.png')
+# f_140C_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-140C-product.jpg')
+# f_140C.product_photo.attach(io: f_140C_product, filename: 'F-140C-product.jpg')
+# f_140C_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-140C-swatch.png')
+# f_140C.swatch_photo.attach(io: f_140C_swatch, filename: 'F-140C-swatch.png')
 ####################################################################
 
 
@@ -387,12 +387,12 @@ f_180W_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade
 f_180W.swatch_photo.attach(io: f_180W_swatch, filename: 'F-180W-swatch.png')
 ####################################################################
 
-f_220C = Shade.create!(name: "220C", product_id: foundation.id)
+# f_220C = Shade.create!(name: "220C", product_id: foundation.id)
 
-f_220C_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-220C-product.jpg')
-f_220C.product_photo.attach(io: f_220C_product, filename: 'F-220C-product.jpg')
-f_220C_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-220C-swatch.png')
-f_220C.swatch_photo.attach(io: f_220C_swatch, filename: 'F-220C-swatch.png')
+# f_220C_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-220C-product.jpg')
+# f_220C.product_photo.attach(io: f_220C_product, filename: 'F-220C-product.jpg')
+# f_220C_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-220C-swatch.png')
+# f_220C.swatch_photo.attach(io: f_220C_swatch, filename: 'F-220C-swatch.png')
 ####################################################################
 
 f_260N = Shade.create!(name: "260N", product_id: foundation.id)
@@ -403,12 +403,12 @@ f_260N_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade
 f_260N.swatch_photo.attach(io: f_260N_swatch, filename: 'F-260N-swatch.png')
 ####################################################################
 
-f_300C = Shade.create!(name: "300C", product_id: foundation.id)
+# f_300C = Shade.create!(name: "300C", product_id: foundation.id)
 
-f_300C_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-300C-product.jpg')
-f_300C.product_photo.attach(io: f_300C_product, filename: 'F-300C-product.jpg')
-f_300C_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-300C-swatch.png')
-f_300C.swatch_photo.attach(io: f_300C_swatch, filename: 'F-300C-swatch.png')
+# f_300C_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-300C-product.jpg')
+# f_300C.product_photo.attach(io: f_300C_product, filename: 'F-300C-product.jpg')
+# f_300C_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-300C-swatch.png')
+# f_300C.swatch_photo.attach(io: f_300C_swatch, filename: 'F-300C-swatch.png')
 ####################################################################
 
 f_340C = Shade.create!(name: "340C", product_id: foundation.id)
@@ -419,20 +419,20 @@ f_340C_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade
 f_340C.swatch_photo.attach(io: f_340C_swatch, filename: 'F-340C-swatch.png')
 ####################################################################
 
-f_380W = Shade.create!(name: "380W", product_id: foundation.id)
+# f_380W = Shade.create!(name: "380W", product_id: foundation.id)
 
-f_380W_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-380W-product.jpg')
-f_380W.product_photo.attach(io: f_380W_product, filename: 'F-380W-product.jpg')
-f_380W_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-380W-swatch.png')
-f_380W.swatch_photo.attach(io: f_380W_swatch, filename: 'F-380W-swatch.png')
+# f_380W_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-380W-product.jpg')
+# f_380W.product_photo.attach(io: f_380W_product, filename: 'F-380W-product.jpg')
+# f_380W_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-380W-swatch.png')
+# f_380W.swatch_photo.attach(io: f_380W_swatch, filename: 'F-380W-swatch.png')
 ####################################################################
 
-f_420N = Shade.create!(name: "420N", product_id: foundation.id)
+# f_420N = Shade.create!(name: "420N", product_id: foundation.id)
 
-f_420N_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-420N-product.jpg')
-f_420N.product_photo.attach(io: f_420N_product, filename: 'F-420N-product.jpg')
-f_420N_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-420N-swatch.png')
-f_420N.swatch_photo.attach(io: f_420N_swatch, filename: 'F-420N-swatch.png')
+# f_420N_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-420N-product.jpg')
+# f_420N.product_photo.attach(io: f_420N_product, filename: 'F-420N-product.jpg')
+# f_420N_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-420N-swatch.png')
+# f_420N.swatch_photo.attach(io: f_420N_swatch, filename: 'F-420N-swatch.png')
 ####################################################################
 
 f_460W = Shade.create!(name: "460W", product_id: foundation.id)
@@ -443,20 +443,20 @@ f_460W_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade
 f_460W.swatch_photo.attach(io: f_460W_swatch, filename: 'F-460W-swatch.png')
 ####################################################################
 
-f_500N = Shade.create!(name: "500N", product_id: foundation.id)
+# f_500N = Shade.create!(name: "500N", product_id: foundation.id)
 
-f_500N_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-500N-product.jpg')
-f_500N.product_photo.attach(io: f_500N_product, filename: 'F-500N-product.jpg')
-f_500N_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-500N-swatch.png')
-f_500N.swatch_photo.attach(io: f_500N_swatch, filename: 'F-500N-swatch.png')
+# f_500N_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-500N-product.jpg')
+# f_500N.product_photo.attach(io: f_500N_product, filename: 'F-500N-product.jpg')
+# f_500N_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-500N-swatch.png')
+# f_500N.swatch_photo.attach(io: f_500N_swatch, filename: 'F-500N-swatch.png')
 ####################################################################
 
-f_540C = Shade.create!(name: "540C", product_id: foundation.id)
+# f_540C = Shade.create!(name: "540C", product_id: foundation.id)
 
-f_540C_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-540C-product.jpg')
-f_540C.product_photo.attach(io: f_540C_product, filename: 'F-540C-product.jpg')
-f_540C_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-540C-swatch.png')
-f_540C.swatch_photo.attach(io: f_540C_swatch, filename: 'F-540C-swatch.png')
+# f_540C_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-540C-product.jpg')
+# f_540C.product_photo.attach(io: f_540C_product, filename: 'F-540C-product.jpg')
+# f_540C_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-540C-swatch.png')
+# f_540C.swatch_photo.attach(io: f_540C_swatch, filename: 'F-540C-swatch.png')
 ####################################################################
 
 f_570N = Shade.create!(name: "570N", product_id: foundation.id)
@@ -477,12 +477,12 @@ c_100W_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade
 c_100W.swatch_photo.attach(io: c_100W_swatch, filename: 'C-100W-swatch.png')
 ####################################################################
 
-c_140C = Shade.create!(name: "140C", product_id: concealer.id)
+# c_140C = Shade.create!(name: "140C", product_id: concealer.id)
 
-c_140C_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-140C-product.jpg')
-c_140C.product_photo.attach(io: c_140C_product, filename: 'C-140C-product.jpg')
-c_140C_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-140C-swatch.png')
-c_140C.swatch_photo.attach(io: c_140C_swatch, filename: 'C-140C-swatch.png')
+# c_140C_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-140C-product.jpg')
+# c_140C.product_photo.attach(io: c_140C_product, filename: 'C-140C-product.jpg')
+# c_140C_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-140C-swatch.png')
+# c_140C.swatch_photo.attach(io: c_140C_swatch, filename: 'C-140C-swatch.png')
 ####################################################################
 
 c_180W = Shade.create!(name: "180W", product_id: concealer.id)
@@ -493,12 +493,12 @@ c_180W_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade
 c_180W.swatch_photo.attach(io: c_180W_swatch, filename: 'C-180W-swatch.png')
 ####################################################################
 
-c_220C = Shade.create!(name: "220C", product_id: concealer.id)
+# c_220C = Shade.create!(name: "220C", product_id: concealer.id)
 
-c_220C_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-220C-product.jpg')
-c_220C.product_photo.attach(io: c_220C_product, filename: 'C-220C-product.jpg')
-c_220C_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-220C-swatch.png')
-c_220C.swatch_photo.attach(io: c_220C_swatch, filename: 'C-220C-swatch.png')
+# c_220C_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-220C-product.jpg')
+# c_220C.product_photo.attach(io: c_220C_product, filename: 'C-220C-product.jpg')
+# c_220C_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-220C-swatch.png')
+# c_220C.swatch_photo.attach(io: c_220C_swatch, filename: 'C-220C-swatch.png')
 ####################################################################
 
 c_260N = Shade.create!(name: "260N", product_id: concealer.id)
@@ -509,12 +509,12 @@ c_260N_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade
 c_260N.swatch_photo.attach(io: c_260N_swatch, filename: 'C-260N-swatch.png')
 ####################################################################
 
-c_300C = Shade.create!(name: "300C", product_id: concealer.id)
+# c_300C = Shade.create!(name: "300C", product_id: concealer.id)
 
-c_300C_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-300C-product.jpg')
-c_300C.product_photo.attach(io: c_300C_product, filename: 'C-300C-product.jpg')
-c_300C_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-300C-swatch.png')
-c_300C.swatch_photo.attach(io: c_300C_swatch, filename: 'C-300C-swatch.png')
+# c_300C_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-300C-product.jpg')
+# c_300C.product_photo.attach(io: c_300C_product, filename: 'C-300C-product.jpg')
+# c_300C_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-300C-swatch.png')
+# c_300C.swatch_photo.attach(io: c_300C_swatch, filename: 'C-300C-swatch.png')
 ####################################################################
 
 c_340C = Shade.create!(name: "340C", product_id: concealer.id)
@@ -525,20 +525,20 @@ c_340C_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade
 c_340C.swatch_photo.attach(io: c_340C_swatch, filename: 'C-340C-swatch.png')
 ####################################################################
 
-c_380W = Shade.create!(name: "380W", product_id: concealer.id)
+# c_380W = Shade.create!(name: "380W", product_id: concealer.id)
 
-c_380W_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-380W-product.jpg')
-c_380W.product_photo.attach(io: c_380W_product, filename: 'C-380W-product.jpg')
-c_380W_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-380W-swatch.png')
-c_380W.swatch_photo.attach(io: c_380W_swatch, filename: 'C-380W-swatch.png')
+# c_380W_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-380W-product.jpg')
+# c_380W.product_photo.attach(io: c_380W_product, filename: 'C-380W-product.jpg')
+# c_380W_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-380W-swatch.png')
+# c_380W.swatch_photo.attach(io: c_380W_swatch, filename: 'C-380W-swatch.png')
 ####################################################################
 
-c_420N = Shade.create!(name: "420N", product_id: concealer.id)
+# c_420N = Shade.create!(name: "420N", product_id: concealer.id)
 
-c_420N_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-420N-product.jpg')
-c_420N.product_photo.attach(io: c_420N_product, filename: 'C-420N-product.jpg')
-c_420N_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-420N-swatch.png')
-c_420N.swatch_photo.attach(io: c_420N_swatch, filename: 'C-420N-swatch.png')
+# c_420N_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-420N-product.jpg')
+# c_420N.product_photo.attach(io: c_420N_product, filename: 'C-420N-product.jpg')
+# c_420N_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-420N-swatch.png')
+# c_420N.swatch_photo.attach(io: c_420N_swatch, filename: 'C-420N-swatch.png')
 ####################################################################
 
 c_460W = Shade.create!(name: "460W", product_id: concealer.id)
@@ -549,20 +549,20 @@ c_460W_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade
 c_460W.swatch_photo.attach(io: c_460W_swatch, filename: 'C-460W-swatch.png')
 ####################################################################
 
-c_500N = Shade.create!(name: "500N", product_id: concealer.id)
+# c_500N = Shade.create!(name: "500N", product_id: concealer.id)
 
-c_500N_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-500N-product.jpg')
-c_500N.product_photo.attach(io: c_500N_product, filename: 'C-500N-product.jpg')
-c_500N_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-500N-swatch.png')
-c_500N.swatch_photo.attach(io: c_500N_swatch, filename: 'C-500N-swatch.png')
+# c_500N_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-500N-product.jpg')
+# c_500N.product_photo.attach(io: c_500N_product, filename: 'C-500N-product.jpg')
+# c_500N_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-500N-swatch.png')
+# c_500N.swatch_photo.attach(io: c_500N_swatch, filename: 'C-500N-swatch.png')
 ####################################################################
 
-c_540C = Shade.create!(name: "540C", product_id: concealer.id)
+# c_540C = Shade.create!(name: "540C", product_id: concealer.id)
 
-c_540C_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-540C-product.jpg')
-c_540C.product_photo.attach(io: c_540C_product, filename: 'C-540C-product.jpg')
-c_540C_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-540C-swatch.png')
-c_540C.swatch_photo.attach(io: c_540C_swatch, filename: 'C-540C-swatch.png')
+# c_540C_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-540C-product.jpg')
+# c_540C.product_photo.attach(io: c_540C_product, filename: 'C-540C-product.jpg')
+# c_540C_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-540C-swatch.png')
+# c_540C.swatch_photo.attach(io: c_540C_swatch, filename: 'C-540C-swatch.png')
 ####################################################################
 
 c_570N = Shade.create!(name: "570N", product_id: concealer.id)
@@ -725,20 +725,20 @@ inspire_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shad
 inspire.swatch_photo.attach(io: inspire_swatch, filename: 'inspire-swatch.png')
 ####################################################################
 
-motivate = Shade.create!(name: "Motivate", product_id: lip_cream.id)
+# motivate = Shade.create!(name: "Motivate", product_id: lip_cream.id)
 
-motivate_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/lip/liquid/motivate-product.jpg')
-motivate.product_photo.attach(io: motivate_product, filename: 'motivate-product.jpg')
-motivate_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/lip/liquid/motivate-swatch.png')
-motivate.swatch_photo.attach(io: motivate_swatch, filename: 'motivate-swatch.png')
+# motivate_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/lip/liquid/motivate-product.jpg')
+# motivate.product_photo.attach(io: motivate_product, filename: 'motivate-product.jpg')
+# motivate_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/lip/liquid/motivate-swatch.png')
+# motivate.swatch_photo.attach(io: motivate_swatch, filename: 'motivate-swatch.png')
 ####################################################################
 
-thrilling = Shade.create!(name: "Thrilling", product_id: lip_cream.id)
+# thrilling = Shade.create!(name: "Thrilling", product_id: lip_cream.id)
 
-thrilling_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/lip/liquid/thrilling-product.jpg')
-thrilling.product_photo.attach(io: thrilling_product, filename: 'thrilling-product.jpg')
-thrilling_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/lip/liquid/thrilling-swatch.png')
-thrilling.swatch_photo.attach(io: thrilling_swatch, filename: 'thrilling-swatch.png')
+# thrilling_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/lip/liquid/thrilling-product.jpg')
+# thrilling.product_photo.attach(io: thrilling_product, filename: 'thrilling-product.jpg')
+# thrilling_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/lip/liquid/thrilling-swatch.png')
+# thrilling.swatch_photo.attach(io: thrilling_swatch, filename: 'thrilling-swatch.png')
 ####################################################################
 
 fearless = Shade.create!(name: "Fearless", product_id: lip_cream.id)

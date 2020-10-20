@@ -13,6 +13,8 @@ import LipContainer from './product/lip_container'
 import EyeContainer from './product/eye_container'
 import ToolsContainer from './product/tools_container'
 
+import ProductShowContainer from './product/product_show_container'
+
 import NotFoundPage from './not_found/not_found_page'
 import { Route, Switch } from 'react-router-dom';
 import { AuthRoute } from '../util/route_utils'
@@ -26,11 +28,13 @@ export default () => (
         <Switch> 
             <Route exact path="/" component={SplashContainer} />
 
-            <Route exact path="/collections/shop-all" component={AllProductsContainer} />
+            <Route exact path="/collections/all" component={AllProductsContainer} />
             <Route exact path="/collections/face" component={FaceContainer} />
             <Route exact path="/collections/lip" component={LipContainer} />
             <Route exact path="/collections/eye" component={EyeContainer} />
             <Route exact path="/collections/tools" component={ToolsContainer} />
+
+            <Route exact path="/products/:productName-:productId" component={ProductShowContainer} />
         
             <Route exact path="/account" component={AccountContainer}/>
             <AuthRoute exact path="/signup" component={SignupContainer} />

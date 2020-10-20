@@ -29,7 +29,7 @@ class Header extends React.Component {
                 <div className="dropdown">
                     <Link to="/" className="dropdown-shop">SHOP</Link>
                     <div className="dropdown-content">
-                        <Link to="/collections/shop-all" className="dropdown-links" >Shop All                   
+                        <Link to="/collections/all" className="dropdown-links" >Shop All                   
                             <img className="downdown-img" src={window.shopAll } />
                         </Link>
                         <Link to="/collections/face" className="dropdown-links" >Face

@@ -1,5 +1,4 @@
 class Api::ProductsController < ApplicationController
-    # for index item
     def index
         @products = Product.all
         render :index
