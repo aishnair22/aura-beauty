@@ -1,3 +1,22 @@
 .product-show {
-    margin: 80px;
+    margin-top: 60px;
+    background-color: $light-pink;
+}
+
+.all-product-photos {
+    position: relative;
+
+}
+
+.selected-product-photo {
+    height: 200px;
+    width: 100px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 50%;
 }

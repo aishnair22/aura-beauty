@@ -1,6 +1,7 @@
 import React from 'react';
 import ScrollToTop from './ScrollToTop'
 import HeaderContainer from './header/header_container';
+import FooterContainer from './footer/footer_container'
 
 import SplashContainer from './splash/splash_container'
 import SignupContainer from './session/signup_container'
@@ -41,5 +42,9 @@ export default () => (
             <AuthRoute exact path="/login" component={LoginContainer} />
             <Route exact path="/:anythingelse" component={NotFoundPage} />
         </Switch>
+
+        <footer>
+            < FooterContainer />
+        </footer>
     </div>
 );

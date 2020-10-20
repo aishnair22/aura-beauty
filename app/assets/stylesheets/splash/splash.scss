@@ -1,3 +1,64 @@
-.splash {
-    margin-top: 100px;
+.splash-first-component {
+    margin-top: 60px;
+    background-color: $dark-pink;
+
+    h1 {
+        font-family: $title;
+        font-size: 55px;
+        margin: 10px 100px;
+        padding: 10px;
+    }
+}
+
+.splash-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.splash-link {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    font-family: $script;
+    font-size: 80px;
+    color: $maroon;
+    margin: 0px 30px;
+}
+
+.splash-link:hover {
+    transition: all 0.4s ease;
+    opacity: 70%;
+}
+
+.splash-img-tall {
+    height: 400px;
+    width: 300px;
+    margin-bottom: 10px;
+    transition: all 0.4s ease;
+}
+
+.splash-img-wide {
+    height: 300px;
+    width: 400px;
+    margin-bottom: 10px;
+    transition: all 0.4s ease;
+}
+
+.splash-second-component {
+    background-color: $light-pink;
+
+    h1 {
+        font-family: $title;
+        font-size: 55px;
+        margin: 0px 100px;
+        padding: 50px 15px;
+    }
+
+    h2 {
+        font-family: $script;
+        font-size: 55px;
+        margin: 0px 100px;
+        padding-top: 50px;
+    }
 }

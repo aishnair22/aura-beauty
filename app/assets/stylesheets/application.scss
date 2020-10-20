@@ -16,11 +16,11 @@
 // CSS Reset
 @import "./reset.scss";
 
-//Colors and Fonts
+// Colors and Fonts
 @import "./base/fonts.scss";
 @import "./base/colors.scss";
 
-//Splash
+// Splash
 @import "./splash/splash.scss";
 
 // Not Found Page
@@ -36,3 +36,6 @@
 @import "./product/product_index.scss";
 @import "./product/product_index_item.scss";
 @import "./product//product_show.scss";
+
+// Footer
+@import "./footer/footer.scss"
