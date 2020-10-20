@@ -3,24 +3,36 @@ import React from 'react'
 class ProductShow extends React.Component {
     constructor(props) {
         super(props)
-        this.state = { currentShade: this.props.shades[0], photoUrl: "" }
+        this.state = { photoUrl: ""}
         this.handleShadeClick = this.handleShadeClick.bind(this)
         this.handlePhotoClick = this.handlePhotoClick.bind(this)
     }
     
     componentDidMount() {
-        this.props.fetchCategories()
-        this.props.fetchProduct(this.props.productId)
-        this.props.fetchAllShades()
-        // if (!this.props.shades.length) {
-        //     this.setState({ photoUrl: this.props.product.photoUrls[0] })
-        // } else {
-        //     this.setState({ photoUrl: this.props.shades[0].productPhoto, currentShadeName: this.props.shades[0].name })
-        // }
+        Promise.all([
+            this.props.fetchCategories(),
+            this.props.fetchProduct(this.props.productId),
+            this.props.fetchAllShades()
+        ])
+        .then(() => {
+            if (!this.props.shades.length) {
+                this.state = {photoUrl: this.props.product.photoUrls[0] }
+            } else {
+                this.state = { photoUrl: this.props.shades[0].productPhoto, currentShade: this.props.shades[0]}
+            }
+        })
     }
 
+    // componentDidUpdate() {
+    //     if (!this.props.shades.length) {
+    //         this.setState({ photoUrl: this.props.product.photoUrls[0] })
+    //     } else {
+    //         this.setState({ photoUrl: this.props.shades[0].productPhoto})
+    //     }
+    // }
+
     handleShadeClick(shade) {
-        this.setState({ currentShade: shade, currentShadeName: shade.name })
+        this.setState({ currentShade: shade, currentShadeName: shade.name, photoUrl: shade.productPhoto })
     }
 
     handlePhotoClick(photoUrl) {

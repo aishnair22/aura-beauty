@@ -10,30 +10,29 @@
     justify-content: space-between;
     font-family: $title;
     color: black;
-    font-size: 50px;
-    padding-bottom: 5px;
+    font-size: 40px;
 }
 
 .footer-about-me {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin: 20px 100px;
 }
 
 .footer-link {
-    font-size: 16px;
+    font-size: 12px;
     font-family: $all-caps-links;
     letter-spacing: 4px;
-    margin-top: 10px;
-    padding: 10px 20px; 
+    padding-top: 20px; 
     color: $maroon;
 }
 
 .footer-logo {
-    // border: 1px solid black;
     margin: 20px 100px;
-    font-family: $script;
-    font-size: 50px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 32px;
     display: flex;
     align-items: center;
+    color: $maroon;
 }
