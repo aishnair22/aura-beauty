@@ -24,7 +24,7 @@ class ProductIndexItem extends React.Component {
 
         return (
             <div className="product-index-item">
-                <Link to={`/products/${this.props.product.name}-${this.props.product.id}`}>
+                <Link to={`/products/${this.props.product.name}~${this.props.product.id}`}>
                     <div className="index-item-img-caption">
                         <img className="index-item-product-img" src={this.state.photoUrl} />
                         <h2>{this.state.selectedShadeName}</h2>

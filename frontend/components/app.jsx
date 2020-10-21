@@ -35,7 +35,7 @@ export default () => (
             <Route exact path="/collections/eye" component={EyeContainer} />
             <Route exact path="/collections/tools" component={ToolsContainer} />
 
-            <Route exact path="/products/:productName-:productId" component={ProductShowContainer} />
+            <Route exact path="/products/:productName~:productId" component={ProductShowContainer} />
         
             <Route exact path="/account" component={AccountContainer}/>
             <AuthRoute exact path="/signup" component={SignupContainer} />

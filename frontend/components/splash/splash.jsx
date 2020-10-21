@@ -27,7 +27,7 @@ class Splash extends React.Component {
 
                 <div className="splash-second-component">
                     <h1>FOUNDER QUOTE</h1>
-                    <h2 className="splash-quote">
+                    <h2 className="quote">
                         “Being rare is about being comfortable with yourself. I’ve stopped trying to be perfect. I just want to be me.”
                     </h2>
                     <h1>SELENA GOMEZ</h1>
