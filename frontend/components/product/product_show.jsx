@@ -3,9 +3,11 @@ import React from 'react'
 class ProductShow extends React.Component {
     constructor(props) {
         super(props)
+        this.state = { currentShade: "", photoUrl: "", howToOpen: "", ingredientsOpen: ""}
         this.handleShadeClick = this.handleShadeClick.bind(this)
         this.handlePhotoClick = this.handlePhotoClick.bind(this)
-        this.state = {currentShade: "", photoUrl: ""}
+        this.openModal = this.openModal.bind(this)
+        this.closeModal = this.closeModal.bind(this)
     }
 
     componentDidMount() {
@@ -28,6 +30,22 @@ class ProductShow extends React.Component {
 
     handlePhotoClick(photoUrl) {
         this.setState({ photoUrl: photoUrl })
+    }
+
+    openModal(type) {
+        if (type === "ingredients") {
+            this.setState({ ingredientsOpen: "is-open"})
+        } else {
+            this.setState({ howToOpen: "is-open"})
+        }
+    }
+
+    closeModal(type) {
+        if (type === "ingredients") {
+            this.setState({ ingredientsOpen: "" })
+        } else {
+            this.setState({ howToOpen: "" })
+        }
     }
 
     render() {
@@ -61,6 +79,27 @@ class ProductShow extends React.Component {
             shadeImageOne = <img className={selected_one} onClick={() => this.handlePhotoClick(this.state.currentShade.productPhoto)} src={this.state.currentShade.productPhoto} />
             shadeImageTwo = <img className={selected_two} onClick={() => this.handlePhotoClick(this.state.currentShade.swatchPhoto)} src={this.state.currentShade.swatchPhoto} />
             shadeUnderline = <div className="product-name-underline"></div>
+        }
+
+        let ingredients
+
+        if (this.props.product.ingredients !== "N/A") {
+            ingredients = (
+                <div className="ingredients">
+                    <h1>What's in it?</h1>
+                    <p>{product.ingredients.slice(0, 100)} ...</p>
+                    <span onClick={() => this.openModal("ingredients")}>MORE</span>
+
+                    <div className={`modal ${this.state.ingredientsOpen}`}>
+                        <div className={`modal-details`}>
+                            <div onClick={() => this.closeModal("ingredients")} className="modal-close">&times;</div>
+                            <h5>Full Ingredients</h5>
+                            <h6>{product.ingredients}</h6>
+                        </div>
+                        <div className="modal-screen"></div>
+                    </div>
+                </div>
+            )
         }
 
         return(
@@ -113,16 +152,23 @@ class ProductShow extends React.Component {
                     </div>
 
                     <div className="product-ingredients-how-to">
-                        <div className="ingredients">
-                            <h1>What's in it?</h1>
-                            <p>{product.ingredients}</p>
-                        </div>
+                        {ingredients}
 
                         <img src={this.props.product.howToUsePhoto} />
 
                         <div className="how-to">
                             <h1>How to use</h1>
-                            <p>{product.how_to_use}</p>
+                            <p>{product.how_to_use.slice(0, 100)} ...</p>
+                            <span onClick={() => this.openModal("how-to")}>MORE</span>
+
+                            <div className={`modal ${this.state.howToOpen}`}>
+                                <div className={`modal-details`}>
+                                    <div onClick={() => this.closeModal("how-to")} className="modal-close">&times;</div>
+                                    <h5>Usage</h5>
+                                    <h6>{product.how_to_use}</h6>
+                                </div>
+                                <div className="modal-screen"></div>
+                            </div>
                         </div>
                     </div>
                 </div>

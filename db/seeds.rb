@@ -74,7 +74,7 @@ blush = Product.create!(
     name: "Soft Pinch Liquid Blush",
     description: "A weightless, long-lasting liquid blush that blends and builds beautifully for a soft, healthy flush. Available in both matte and dewy finishes.",
     details: "Airy, lightweight liquid formula blends and builds effortlessly for a soft flush of color. Infused with long-lasting color pigments for all-day wear—a little goes a long way. Mistake-proof, it layers beautifully over liquid/powder formulas without disturbing makeup. Available in matte and dewy finishes. Love – terracotta (matte) Faith – deep berry (matte) Happy – cool pink (dewy) Grateful – true red (dewy)",
-    ingredients: "SHADES: HAPPY, GRATEFUL Hydrogenated Polyisobutene, Hydrogenated Poly(C6-14 Olefin), Mica, Octyldodecanol, Ethylene/Propylene/Styrene Copolymer, Trimethylsiloxysilicate, Isododecane, 1,2-Hexanediol, Disteardimonium Hectorite, Sorbitan Sesquioleate, Propylene Carbonate, Triethoxycaprylylsilane, Aluminum Hydroxide, Helianthus Annuus (Sunflower) Seed Oil, Gardenia Florida Fruit Extract, Nelumbo Nucifera (Sacred Lotus) Flower Extract, Nymphaea Odorata Root Extract. [+/- May Contain/Peut Contenir: Iron Oxides (CI 77491), Red 7 Lake (CI 15850), Yellow 6 Lake (CI 15985), Titanium Dioxide (CI 77891), Yellow 5 Lake (CI 19140), Red 28 Lake (CI 45410)]. SHADE: LOVE Isododecane, Silica, Dimethicone, Methyl Trimethicone, Diisostearyl Malate, Trimethylsiloxysilicate, Diphenyl Dimethicone, Mica, Cera Microcristallina/Microcrystalline Wax/Cire microcrystalline, Silica Silylate, Disteardimonium Hectorite, C30-45 Alkyl Dimethicone, Dimethicone/Vinyl Dimethicone Crosspolymer, Sorbitan Isostearate, Propylene Carbonate, Phenoxyethanol, Caprylyl Glycol, 1,2-Hexanediol, Propanediol, Helianthus Annuus (Sunflower) Seed Oil, Illicium Verum (Anise) Fruit Extract, Gardenia Florida Fruit Extract, Nelumbo Nucifera (Sacred Lotus) Flower Extract, Nymphaea Odorata Root Extract, [+/- May Contain/Peut Contenir: Titanium Dioxide (CI 77891), Red 28 Lake (CI 45410), Yellow 6 Lake (CI 15985), Iron Oxides (CI 77491), Iron Oxides (CI 77499), Red 7 Lake (CI 15850)]. SHADE: FAITH Isododecane, Methyl Trimethicone, Silica, Dimethicone, Diisostearyl Malate, Trimethylsiloxysilicate, Mica, Diphenyl Dimethicone, Cera Microcristallina/Microcrystalline Wax/Cire microcrystalline, Silica Silylate, Disteardimonium Hectorite, C30-45 Alkyl Dimethicone, Dimethicone/Vinyl Dimethicone Crosspolymer, Sorbitan Isostearate, Propylene Carbonate, Phenoxyethanol, Caprylyl Glycol, 1,2-Hexanediol, Propanediol, Helianthus Annuus (Sunflower) Seed Oil, Illicium Verum (Anise) Fruit Extract, Gardenia Florida Fruit Extract, Nelumbo Nucifera (Sacred Lotus) Flower Extract, Nymphaea Odorata Root Extract, Blue 1 Lake (CI 42090), Iron Oxides (CI 77491), Iron Oxides (CI 77499), Red 7 Lake (CI 15850), Titanium Dioxide (CI 77891), Yellow 6 Lake (CI 15985).",
+    ingredients: "Hydrogenated Polyisobutene, Hydrogenated Poly(C6-14 Olefin), Mica, Octyldodecanol, Ethylene/Propylene/Styrene Copolymer, Trimethylsiloxysilicate, Isododecane, 1,2-Hexanediol, Disteardimonium Hectorite, Sorbitan Sesquioleate, Propylene Carbonate, Triethoxycaprylylsilane, Aluminum Hydroxide, Helianthus Annuus (Sunflower) Seed Oil, Gardenia Florida Fruit Extract, Nelumbo Nucifera (Sacred Lotus) Flower Extract, Nymphaea Odorata Root Extract. [+/- May Contain/Peut Contenir: Iron Oxides (CI 77491), Red 7 Lake (CI 15850), Yellow 6 Lake (CI 15985), Titanium Dioxide (CI 77891), Yellow 5 Lake (CI 19140), Red 28 Lake (CI 45410)].",
     how_to_use: "Gently remove excess product from applicator. Use the doe-foot applicator and place 1-2 dots on each cheek. Use fingertips and gently pat into skin for a seamless finish.",
     price: 20,
     quote: "There’s nothing like a soft hint of blush to add dimension and color to your look.",
@@ -220,7 +220,7 @@ brow_pencil = Product.create!(
     name: "Brow Harmony Pencil And Gel",
     description: "A triangular-shaped retractable brow pencil with a complementary tinted brow gel to create naturally defined brows.",
     details: "Soft, buildable brow pencil features a triangular tip to help create any brow look you desire from natural and defined to bold and full. Weightless brow gel formula glides effortlessly and provides flexible hold. Natural-looking shades allow you to customize your desired intensity.",
-    ingredients: "BROW GEL SHADES: SOFT BLONDE, WARM BROWN, DEEP BROWN Water/Aqua/Eau, Butylene Glycol, Methyl Trimethicone, Acrylates Copolymer, Stearic Acid, Polyglyceryl-2 Triisostearate, Palmitic Acid, Ceresin, Synthetic Beeswax, Synthetic Wax, Hydrogenated Coco-Glycerides, Polysorbate 60, Caprylyl Glycol, Glycerin, 1,2-Hexanediol, Phenoxyethanol, Bentonite, Potassium Sorbate, Hydroxyethylcellulose, PVP, Sodium Benzoate, Tromethamine, Alcohol, Ethylhexylglycerin, Sodium Dehydroacetate, Triethoxycaprylylsilane. [+/- May Contain/Peut Contenir: Iron Oxides (CI 77492, CI 77499, CI 77491), Titanium Dioxide (CI 77891)]. BROW GEL SHADE:SOFT BLACK Water/Aqua/Eau, Butylene Glycol, Methyl Trimethicone, Acrylates Copolymer, Stearic Acid, Polyglyceryl-2 Triisostearate, Palmitic Acid, Ceresin, Synthetic Beeswax, Synthetic Wax, Hydrogenated Coco-Glycerides, Polysorbate 60, Caprylyl Glycol, Glycerin, 1,2-Hexanediol, Phenoxyethanol, Bentonite, Potassium Sorbate, Hydroxyethylcellulose, PVP, Sodium Benzoate, Tromethamine, Alcohol, Ethylhexylglycerin, Sodium Dehydroacetate. [+/- May Contain/Peut Contenir: Iron Oxides (CI 77499, CI 77491), Titanium Dioxide (CI 77891)]. BROW PENCIL C12-15 Alkyl Ethylhexanoate, Methyl Trimethicone, Polyethylene, Trimethylsiloxysilicate, Synthetic Wax, Ceresin, Polyisobutene, Synthetic Beeswax, Stearic Acid. [+/- May Contain/Peut Contenir: Iron Oxides (CI 77491, CI 77492, CI 77499), Titanium Dioxide (CI 77891)].",
+    ingredients: "Water/Aqua/Eau, Butylene Glycol, Methyl Trimethicone, Acrylates Copolymer, Stearic Acid, Polyglyceryl-2 Triisostearate, Palmitic Acid, Ceresin, Synthetic Beeswax, Synthetic Wax, Hydrogenated Coco-Glycerides, Polysorbate 60, Caprylyl Glycol, Glycerin, 1,2-Hexanediol, Phenoxyethanol, Bentonite, Potassium Sorbate, Hydroxyethylcellulose, PVP, Sodium Benzoate, Tromethamine, Alcohol, Ethylhexylglycerin, Sodium Dehydroacetate, Triethoxycaprylylsilane. [+/- May Contain/Peut Contenir: Iron Oxides (CI 77492, CI 77499, CI 77491), Titanium Dioxide (CI 77891)].",
     how_to_use: "To create definition: Twist pencil to reveal product (but don't twist too high—the pencil could break due to the creamy nature of the formula)! Hold the pencil so it's angled against the skin and then use small, short strokes to mimic the look of natural hairs. To create volume and set: Comb brow gel through brow hairs to set and hold.",
     price: 22,
     quote: "I needed a brow pencil and gel that I could carry with me for touch ups on the go.",
@@ -245,7 +245,7 @@ lip_balm = Product.create!(
     name: "With Gratitude Dewy Lip Balm",
     description: "A hydrating lip balm with a kiss of dewy, buildable color that looks and feels so good your lips will thank you.",
     details: "Sheer color, soft shine. The kind of tinted lip balm you can throw on without a mirror and still get right. Glides on with a smooth, satisfying slip. Feels comfy and cushiony, never greasy or sticky. Weightless hydration that lasts all day so lips feel nourished and nurtured. Lips look fuller and healthier, with buildable color that blurs the look of fine lines without settling.",
-    ingredients: "SHADES: EMPATHY, APPRECIATE, COMPLIMENT C12-15 Alkyl Ethylhexanoate, Diisostearyl Malate, Tridecyl Trimellitate, Ceresin, Bis-Diglyceryl Polyacyladipate-2, Butyrospermum Parkii (Shea) Butter, Vinyl Dimethicone/Methicone Silsesquioxane Crosspolymer, Hydrogenated Polyisobutene, Sorbitan Sesquioleate, 1,2-Hexanediol, Fragrance/Parfum, Helianthus Annuus (Sunflower) Seed Oil, Gardenia Florida Fruit Extract, Nelumbo Nucifera (Sacred Lotus) Flower Extract, Nymphaea Odorata Root Extract, Linalool [+/- May Contain/Peut Contenir: Titanium Dioxide (CI 77891), Iron Oxides (CI 77491, CI 77492, CI 77499), Red 7 Lake (CI 15850), Blue 1 Lake (CI 42090)]. SHADE: BLESSED C12-15 Alkyl Ethylhexanoate, Diisostearyl Malate, Tridecyl Trimellitate, Ceresin, Bis-Diglyceryl Polyacyladipate-2, Butyrospermum Parkii (Shea) Butter, Vinyl Dimethicone/Methicone Silsesquioxane Crosspolymer, Hydrogenated Polyisobutene, Sorbitan Sesquioleate, 1,2-Hexanediol, Fragrance/Parfum, Triethoxycaprylylsilane, Helianthus Annuus (Sunflower) Seed Oil, Gardenia Florida Fruit Extract, Nelumbo Nucifera (Sacred Lotus) Flower Extract, Nymphaea Odorata Root Extract, Linalool, Titanium Dioxide (CI 77891), Red 28 Lake (CI 45410), Yellow 5 Lake (CI 19140), Iron Oxides (CI 77492). SHADE: HONOR C12-15 Alkyl Ethylhexanoate, Diisostearyl Malate, Tridecyl Trimellitate, Ceresin, Bis-Diglyceryl Polyacyladipate-2, Dimethicone, Trimethylsiloxysilicate, Mica, Butyrospermum Parkii (Shea) Butter, Vinyl Dimethicone/Methicone Silsesquioxane Crosspolymer, Hydrogenated Polyisobutene, Sorbitan Sesquioleate, 1,2-Hexanediol, Fragrance/Parfum, Helianthus Annuus (Sunflower) Seed Oil, Gardenia Florida Fruit Extract, Nelumbo Nucifera (Sacred Lotus) Flower Extract, Nymphaea Odorata Root Extract, Linalool, Iron Oxides (CI 77491).",
+    ingredients: "C12-15 Alkyl Ethylhexanoate, Diisostearyl Malate, Tridecyl Trimellitate, Ceresin, Bis-Diglyceryl Polyacyladipate-2, Butyrospermum Parkii (Shea) Butter, Vinyl Dimethicone/Methicone Silsesquioxane Crosspolymer, Hydrogenated Polyisobutene, Sorbitan Sesquioleate, 1,2-Hexanediol, Fragrance/Parfum, Helianthus Annuus (Sunflower) Seed Oil, Gardenia Florida Fruit Extract, Nelumbo Nucifera (Sacred Lotus) Flower Extract, Nymphaea Odorata Root Extract, Linalool [+/- May Contain/Peut Contenir: Titanium Dioxide (CI 77891), Iron Oxides (CI 77491, CI 77492, CI 77499), Red 7 Lake (CI 15850), Blue 1 Lake (CI 42090)]. SHADE: BLESSED C12-15 Alkyl Ethylhexanoate, Diisostearyl Malate, Tridecyl Trimellitate, Ceresin, Bis-Diglyceryl Polyacyladipate-2, Butyrospermum Parkii (Shea) Butter, Vinyl Dimethicone/Methicone Silsesquioxane Crosspolymer, Hydrogenated Polyisobutene, Sorbitan Sesquioleate, 1,2-Hexanediol, Fragrance/Parfum, Triethoxycaprylylsilane, Helianthus Annuus (Sunflower) Seed Oil, Gardenia Florida Fruit Extract, Nelumbo Nucifera (Sacred Lotus) Flower Extract, Nymphaea Odorata Root Extract, Linalool, Titanium Dioxide (CI 77891), Red 28 Lake (CI 45410), Yellow 5 Lake (CI 19140), Iron Oxides (CI 77492). SHADE: HONOR C12-15 Alkyl Ethylhexanoate, Diisostearyl Malate, Tridecyl Trimellitate, Ceresin, Bis-Diglyceryl Polyacyladipate-2, Dimethicone, Trimethylsiloxysilicate, Mica, Butyrospermum Parkii (Shea) Butter, Vinyl Dimethicone/Methicone Silsesquioxane Crosspolymer, Hydrogenated Polyisobutene, Sorbitan Sesquioleate, 1,2-Hexanediol, Fragrance/Parfum, Helianthus Annuus (Sunflower) Seed Oil, Gardenia Florida Fruit Extract, Nelumbo Nucifera (Sacred Lotus) Flower Extract, Nymphaea Odorata Root Extract, Linalool, Iron Oxides (CI 77491).",
     how_to_use: "Swipe it on whenever, wherever. Repeat for more color.",
     price: 16,
     quote: "It keeps my lips super hydrated with a hint of shine. Honor is my go-to for every day.",
@@ -268,7 +268,7 @@ lip_cream = Product.create!(
     name: "Lip Soufflé Matte Lip Cream",
     description: "An air-whipped lip cream that hugs lips with rich, melted-in color and nourishing hydration that won’t weigh you down.",
     details: "Airy, whipped cream formula glides on easy for full-on color with a featherweight feel. Velvety matte finish with a soft blurring effect—lips look fuller, smoother, and more plump. Hydrates, softens, and stays put. Lips feel comfortable all day—no drying or caking here! Precise applicator tip makes it easy to apply.",
-    ingredients: "SHADES: FEARLESS, THRILLING, MOTIVATE, INSPIRE, DARING Dimethicone, Methyl Trimethicone, Dimethicone Crosspolymer, Dimethicone/Vinyl Dimethicone Crosspolymer, Polyglyceryl-2 Triisostearate, Isododecane, 1,2-Hexanediol, Disteardimonium Hectorite, Phenoxyethanol, PEG-10 Dimethicone, Tocopheryl Acetate, Propylene Carbonate, Fragrance/Parfum, Linalool, Helianthus Annuus (Sunflower) Seed Oil, Gardenia Florida Fruit Extract, Nelumbo Nucifera (Sacred Lotus) Flower Extract, Nymphaea Odorata Root Extract, [+/- May Contain/Peut Contenir: Titanium Dioxide (CI 77891), Iron Oxides (CI 77491), Iron Oxides (CI 77499), Red 28 Lake (CI 45410), Red 27 (CI 45410), Red 7 Lake (CI 15850), Iron Oxides (CI 77492), Yellow 6 Lake (CI 15985), Yellow 5 Lake (CI 19140), Blue 1 Lake (CI 42090)]. SHADES: ASCEND, STRENGTHEN, HEROIC Dimethicone, Methyl Trimethicone, Polyglyceryl-2 Triisostearate, Dimethicone Crosspolymer, Dimethicone/Vinyl Dimethicone Crosspolymer, Isododecane, 1,2-Hexanediol, Disteardimonium Hectorite, Phenoxyethanol, PEG-10 Dimethicone, Tocopheryl Acetate, Propylene Carbonate, Fragrance/Parfum, Linalool, Helianthus Annuus (Sunflower) Seed Oil, Gardenia Florida Fruit Extract, Nelumbo Nucifera (Sacred Lotus) Flower Extract, Nymphaea Odorata Root Extract, [+/- May Contain/Peut Contenir: Red 27 (CI 45410), Red 28 Lake (CI 45410), Red 7 Lake (CI 15850), Titanium Dioxide (CI 77891), Blue 1 Lake (CI 42090), Iron Oxides (CI 77491).",
+    ingredients: "Dimethicone, Methyl Trimethicone, Dimethicone Crosspolymer, Dimethicone/Vinyl Dimethicone Crosspolymer, Polyglyceryl-2 Triisostearate, Isododecane, 1,2-Hexanediol, Disteardimonium Hectorite, Phenoxyethanol, PEG-10 Dimethicone, Tocopheryl Acetate, Propylene Carbonate, Fragrance/Parfum, Linalool, Helianthus Annuus (Sunflower) Seed Oil, Gardenia Florida Fruit Extract, Nelumbo Nucifera (Sacred Lotus) Flower Extract, Nymphaea Odorata Root Extract, [+/- May Contain/Peut Contenir: Titanium Dioxide (CI 77891), Iron Oxides (CI 77491), Iron Oxides (CI 77499), Red 28 Lake (CI 45410), Red 27 (CI 45410), Red 7 Lake (CI 15850), Iron Oxides (CI 77492), Yellow 6 Lake (CI 15985), Yellow 5 Lake (CI 19140), Blue 1 Lake (CI 42090)].",
     how_to_use: "Apply directly onto clean, dry lips. Lay it all down in one bold swipe, or go in light and build it up—totally up to you!",
     price: 20,
     quote: "It's so weightless, I forget that I'm wearing it until I look in the mirror!",
@@ -369,30 +369,12 @@ f_100W_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shad
 f_100W.product_photo.attach(io: f_100W_product, filename: 'F-100W-product.jpg')
 ####################################################################
 
-
-# f_140C = Shade.create!(name: "140C", product_id: foundation.id)
-
-# f_140C_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-140C-product.jpg')
-# f_140C.product_photo.attach(io: f_140C_product, filename: 'F-140C-product.jpg')
-# f_140C_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-140C-swatch.png')
-# f_140C.swatch_photo.attach(io: f_140C_swatch, filename: 'F-140C-swatch.png')
-####################################################################
-
-
 f_180W = Shade.create!(name: "180W", product_id: foundation.id)
 
 f_180W_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-180W-product.jpg')
 f_180W.product_photo.attach(io: f_180W_product, filename: 'F-180W-product.jpg')
 f_180W_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-180W-swatch.png')
 f_180W.swatch_photo.attach(io: f_180W_swatch, filename: 'F-180W-swatch.png')
-####################################################################
-
-# f_220C = Shade.create!(name: "220C", product_id: foundation.id)
-
-# f_220C_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-220C-product.jpg')
-# f_220C.product_photo.attach(io: f_220C_product, filename: 'F-220C-product.jpg')
-# f_220C_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-220C-swatch.png')
-# f_220C.swatch_photo.attach(io: f_220C_swatch, filename: 'F-220C-swatch.png')
 ####################################################################
 
 f_260N = Shade.create!(name: "260N", product_id: foundation.id)
@@ -403,14 +385,6 @@ f_260N_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade
 f_260N.swatch_photo.attach(io: f_260N_swatch, filename: 'F-260N-swatch.png')
 ####################################################################
 
-# f_300C = Shade.create!(name: "300C", product_id: foundation.id)
-
-# f_300C_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-300C-product.jpg')
-# f_300C.product_photo.attach(io: f_300C_product, filename: 'F-300C-product.jpg')
-# f_300C_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-300C-swatch.png')
-# f_300C.swatch_photo.attach(io: f_300C_swatch, filename: 'F-300C-swatch.png')
-####################################################################
-
 f_340C = Shade.create!(name: "340C", product_id: foundation.id)
 
 f_340C_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-340C-product.jpg')
@@ -419,44 +393,12 @@ f_340C_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade
 f_340C.swatch_photo.attach(io: f_340C_swatch, filename: 'F-340C-swatch.png')
 ####################################################################
 
-# f_380W = Shade.create!(name: "380W", product_id: foundation.id)
-
-# f_380W_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-380W-product.jpg')
-# f_380W.product_photo.attach(io: f_380W_product, filename: 'F-380W-product.jpg')
-# f_380W_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-380W-swatch.png')
-# f_380W.swatch_photo.attach(io: f_380W_swatch, filename: 'F-380W-swatch.png')
-####################################################################
-
-# f_420N = Shade.create!(name: "420N", product_id: foundation.id)
-
-# f_420N_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-420N-product.jpg')
-# f_420N.product_photo.attach(io: f_420N_product, filename: 'F-420N-product.jpg')
-# f_420N_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-420N-swatch.png')
-# f_420N.swatch_photo.attach(io: f_420N_swatch, filename: 'F-420N-swatch.png')
-####################################################################
-
 f_460W = Shade.create!(name: "460W", product_id: foundation.id)
 
 f_460W_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-460W-product.jpg')
 f_460W.product_photo.attach(io: f_460W_product, filename: 'F-460W-product.jpg')
 f_460W_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-460W-swatch.png')
 f_460W.swatch_photo.attach(io: f_460W_swatch, filename: 'F-460W-swatch.png')
-####################################################################
-
-# f_500N = Shade.create!(name: "500N", product_id: foundation.id)
-
-# f_500N_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-500N-product.jpg')
-# f_500N.product_photo.attach(io: f_500N_product, filename: 'F-500N-product.jpg')
-# f_500N_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-500N-swatch.png')
-# f_500N.swatch_photo.attach(io: f_500N_swatch, filename: 'F-500N-swatch.png')
-####################################################################
-
-# f_540C = Shade.create!(name: "540C", product_id: foundation.id)
-
-# f_540C_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-540C-product.jpg')
-# f_540C.product_photo.attach(io: f_540C_product, filename: 'F-540C-product.jpg')
-# f_540C_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-540C-swatch.png')
-# f_540C.swatch_photo.attach(io: f_540C_swatch, filename: 'F-540C-swatch.png')
 ####################################################################
 
 f_570N = Shade.create!(name: "570N", product_id: foundation.id)
@@ -477,28 +419,12 @@ c_100W_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade
 c_100W.swatch_photo.attach(io: c_100W_swatch, filename: 'C-100W-swatch.png')
 ####################################################################
 
-# c_140C = Shade.create!(name: "140C", product_id: concealer.id)
-
-# c_140C_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-140C-product.jpg')
-# c_140C.product_photo.attach(io: c_140C_product, filename: 'C-140C-product.jpg')
-# c_140C_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-140C-swatch.png')
-# c_140C.swatch_photo.attach(io: c_140C_swatch, filename: 'C-140C-swatch.png')
-####################################################################
-
 c_180W = Shade.create!(name: "180W", product_id: concealer.id)
 
 c_180W_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-180W-product.jpg')
 c_180W.product_photo.attach(io: c_180W_product, filename: 'C-180W-product.jpg')
 c_180W_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-180W-swatch.png')
 c_180W.swatch_photo.attach(io: c_180W_swatch, filename: 'C-180W-swatch.png')
-####################################################################
-
-# c_220C = Shade.create!(name: "220C", product_id: concealer.id)
-
-# c_220C_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-220C-product.jpg')
-# c_220C.product_photo.attach(io: c_220C_product, filename: 'C-220C-product.jpg')
-# c_220C_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-220C-swatch.png')
-# c_220C.swatch_photo.attach(io: c_220C_swatch, filename: 'C-220C-swatch.png')
 ####################################################################
 
 c_260N = Shade.create!(name: "260N", product_id: concealer.id)
@@ -509,14 +435,6 @@ c_260N_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade
 c_260N.swatch_photo.attach(io: c_260N_swatch, filename: 'C-260N-swatch.png')
 ####################################################################
 
-# c_300C = Shade.create!(name: "300C", product_id: concealer.id)
-
-# c_300C_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-300C-product.jpg')
-# c_300C.product_photo.attach(io: c_300C_product, filename: 'C-300C-product.jpg')
-# c_300C_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-300C-swatch.png')
-# c_300C.swatch_photo.attach(io: c_300C_swatch, filename: 'C-300C-swatch.png')
-####################################################################
-
 c_340C = Shade.create!(name: "340C", product_id: concealer.id)
 
 c_340C_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-340C-product.jpg')
@@ -525,44 +443,12 @@ c_340C_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade
 c_340C.swatch_photo.attach(io: c_340C_swatch, filename: 'C-340C-swatch.png')
 ####################################################################
 
-# c_380W = Shade.create!(name: "380W", product_id: concealer.id)
-
-# c_380W_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-380W-product.jpg')
-# c_380W.product_photo.attach(io: c_380W_product, filename: 'C-380W-product.jpg')
-# c_380W_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-380W-swatch.png')
-# c_380W.swatch_photo.attach(io: c_380W_swatch, filename: 'C-380W-swatch.png')
-####################################################################
-
-# c_420N = Shade.create!(name: "420N", product_id: concealer.id)
-
-# c_420N_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-420N-product.jpg')
-# c_420N.product_photo.attach(io: c_420N_product, filename: 'C-420N-product.jpg')
-# c_420N_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-420N-swatch.png')
-# c_420N.swatch_photo.attach(io: c_420N_swatch, filename: 'C-420N-swatch.png')
-####################################################################
-
 c_460W = Shade.create!(name: "460W", product_id: concealer.id)
 
 c_460W_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-460W-product.jpg')
 c_460W.product_photo.attach(io: c_460W_product, filename: 'C-460W-product.jpg')
 c_460W_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-460W-swatch.png')
 c_460W.swatch_photo.attach(io: c_460W_swatch, filename: 'C-460W-swatch.png')
-####################################################################
-
-# c_500N = Shade.create!(name: "500N", product_id: concealer.id)
-
-# c_500N_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-500N-product.jpg')
-# c_500N.product_photo.attach(io: c_500N_product, filename: 'C-500N-product.jpg')
-# c_500N_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-500N-swatch.png')
-# c_500N.swatch_photo.attach(io: c_500N_swatch, filename: 'C-500N-swatch.png')
-####################################################################
-
-# c_540C = Shade.create!(name: "540C", product_id: concealer.id)
-
-# c_540C_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-540C-product.jpg')
-# c_540C.product_photo.attach(io: c_540C_product, filename: 'C-540C-product.jpg')
-# c_540C_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-540C-swatch.png')
-# c_540C.swatch_photo.attach(io: c_540C_swatch, filename: 'C-540C-swatch.png')
 ####################################################################
 
 c_570N = Shade.create!(name: "570N", product_id: concealer.id)
@@ -723,22 +609,6 @@ inspire_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/sha
 inspire.product_photo.attach(io: inspire_product, filename: 'inspire-product.jpg')
 inspire_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/lip/liquid/inspire-swatch.png')
 inspire.swatch_photo.attach(io: inspire_swatch, filename: 'inspire-swatch.png')
-####################################################################
-
-# motivate = Shade.create!(name: "Motivate", product_id: lip_cream.id)
-
-# motivate_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/lip/liquid/motivate-product.jpg')
-# motivate.product_photo.attach(io: motivate_product, filename: 'motivate-product.jpg')
-# motivate_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/lip/liquid/motivate-swatch.png')
-# motivate.swatch_photo.attach(io: motivate_swatch, filename: 'motivate-swatch.png')
-####################################################################
-
-# thrilling = Shade.create!(name: "Thrilling", product_id: lip_cream.id)
-
-# thrilling_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/lip/liquid/thrilling-product.jpg')
-# thrilling.product_photo.attach(io: thrilling_product, filename: 'thrilling-product.jpg')
-# thrilling_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/lip/liquid/thrilling-swatch.png')
-# thrilling.swatch_photo.attach(io: thrilling_swatch, filename: 'thrilling-swatch.png')
 ####################################################################
 
 fearless = Shade.create!(name: "Fearless", product_id: lip_cream.id)

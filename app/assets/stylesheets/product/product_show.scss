@@ -155,7 +155,8 @@
 
 .product-quote-component {
     background-color: $light-pink;
-    height: 600px;
+    height: 500px;
+    padding-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -210,7 +211,13 @@
 
 .product-ingredients-how-to {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+
+    img {
+        height: 470px;
+        width: 470px;
+        margin-bottom: -50px;
+    }
 
     h1 {
         font-family: $title;
@@ -220,25 +227,84 @@
     p {
         font-family: $body;
         line-height: 20px;
-        height: 100px;
-        width: 250px;
-        margin: 30px;
-        border: 1px solid black;
-    }
+        width: 200px;
+        margin-top: 20px;
+        margin-left: 40px;
+        margin-bottom: 10px;
+    }  
     
-    img {
-        height: 470px;
-        width: 470px;
-        margin-bottom: -50px;
+    span {
+        font-family: $all-caps-links;
+        font-size: 10px;
+        letter-spacing: 2px;
+        text-decoration: underline;
+        margin-left: 40px;
+    }
+
+    span:hover {
+        cursor: pointer;
     }
 }
 
 .ingredients {
     margin-left: 60px;
-    margin-top: 60px;
+    margin-top: 140px;
 }
 
 .how-to {
     margin-right: 60px;
-    margin-top: 200px;
+    margin-top: 40px;
+}
+
+.modal {
+    display: none;
+}
+
+.is-open {
+    display: block;
+}
+
+.modal-screen {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $light-pink;
+    opacity: 0.9;
+}
+
+.modal-details {
+    position: fixed; //absolute
+    top: 10%;
+    left: 25%;
+    z-index: 5;
+    background-color: $dark-pink;
+    box-shadow: 0 0 0.625rem 0 rgba(192,187,180,0.5);
+    display: inline-block;
+    width: 600px;
+    max-height: 80%;
+    padding: 20px;
+    overflow-y: auto;
+
+    h5 {
+        font-family: $title;
+        font-size: 40px;
+        margin: 40px;
+    }
+
+    h6 {
+        font-family: $body;
+        line-height: 30px;
+        margin: 40px;
+    } 
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 35px;
+    color: $maroon;
+    cursor: pointer;
 }
