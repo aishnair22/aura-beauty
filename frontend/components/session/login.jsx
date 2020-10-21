@@ -42,7 +42,6 @@ class Login extends React.Component {
             password: "123456"
         }, () => this.props.login(this.state)
         .then(() => this.props.history.push("/account")))
-        //setState is asynch, so passed in the login as a cb
     }
 
     renderErrors() {

@@ -28,11 +28,9 @@ class ProductIndex extends React.Component {
     }
 
     componentDidMount() {
-        // Promise.all([
         this.props.fetchAllProducts()
         this.props.fetchCategories()
         this.props.fetchAllShades()
-        // ])
     }
 
     render() {

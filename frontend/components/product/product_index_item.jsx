@@ -21,7 +21,6 @@ class ProductIndexItem extends React.Component {
     }
     
     render() {
-
         return (
             <div className="product-index-item">
                 <Link to={`/products/${this.props.product.name}~${this.props.product.id}`}>
@@ -44,7 +43,7 @@ class ProductIndexItem extends React.Component {
                             <img className={`carousel-swatch ${active}`} src={shade.swatchPhoto} onClick={() => this.handleShadeClick(shade)} key={shade.id} />
                         )
                     })}
-                </div>
+                </div>              
 
                 <button>ADD TO BAG</button>
                 {/* add an onclick to add to cart */}
