@@ -211,23 +211,25 @@
 
 .product-ingredients-how-to {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 
     img {
         height: 470px;
         width: 470px;
         margin-bottom: -50px;
+        margin-right: 40px;
+        margin-left: 40px;
     }
-
+    
     h1 {
         font-family: $title;
         font-size: 55px;
     }
-
+    
     p {
         font-family: $body;
         line-height: 20px;
-        width: 200px;
+        width: 220px;
         margin-top: 20px;
         margin-left: 40px;
         margin-bottom: 10px;
