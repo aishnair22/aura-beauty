@@ -1,29 +1,99 @@
 .splash-first-component {
+    background-color: $light-pink;
     margin-top: 60px;
-    background-color: $dark-pink;
-    padding-bottom: 60px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+
+    img {
+        height: 700px;
+        object-fit: cover;
+        margin-top: 20px;
+        margin-right: 50px;
+    }
+}
+
+.blot {
+    margin-left: 50px;
+    width: 370px;
+    margin-top: 100px;
+    color: $maroon;
     
     h1 {
         font-family: $title;
         font-size: 55px;
-        padding: 40px;
+    }
+    
+    h2 {
+        font-family: $script;
+        font-size: 60px;
+    }
+    
+    p {
+        font-family: $body;
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 30px;
+    }
+
+    button {
+        height: 35px;
+        margin-top: 40px;
+        margin-bottom: 50px;
+        background: $light-pink;
+        font-family: $all-caps-links;
+        letter-spacing: 5px;
+        font-size: 10px;
+        color: $maroon;
+        border: 1px solid $maroon;
+        padding: 10px;
+        text-align: center;
+        width: 200px;
+        transition: all 0.6s ease;
+    }
+
+    button:hover {
+        cursor: pointer;
+        background-color: $maroon;
+        color: white;
+        border: 1px solid transparent;
+        transition: all 0.6s ease
+    }
+}
+
+.splash-second-component {
+    background-color: $dark-pink;
+    position: relative;
+
+    h1 {
+        font-family: $title;
+        font-size: 55px;
+        width: 200px;
+        margin-left: 120px;
+        position: absolute;
+        top: -30px;
     }
 }
 
 .splash-links {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
+    height: 1000px;
 }
 
 .splash-link {
     display: flex;
     flex-direction: column-reverse;
-    align-items: center;
-    font-family: $googlescript;
-    font-size: 70px;
-    color: $maroon;
-    margin: 0px 20px;
+    width: 400px;
+    
+    h5 {
+        font-family: $script;
+        font-size: 55px;
+        color: $maroon;
+        margin-top: -15px;
+        margin-left: 40px;
+        z-index: 2;
+    }
 }
 
 .splash-link:hover {
@@ -31,44 +101,62 @@
     opacity: 70%;
 }
 
-.splash-img-tall {
-    height: 400px;
-    width: 320px;
-    margin-bottom: 10px;
-    transition: all 0.4s ease;
-}
-
-.splash-img-wide {
-    height: 320px;
+.splash-img {
     width: 400px;
-    margin-bottom: 10px;
     transition: all 0.4s ease;
+    object-fit: cover;
 }
 
-.splash-second-component {
+.link-face {
+    position: absolute;
+    right: 130px;
+    top: -100px;
+}
+
+.link-eye {
+    position: absolute;
+    right: 230px;
+    bottom: -100px;
+}
+
+.link-lip {
+    position: absolute;
+    left: 130px;
+    top: 130px;
+}
+
+.splash-third-component {
     background-color: $light-pink;
-    height: 600px;
+    height: 800px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    
-    h1 {
-        padding: 20px;
-        font-family: $all-caps-links;
-        font-size: 12px;
-        color: $maroon;
-        letter-spacing: 4px;
-    }
-   
+    align-items: center;
+    padding-top: 50px;
+
+    img {
+        height: 500px;
+        width: 500px;
+        object-fit: contain;
+        border-radius: 50%;
+        margin-right: 50px;
+    }   
 }
 
-.quote {
-    display: flex;
-    width: 720px;
-    text-align: center;
-    font-family: $title;
-    color: black;
-    font-size: 55px;
-    line-height: 70px;
+.rare {
+    width: 400px;
+    margin-left: 50px;
+
+    h1 {
+        font-family: $title;
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+    
+    p {
+        font-family: $body;
+        font-size: 18px;
+        line-height: 30px;
+        margin-top: 10px;
+    }
+
 }

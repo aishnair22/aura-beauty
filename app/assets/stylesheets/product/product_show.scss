@@ -27,7 +27,7 @@
         position: absolute;
         bottom: 1px;
         left: 30px;
-        font-family: $googlescript;
+        font-family: $script;
         font-size: 22px;
     }
 }
@@ -170,6 +170,16 @@
         letter-spacing: 4px;
     }
    
+}
+
+.quote {
+    display: flex;
+    width: 720px;
+    text-align: center;
+    font-family: $title;
+    color: black;
+    font-size: 55px;
+    line-height: 70px;
 }
 
 .product-second-component {

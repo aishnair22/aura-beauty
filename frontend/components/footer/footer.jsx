@@ -17,7 +17,8 @@ class Footer extends React.Component {
                     <a className="footer-link" href="https://www.linkedin.com/in/aishwarya-nair22/">LINKEDIN</a>
                 </div>
                 <div className="footer-logo">
-                    <p>Aura Beauty</p>
+                    <h1>Aura Beauty</h1>
+                    <p>clone of Rare Beauty</p>
                 </div>
             </div>
         )
