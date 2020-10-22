@@ -19,6 +19,10 @@ class User < ApplicationRecord
     
     after_initialize :ensure_session_token
 
+    has_one :cart,
+    foreign_key: :user_id,
+    class_name: 'Cart'
+
     attr_reader :password
 
     def first_last_name_validation

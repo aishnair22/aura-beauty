@@ -26,6 +26,11 @@
     letter-spacing: 4px;
     padding-top: 20px; 
     color: $maroon;
+    width: 90px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
 }
 
 .footer-logo {

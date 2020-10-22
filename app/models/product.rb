@@ -25,6 +25,10 @@ class Product < ApplicationRecord
     foreign_key: :product_id,
     class_name: 'Shade'
 
+    has_many :cart_items,
+    foreign_key: :product_id,
+    class_name: 'CartItem'
+
     #active storage associations:
     has_many_attached :photos
 
