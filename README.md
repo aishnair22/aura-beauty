@@ -45,7 +45,7 @@ When a shade is clicked, I set my state with that shade as the selected shade. I
             selected = "selected"
         }
         return (
-            <div className={selected} src={shade.swatchPhoto} onClick={() => this.handleShadeClick(shade)} key={shade.id} />
+            <img className={selected} onClick={() => this.handleShadeClick(shade)} />
         )
     })}
 </code></pre>
