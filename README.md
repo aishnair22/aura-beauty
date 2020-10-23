@@ -36,7 +36,7 @@ Live site: [Aura Beauty](https://aura-beauty.herokuapp.com/#/)
 
 ![index](./app/assets/images/readme/index.png)
 
-When a shade is clicked, I set my state with that shade as the selected shade. If the shade I am on matches the selected shade in my state, I add a class of "selected" on that shade. The shade with that class will have a maroon border around it, indicating what shade the user is currently on.
+When a shade is clicked, I set my state with that shade as the selected shade. If the shade I am on matches the selected shade in my state, I add a class of "selected" to that shade image. The shade with that class will have a maroon border around it, indicating what shade the user is currently on.
 
 <pre><code>
     {this.props.productShades.map((shade) => {
@@ -50,7 +50,7 @@ When a shade is clicked, I set my state with that shade as the selected shade. I
     })}
 </code></pre>
 
-An issue I faced was displaying a different image for products that had shades vs. products that did not have shades. My solution was to add logic in my componentDidMount. If we are receiving shades, we set the photo to the product photo of the first shade. If we are not receiving shades, we set the photo to the first product photo.
+An issue I faced was displaying a different image for products that had shades vs. products that did not have shades. My solution was to add logic in my componentDidMount lifecycle method. If the component is receiving shades, I set the photo to the product photo of the first shade. If the component does not receive any shades, I set the photo to the first product photo.
 
 <pre><code>
     componentDidMount() {
