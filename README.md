@@ -45,7 +45,7 @@ When a shade is clicked, I set my state with that shade as the selected shade. I
             selected = "selected"
         }
         return (
-            <img className={selected} onClick={() => this.handleShadeClick(shade)} />
+            img className={selected} onClick={() => this.handleShadeClick(shade)}
         )
     })}
 </code></pre>
