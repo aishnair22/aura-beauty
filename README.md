@@ -45,10 +45,23 @@ When a shade is clicked, I set my state with that shade as the selected shade. I
             selected = "selected"
         }
         return (
-            img className={selected} onClick={() => this.handleShadeClick(shade)}
+            image className={selected} onClick={() => this.handleShadeClick(shade)}
         )
     })}
 </code></pre>
+
+An issue I faced was displaying a different image for products that had shades vs. products that did not have shades. My solution was to add logic in my componentDidMount. If we are receiving shades, we set the photo to the product photo of the first shade. If we are not receiving shades, we set the photo to the first product photo.
+
+<pre><code>
+    componentDidMount() {
+        if (!this.props.productShades.length) {
+            this.setState({photoUrl: this.props.product.photoUrls[0]})
+        } else {
+            this.setState({ photoUrl: this.props.productShades[0].productPhoto})
+        }
+    }
+</code></pre>
+
 
 ### Single Product Page
 * Displays the product information.
