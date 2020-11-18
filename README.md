@@ -1,6 +1,6 @@
 # Aura Beauty
 
-Aura Beauty is a cosmetic webstore inspired by Rare Beauty, a beauty brand that focuses on embracing inner beauty as well as self-expression.
+Aura Beauty is a cosmetic web store inspired by Rare Beauty, a beauty brand that spreads positive messages about mental health and self-expression.
 
 Live site: [Aura Beauty](https://aura-beauty.herokuapp.com/#/)
 
