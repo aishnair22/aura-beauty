@@ -6,10 +6,11 @@ class Api::CartsController < ApplicationController
 
     def create
         @cart = Cart.new(cart_params)
+
         if @cart.save!
-            render json: ['success']
+            render :show
         else
-            render json: ['Try Again']
+            render json: @cart.errors.full_messages, status: 401
         end
     end
 

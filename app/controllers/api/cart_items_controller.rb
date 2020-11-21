@@ -1,24 +1,25 @@
 class Api::CartItemsController < ApplicationController
     def index 
-        @cart_items = CartItem.where(user_id: current_user.id)
+        @cart_items = CartItem.where(cart_id: current_user.cart.id)
         render :index
     end
 
     def create
         @cart_item = CartItem.new(cart_item_params)
+
         if @cart_item.save!
-            render json: ['success']
+            render :show
         else
-            render json: ['Try Again']
+            render json: @cart_item.errors.full_messages, status: 401
         end
     end
     
     def update
         @cart_item = CartItem.find(params[:id])
         if @cart_item.update(cart_item_params)
-            render json: ['success']
+            render :show
         else 
-            render json: ['Try Again']
+            render json: @cart_item.errors.full_messages, status: 401
         end
     end
     

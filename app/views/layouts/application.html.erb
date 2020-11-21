@@ -16,7 +16,8 @@
 
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
-    <% if current_user %>
+    
+    <% if current_user %>3
       <script>
         window.currentUser = {
           "id": <%= current_user.id %>,
