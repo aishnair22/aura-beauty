@@ -21,18 +21,18 @@ const Auth = ({ loggedIn, path, component: Component }) => {
     )
 }
 
-//protected route: show our users the login form if they are not logged in and they are trying to write a review
+//protected route: show our users the login page if they are not logged in and they are trying to access /account
 
-// const Protected = ({ loggedIn, path, component: Component }) => {
-//     return (
-//         <Route
-//             path={path}
-//             render={(props) => (
-//                 loggedIn ? <Component {...props} /> : <Redirect to="/signup" />
-//             )}
-//         />
-//     )
-// }
+const Protected = ({ loggedIn, path, component: Component }) => {
+    return (
+        <Route
+            path={path}
+            render={(props) => (
+                loggedIn ? <Component {...props} /> : <Redirect to="/login" />
+            )}
+        />
+    )
+}
 
 export const AuthRoute = withRouter(connect(mapStateToProps)(Auth))
-// export const ProtectedRoute = withRouter(connect(mapStateToProps)(Protected))
+export const ProtectedRoute = withRouter(connect(mapStateToProps)(Protected))

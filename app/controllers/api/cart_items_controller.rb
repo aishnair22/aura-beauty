@@ -1,14 +1,15 @@
 class Api::CartItemsController < ApplicationController
     def index 
+        currentuser = User.find_by(id: current_user.id)
         @cart_items = CartItem.where(cart_id: current_user.cart.id)
         render :index
     end
 
     def create
         @cart_item = CartItem.new(cart_item_params)
-
+        @cart_items = CartItem.where(cart_id: current_user.cart.id)
         if @cart_item.save!
-            render :show
+            render :index
         else
             render json: @cart_item.errors.full_messages, status: 401
         end
@@ -16,8 +17,9 @@ class Api::CartItemsController < ApplicationController
     
     def update
         @cart_item = CartItem.find(params[:id])
+        @cart_items = CartItem.where(cart_id: current_user.cart.id)
         if @cart_item.update(cart_item_params)
-            render :show
+            render :index
         else 
             render json: @cart_item.errors.full_messages, status: 401
         end
@@ -26,6 +28,7 @@ class Api::CartItemsController < ApplicationController
     def destroy
         @cart_item = CartItem.find(params[:id])
         @cart_item.destroy
+        render :show
     end
 
     private

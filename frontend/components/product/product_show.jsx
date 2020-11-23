@@ -121,7 +121,7 @@ class ProductShow extends React.Component {
                                 return <img className={active} onClick={() => this.handleShadeClick(shade)} src={shade.swatchPhoto} />
                             })}
                         </div>
-                        <button>ADD TO CART • ${product.price}</button>
+                        <button >ADD TO CART • ${product.price}</button>
                     </div>
 
                     <div className="product-show-img-and-captions">

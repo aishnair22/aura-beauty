@@ -15,6 +15,10 @@ class Shade < ApplicationRecord
     foreign_key: :product_id,
     class_name: 'Product'
 
+    has_many :cart_items,
+    foreign_key: :shade_id,
+    class_name: 'CartItem'
+
     #active storage associations:
     has_one_attached :swatch_photo
     #Shade.first.swatch_photo => active storage instance
