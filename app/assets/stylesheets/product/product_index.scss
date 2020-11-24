@@ -1,15 +1,7 @@
-.product-index {
-    background-color: $light-pink; 
-    height: 100%; 
-    margin-top: 0; 
-    display: block;
-}
 
 .product-index-content {
-    margin-top: 60px;
-    margin-left: 9vw;
-    margin-right: 8vw;
-    height: 100%;
+    background-color: $light-pink; 
+    padding: 60px 9%;
 
     h1 {
         font-size: 32px;

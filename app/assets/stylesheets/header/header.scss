@@ -104,17 +104,19 @@
     margin-top: 60px;
     height: 350px;
     width: 100vw;
+    white-space: nowrap;
+    overflow-x: auto;
 }
 
 .dropdown-links {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    margin-left: 2%;
 }
 
 .dropdown:hover .dropdown-content {
     display: flex;
-    justify-content: space-around;
     align-items: center;
 }
 

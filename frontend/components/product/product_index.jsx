@@ -40,35 +40,33 @@ class ProductIndex extends React.Component {
         }
 
         return(
-            <div className="product-index">
-                <div className="product-index-content">
-                    <h1>{this.props.categoryName}</h1>
-                    <h2>CATEGORIES</h2>
-                    <button className={this.state.all} onClick={() => this.handleCategory("all")}>All</button>
-                    <button className={this.state.face} onClick={() => this.handleCategory("face")}>Face</button>
-                    <button className={this.state.lip} onClick={() => this.handleCategory("lip")}>Lip</button>
-                    <button className={this.state.eye} onClick={() => this.handleCategory("eye")}>Eye</button>
-                    <button className={this.state.tools} onClick={() => this.handleCategory("tools")}>Tools</button>
+            <div className="product-index-content">
+                <h1>{this.props.categoryName}</h1>
+                <h2>CATEGORIES</h2>
+                <button className={this.state.all} onClick={() => this.handleCategory("all")}>All</button>
+                <button className={this.state.face} onClick={() => this.handleCategory("face")}>Face</button>
+                <button className={this.state.lip} onClick={() => this.handleCategory("lip")}>Lip</button>
+                <button className={this.state.eye} onClick={() => this.handleCategory("eye")}>Eye</button>
+                <button className={this.state.tools} onClick={() => this.handleCategory("tools")}>Tools</button>
 
-                    <ul className="all-index-items">
-                        {this.props.products.map(product => {
-                            const productShades = this.props.shades.filter((shade) => {
-                                return (shade.product_id === product.id)
-                            })
+                <ul className="all-index-items">
+                    {this.props.products.map(product => {
+                        const productShades = this.props.shades.filter((shade) => {
+                            return (shade.product_id === product.id)
+                        })
 
-                            return <ProductIndexItem 
-                                key={product.id} 
-                                product={product} 
-                                productShades={productShades} 
-                                cartItems={this.props.cartItems} 
-                                currentUser={this.props.currentUser} 
-                                currentCart={this.props.currentCart} 
-                                createCartItem={this.props.createCartItem} 
-                                updateCartItem={this.props.updateCartItem} 
-                            />
-                        })}
-                    </ul>
-                </div>
+                        return <ProductIndexItem 
+                            key={product.id} 
+                            product={product} 
+                            productShades={productShades} 
+                            cartItems={this.props.cartItems} 
+                            currentUser={this.props.currentUser} 
+                            currentCart={this.props.currentCart} 
+                            createCartItem={this.props.createCartItem} 
+                            updateCartItem={this.props.updateCartItem} 
+                        />
+                    })}
+                </ul>
             </div>
         )
     }
