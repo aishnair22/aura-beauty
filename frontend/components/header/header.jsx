@@ -6,6 +6,11 @@ class Header extends React.Component {
         super(props)
         this.handleAccount = this.handleAccount.bind(this)
         this.handleLogo = this.handleLogo.bind(this)
+        this.handleCart = this.handleCart.bind(this)
+    }
+
+    componentDidMount() {
+        this.props.fetchAllCartItems()
     }
 
     handleAccount(e) {
@@ -22,7 +27,18 @@ class Header extends React.Component {
         this.props.history.push("/")
     }
 
+    handleCart(e) {
+        e.preventDefault()
+        this.props.history.push("/cart")
+    }
+
     render() {
+        let cartNumber = 0
+        if (this.props.cartItems.length) {
+            this.props.cartItems.forEach((item) => {
+                cartNumber += item.quantity
+            })
+        }
     
         return (
             <header className="header">
@@ -47,8 +63,12 @@ class Header extends React.Component {
                     </div>
                 </div>
                 <h1 className="logo" onClick={this.handleLogo}>Aura Beauty</h1>
-                <img onClick={this.handleAccount} src={window.accountIcon} /> 
-                {/* access to window.accountIcon in application.html.erb */}
+                {/* <img className="search-icon" onClick={this.handleAccount} src={window.searchIcon} />  */}
+                <img className="account-icon" onClick={this.handleAccount} src={window.accountIcon} /> 
+                <div>
+                    <img className="cart-icon" onClick={this.handleCart} src={window.cartIcon} /> 
+                    <h2 className="cart-caption" onClick={this.handleCart}>{cartNumber}</h2>
+                </div>
             </header>
         );
     }

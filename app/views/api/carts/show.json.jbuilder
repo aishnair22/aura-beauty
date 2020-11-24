@@ -1,1 +1,0 @@
-json.extract! @cart, :id, :user_id, :cart_items

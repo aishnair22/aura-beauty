@@ -7,8 +7,8 @@ class Api::CartItemsController < ApplicationController
 
     def create
         @cart_item = CartItem.new(cart_item_params)
-        @cart_items = CartItem.where(cart_id: current_user.cart.id)
         if @cart_item.save!
+            @cart_items = CartItem.where(cart_id: current_user.cart.id)
             render :index
         else
             render json: @cart_item.errors.full_messages, status: 401
@@ -17,8 +17,8 @@ class Api::CartItemsController < ApplicationController
     
     def update
         @cart_item = CartItem.find(params[:id])
-        @cart_items = CartItem.where(cart_id: current_user.cart.id)
         if @cart_item.update(cart_item_params)
+            @cart_items = CartItem.where(cart_id: current_user.cart.id)
             render :index
         else 
             render json: @cart_item.errors.full_messages, status: 401
@@ -33,6 +33,6 @@ class Api::CartItemsController < ApplicationController
 
     private
     def cart_item_params
-        params.require(:cart_item).permit(:product_id, :cart_id, :quantity)
+        params.require(:cart_item).permit(:product_id, :cart_id, :quantity, :shade_id)
     end
 end

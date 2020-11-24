@@ -1,6 +1,6 @@
 import Splash from './splash';
 import { connect } from 'react-redux';
-
+import { fetchCategories } from '../../actions/category_actions'
 
 const mSTP = (state) => {
     return({
@@ -10,7 +10,7 @@ const mSTP = (state) => {
 
 const mDTP = (dispatch) => {
     return ({
-
+        fetchCategories: () => dispatch(fetchCategories())
     })
 }
 

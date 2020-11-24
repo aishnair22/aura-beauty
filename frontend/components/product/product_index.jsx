@@ -31,6 +31,7 @@ class ProductIndex extends React.Component {
         this.props.fetchAllProducts()
         this.props.fetchCategories()
         this.props.fetchAllShades()
+        this.props.fetchAllCartItems()
     }
 
     render() {
@@ -55,7 +56,16 @@ class ProductIndex extends React.Component {
                                 return (shade.product_id === product.id)
                             })
 
-                            return <ProductIndexItem key={product.id} product={product} productShades={productShades}/>
+                            return <ProductIndexItem 
+                                key={product.id} 
+                                product={product} 
+                                productShades={productShades} 
+                                cartItems={this.props.cartItems} 
+                                currentUser={this.props.currentUser} 
+                                currentCart={this.props.currentCart} 
+                                createCartItem={this.props.createCartItem} 
+                                updateCartItem={this.props.updateCartItem} 
+                            />
                         })}
                     </ul>
                 </div>

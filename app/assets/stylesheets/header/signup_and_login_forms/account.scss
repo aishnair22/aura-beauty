@@ -2,13 +2,13 @@
     display: flex;
     flex-direction: column;
     background: $light-pink;
-    height: 1000px;
+    padding-bottom: 200px;
 }
 
 .account-all > h1 {
     font-family: $title;
     font-size: 55px;
-    margin-left: 90px;
+    margin-left: 6%;
     margin-top: 150px;
 }
 
@@ -19,10 +19,10 @@
 
 .account-sidebar {
     border-right: 1px solid $dark-gray; 
-    margin-left: 90px;
-    margin-top: 30px;
-    padding-right: 20px;
-    height: 400px;
+    margin-left: 8%;
+    margin-top: 2%;
+    padding-right: 2%;
+    height: 70vh;
 }
 
 .account-sidebar > button {
@@ -46,17 +46,16 @@
     transition: all 0.6s ease
 }
 
-
 .account-main {
-    margin-top: 30px;
-    margin-left: 70px;
+    margin-top: 2%;
+    margin-left: 5%;
 }
 
 .account-main > h1 {
     font-family: $title;
     font-size: 55px;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-top: 2%;
+    padding-bottom: 10%;
 }
 
 

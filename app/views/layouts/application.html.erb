@@ -17,7 +17,7 @@
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
     
-    <% if current_user %>3
+    <% if current_user %>
       <script>
         window.currentUser = {
           "id": <%= current_user.id %>,
@@ -29,7 +29,9 @@
     <% end %>
 
     <script type="text/javascript">
-      window.accountIcon = "<%= image_url('account-icon.png') %>";
+      window.accountIcon = "<%= image_url('accountIcon.png') %>";
+      window.cartIcon = "<%= image_url('cartIcon.png') %>";
+      window.searchIcon = "<%= image_url('searchIcon.png') %>";
       window.sadFace = "<%= image_url('sad-face.png')%>"
       window.shopAll = "<%= image_url('dropdown-shop-all.png')%>"
       window.face = "<%= image_url('dropdown-face.png')%>"

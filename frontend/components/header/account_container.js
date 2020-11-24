@@ -1,6 +1,7 @@
 import { connect } from "react-redux";
 import Account from "./account"
 import { logout } from '../../actions/session_actions';
+import { removeAllCartItems, fetchAllCartItems } from '../../actions/cart_item_actions'
 
 const mSTP = (state) => {
     return({
@@ -10,7 +11,9 @@ const mSTP = (state) => {
 
 const mDTP = (dispatch) => {
     return ({
-        logout: () => dispatch(logout())
+        logout: () => dispatch(logout()),
+        removeAllCartItems: () => dispatch(removeAllCartItems()),
+        fetchAllCartItems: () => dispatch(fetchAllCartItems())
     })
 }
 

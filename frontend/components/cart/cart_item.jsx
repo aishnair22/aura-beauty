@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 class CartItem extends React.Component {
     constructor(props) {
@@ -30,15 +31,15 @@ class CartItem extends React.Component {
         const { product, quantity, shade } = this.props.cartItem
         let shadeName
         if (shade) {
-            shadeName = shade.name
+            shadeName = `Shade: ${shade.name}`
         } else {
             shadeName = ""
         }
 
         return (
             <div>
-                <h1>{product.name}</h1>
-                <h2>{shadeName}</h2>
+                <Link to={`/products/${product.name}~${product.id}`}>{product.name}</Link>
+                <h1>{shadeName}</h1>
                 <h2>
                     <select value={this.state.quantity} onChange={this.handleUpdateQuantity} >
                         <option value="1">1</option>

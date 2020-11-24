@@ -1,10 +1,15 @@
 import React from "react"
 import {Link} from 'react-router-dom'
+import { fetchCategories } from "../../actions/category_actions"
 
 class Splash extends React.Component {
     constructor(props) {
         super(props)
         this.handleFoundation = this.handleFoundation.bind(this)
+    }
+
+    componentDidMount() {
+        this.props.fetchCategories()
     }
 
     handleFoundation(e) {

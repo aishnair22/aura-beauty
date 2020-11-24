@@ -2,31 +2,31 @@
     display: flex;
     justify-content: center;
     background: $light-pink;
-    height: 1000px;
+    padding-bottom: 200px;
 }
 
 .login-side {
     display: flex;
     flex-direction: column;
-    margin-top: 150px;
-    margin-right: 100px;
+    margin-top: 10%;
+    margin-right: 8%;
 }
 
 .login-side > h2 {
     font-family: $title;
     font-size: 55px;
-    margin-bottom: 30px;
+    margin-bottom: 4%;
 }
 
 .signup-side {
-    margin-top: 150px;
-    margin-left: 100px;
+    margin-top: 10%;
+    margin-left: 8%;
 }
 
 .signup-side > h2 {
     font-family: $title;
     font-size: 55px;
-    margin-bottom: 30px;
+    margin-bottom: 5%;
 }
 
 .signup-side > button {
@@ -54,7 +54,7 @@
 
 .vertical-line {
     border-left: 1px solid $light-gray;
-    height: 300px;
-    margin-top: 190px;
+    height: 50vh;
+    margin-top: 11%;
 }
 

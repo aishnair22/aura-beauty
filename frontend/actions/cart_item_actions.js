@@ -2,6 +2,7 @@ import * as CartItemApiUtil from "../util/cart_item_api_util"
 
 export const RECEIVE_ALL_CART_ITEMS = "RECEIVE_ALL_CART_ITEMS";
 export const DELETE_CART_ITEM = "DELETE_CART_ITEM";
+export const REMOVE_ALL_CART_ITEMS = "REMOVE_ALL_CART_ITEMS";
 
 const receiveAllCartItems = (cartItems) => {
     return ({
@@ -35,4 +36,8 @@ export const updateCartItem = (cartItem) => (dispatch) => {
 export const deleteCartItem = (cartItemId) => (dispatch) => {
     return CartItemApiUtil.deleteCartItem(cartItemId)
         .then(cartItem => dispatch(destroyCartItem(cartItem)))
+}
+
+export const removeAllCartItems = () => (dispatch) => {
+    return dispatch({type: REMOVE_ALL_CART_ITEMS})
 }

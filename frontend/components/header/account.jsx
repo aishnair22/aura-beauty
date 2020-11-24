@@ -6,8 +6,13 @@ class Account extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this)
     }
 
+    componentDidMount() {
+        this.props.fetchAllCartItems()
+    }
+
     handleSubmit(e) {
         e.preventDefault()
+        this.props.removeAllCartItems()
         this.props.logout()
         .then(() => this.props.history.push("/"))
     }

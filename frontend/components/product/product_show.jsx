@@ -3,17 +3,25 @@ import React from 'react'
 class ProductShow extends React.Component {
     constructor(props) {
         super(props)
-        this.state = { currentShade: "", photoUrl: "", howToOpen: "", ingredientsOpen: ""}
+        this.state = {
+            currentShade: "", 
+            photoUrl: "", 
+            howToOpen: "", 
+            ingredientsOpen: "",
+            disabled: ""
+        }
         this.handleShadeClick = this.handleShadeClick.bind(this)
         this.handlePhotoClick = this.handlePhotoClick.bind(this)
         this.openModal = this.openModal.bind(this)
         this.closeModal = this.closeModal.bind(this)
+        this.addToCart = this.addToCart.bind(this)
     }
 
     componentDidMount() {
         this.props.fetchCategories()
         this.props.fetchProduct(this.props.productId)
         this.props.fetchAllShades()
+        this.props.fetchAllCartItems()
     }
     
     componentWillReceiveProps(nextProps, prevState) {
@@ -47,6 +55,62 @@ class ProductShow extends React.Component {
             this.setState({ howToOpen: "" })
         }
     }
+
+    addToCart() {
+        this.setState({ disabled: "disabled"})
+        setTimeout(() => this.setState({ disabled: "" }), 2000)
+
+        if (!this.props.currentUser) {
+            // localstorage
+            // if (!this.state.currentShade) {
+            //     const cartItem = {
+            //         product_id: this.props.product.id,
+            //         quantity: 1
+            //     }
+            // } else {
+            //     const cartItem = {
+            //         product_id: this.props.product.id,
+            //         quantity: 1,
+            //         shade_id: this.state.currentShade.id
+            //     }
+            // }
+        } else { // we are logged in
+            if (this.props.currentCart) { // we have existing cart for this user
+                let currentProduct = this.props.product
+                let matchingCartItem = this.props.cartItems.filter((itemObj) => {
+                    if (itemObj.shade) {
+                        return (itemObj.product.id === currentProduct.id && itemObj.shade.id === this.state.currentShade.id)
+                    } else {
+                        return (itemObj.product.id === currentProduct.id)
+                    }
+                })
+                
+                if (matchingCartItem[0]) { // we have this item already, update the quantity
+                    let updatedItem = {
+                        id: matchingCartItem[0].id,
+                        cart_id: matchingCartItem[0].cart_id,
+                        product_id: currentProduct.id,
+                        quantity: matchingCartItem[0].quantity + 1
+                    }
+                    if (matchingCartItem[0].shade) {
+                        updatedItem.shade_id = matchingCartItem[0].shade.id
+                    }
+                    this.props.updateCartItem(updatedItem)
+                } else { // we don't have this item, we create it
+                    let newItem = {
+                        cart_id: this.props.currentCart.id,
+                        product_id: this.props.product.id,
+                        quantity: 1
+                    }
+                    if (this.state.currentShade) {
+                        newItem.shade_id = this.state.currentShade.id
+                    }
+                    this.props.createCartItem(newItem)
+                }
+            }
+        }
+
+    }   
 
     render() {
         if (!this.props.product) {
@@ -102,6 +166,13 @@ class ProductShow extends React.Component {
             )
         }
 
+        let cartButtonText
+        if (this.state.disabled) {
+            cartButtonText = "ADDED TO BAG!"
+        } else {
+            cartButtonText = `ADD TO BAG • ${ product.price }`
+        }
+
         return(
             <div className="product-show">
                 <div className="product-first-component">
@@ -113,15 +184,15 @@ class ProductShow extends React.Component {
                         <h3>{product.description}</h3>
 
                         <div className="product-swatches-all-images">
-                            {shades.map((shade) => {
+                            {shades.map((shade, idx) => {
                                 let active = ""
                                 if (shade === this.state.currentShade) {
                                     active = "selected"
                                 }
-                                return <img className={active} onClick={() => this.handleShadeClick(shade)} src={shade.swatchPhoto} />
+                                return <img key={idx} className={active} onClick={() => this.handleShadeClick(shade)} src={shade.swatchPhoto} />
                             })}
                         </div>
-                        <button >ADD TO CART • ${product.price}</button>
+                        <button className="cart-button" onClick={this.addToCart} >{cartButtonText}</button>
                     </div>
 
                     <div className="product-show-img-and-captions">
