@@ -18,13 +18,29 @@ class CartItem extends React.Component {
     }
 
     handleUpdateQuantity(e) {
-        e.preventDefault()        
-        this.setState({ quantity: e.target.value }, () => this.props.updateCartItem(this.state))                
+        e.preventDefault()       
+        
+        if (this.props.cartItems.length) {
+            this.setState({ quantity: e.target.value }, () => this.props.updateCartItem(this.state))        
+        } else {
+            let cartItems = JSON.parse(localStorage.getItem('cartItems'))
+            cartItems[this.props.localStorageIdx].quantity = e.target.value
+            localStorage.setItem('cartItems', JSON.stringify(cartItems))
+            this.setState({ quantity: e.target.value })
+            this.props.updatedLocalStorage()
+        }
     }
 
     handleRemoveItem(e) {
         e.preventDefault()
-        this.props.deleteCartItem(this.props.cartItem.id)
+        if (this.props.cartItems.length) {
+            this.props.deleteCartItem(this.props.cartItem.id)
+        } else {
+            let cartItems = JSON.parse(localStorage.getItem('cartItems'))
+            cartItems.splice(this.props.localStorageIdx, 1)
+            localStorage.setItem('cartItems', JSON.stringify(cartItems))
+            this.props.updatedLocalStorage()
+        }
     }
 
     render() {
@@ -36,12 +52,19 @@ class CartItem extends React.Component {
             shadeName = ""
         }
 
-        return (
-            <div>
-                <Link to={`/products/${product.name}~${product.id}`}>{product.name}</Link>
-                <h1>{shadeName}</h1>
-                <h2>
-                    <select value={this.state.quantity} onChange={this.handleUpdateQuantity} >
+        return (                
+
+            <div className="cart-item">
+
+                <img src={this.props.photoUrl}/>
+
+                <div className="cart-item-middle-section">
+                    <Link to={`/products/${product.name}~${product.id}`} className="cart-item-product-name">{product.name}</Link>
+                    <h1 className="cart-item-shade-name">{shadeName}</h1>
+                </div>
+
+                <div className="cart-item-last-section">
+                    <select className="cart-item-quantity" value={this.state.quantity} onChange={this.handleUpdateQuantity} >
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -53,13 +76,11 @@ class CartItem extends React.Component {
                         <option value="9">9</option>
                         <option value="10">10</option>
                     </select>
-                </h2>
-                <h2>${product.price * quantity}.00</h2>
-                <div>
-                    <button onClick={this.handleRemoveItem}>REMOVE</button>
-                </div>
 
-                <img src={this.props.photoUrl} style={{height: 250, width: 150}}/>
+                    <h2 className="cart-item-price">${product.price * quantity}.00</h2>
+
+                    <button onClick={this.handleRemoveItem} className="remove-button">REMOVE</button>
+                </div>
             </div>
         )
     }

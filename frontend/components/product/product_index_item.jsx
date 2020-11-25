@@ -26,22 +26,48 @@ class ProductIndexItem extends React.Component {
         setTimeout(() => this.setState({ disabled: "" }), 2000)
 
         if (!this.props.currentUser) {
-            // localstorage
-            // if (!this.state.currentShade) {
-            //     const cartItem = {
-            //         product_id: this.props.product.id,
-            //         quantity: 1
-            //     }
-            // } else {
-            //     const cartItem = {
-            //         product_id: this.props.product.id,
-            //         quantity: 1,
-            //         shade_id: this.state.currentShade.id
-            //     }
-            // }
+            let currentProduct = this.props.product
+            const cartItems = JSON.parse(localStorage.getItem('cartItems')) || []
+            let matchingItemIndex;
+            let matchingStorageItem = cartItems.filter((item, idx) => {
+                if (item.shade) {
+                    if (item.product.id === currentProduct.id && item.shade.id === this.state.selectedShade.id) {
+                        matchingItemIndex = idx
+                    }
+                    return (item.product.id === currentProduct.id && item.shade.id === this.state.selectedShade.id)
+                } else {
+                    if (item.product.id === currentProduct.id) {
+                        matchingItemIndex = idx
+                    }
+                    return (item.product.id === currentProduct.id)
+                }
+            })
+
+            if (matchingStorageItem.length) { // we have this item already, update the quantity
+                let updatedItem = {
+                    product: currentProduct,
+                    quantity: matchingStorageItem[0].quantity + 1
+                }
+                if (matchingStorageItem[0].shade) {
+                    updatedItem.shade = matchingStorageItem[0].shade
+                }
+
+                cartItems[matchingItemIndex] = updatedItem
+
+            } else { // we don't have this item, we create it
+                let newItem = {
+                    product: this.props.product,
+                    quantity: 1
+                }
+                if (this.state.selectedShade) {
+                    newItem.shade = this.state.selectedShade
+                }
+                cartItems.push(newItem)
+            }
+
+            localStorage.setItem('cartItems', JSON.stringify(cartItems))
         } else { // we are logged in
             if (this.props.currentCart) { // we have existing cart for this user
-                debugger
                 let currentProduct = this.props.product
                 let matchingCartItem = this.props.cartItems.filter((itemObj) => {
                     if (itemObj.shade) {
@@ -52,7 +78,6 @@ class ProductIndexItem extends React.Component {
                 })
 
                 if (matchingCartItem[0]) { // we have this item already, update the quantity
-                    debugger
                     let updatedItem = {
                         id: matchingCartItem[0].id,
                         cart_id: matchingCartItem[0].cart_id,
@@ -62,10 +87,8 @@ class ProductIndexItem extends React.Component {
                     if (matchingCartItem[0].shade) {
                         updatedItem.shade_id = matchingCartItem[0].shade.id
                     }
-                    debugger
                     this.props.updateCartItem(updatedItem)
                 } else { // we don't have this item, we create it
-                    debugger
                     let newItem = {
                         cart_id: this.props.currentCart.id,
                         product_id: this.props.product.id,
@@ -74,7 +97,6 @@ class ProductIndexItem extends React.Component {
                     if (this.state.selectedShade) {
                         newItem.shade_id = this.state.selectedShade.id
                     }
-                    debugger
                     this.props.createCartItem(newItem)
                 }
             }

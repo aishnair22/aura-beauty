@@ -12,9 +12,7 @@ import LipContainer from './product/lip_container'
 import EyeContainer from './product/eye_container'
 import ToolsContainer from './product/tools_container'
 import ProductShowContainer from './product/product_show_container'
-
 import CartContainer from './cart/cart_container'
-
 import NotFoundPage from './not_found/not_found_page'
 import { Route, Switch } from 'react-router-dom';
 import { AuthRoute, ProtectedRoute } from '../util/route_utils'

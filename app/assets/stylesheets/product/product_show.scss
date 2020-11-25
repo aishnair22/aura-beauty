@@ -5,7 +5,7 @@
 
 .product-first-component {
     display: flex;
-    height: 700px;
+    min-height: 100%;
 }
 
 .product-shade-name {
@@ -289,7 +289,7 @@
 }
 
 .modal-details {
-    position: fixed; //absolute
+    position: fixed;
     top: 10%;
     left: 25%;
     z-index: 5;

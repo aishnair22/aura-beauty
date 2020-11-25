@@ -4,9 +4,15 @@ import { Link } from 'react-router-dom'
 class Header extends React.Component {
     constructor(props) {
         super(props)
+        this.state = {updated: ""}
         this.handleAccount = this.handleAccount.bind(this)
         this.handleLogo = this.handleLogo.bind(this)
         this.handleCart = this.handleCart.bind(this)
+        this.updatedLocalStorage = this.updatedLocalStorage.bind(this)
+    }
+
+    updatedLocalStorage() {
+        this.setState({ update: "updated" })
     }
 
     componentDidMount() {
@@ -34,12 +40,20 @@ class Header extends React.Component {
 
     render() {
         let cartNumber = 0
-        if (this.props.cartItems.length) {
-            this.props.cartItems.forEach((item) => {
-                cartNumber += item.quantity
+        let cartItems
+        
+        if (this.props.currentUser) {
+            cartItems = this.props.cartItems
+        } else {
+            cartItems = JSON.parse(localStorage.getItem('cartItems')) || []
+        }
+        
+        if (cartItems.length) {
+            cartItems.forEach((item) => {
+                cartNumber += Number(item.quantity)
             })
         }
-    
+
         return (
             <header className="header">
                 <div className="dropdown">

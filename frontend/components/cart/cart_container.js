@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom'
-import { fetchAllCartItems, createCartItem, updateCartItem, deleteCartItem } from '../../actions/cart_item_actions'
+import { fetchAllCartItems, createCartItem, updateCartItem, deleteCartItem, deleteAllCartItems } from '../../actions/cart_item_actions'
 import { fetchAllShades } from '../../actions/shade_actions'
 import { fetchAllProducts } from '../../actions/product_actions'
 import Cart from './cart';
@@ -17,7 +17,8 @@ const mapDispatchToProps = (dispatch) => ({
     fetchAllShades: () => dispatch(fetchAllShades()),
     fetchAllProducts: () => dispatch(fetchAllProducts()),
     updateCartItem: (cartItem) => dispatch(updateCartItem(cartItem)),
-    deleteCartItem: (cartItemId) => dispatch(deleteCartItem(cartItemId))
+    deleteCartItem: (cartItemId) => dispatch(deleteCartItem(cartItemId)),
+    deleteAllCartItems: () => dispatch(deleteAllCartItems())
 });
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Cart));

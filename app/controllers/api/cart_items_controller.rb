@@ -1,7 +1,7 @@
 class Api::CartItemsController < ApplicationController
     def index 
         currentuser = User.find_by(id: current_user.id)
-        @cart_items = CartItem.where(cart_id: current_user.cart.id)
+        @cart_items = CartItem.where(cart_id: currentuser.cart.id)
         render :index
     end
 
@@ -29,6 +29,12 @@ class Api::CartItemsController < ApplicationController
         @cart_item = CartItem.find(params[:id])
         @cart_item.destroy
         render :show
+    end
+
+    def destroy_all
+        @cart_items = CartItem.where(cart_id: current_user.cart.id)
+        @cart_items.destroy_all
+        render :index
     end
 
     private

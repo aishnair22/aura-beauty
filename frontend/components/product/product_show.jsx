@@ -60,20 +60,47 @@ class ProductShow extends React.Component {
         this.setState({ disabled: "disabled"})
         setTimeout(() => this.setState({ disabled: "" }), 2000)
 
-        if (!this.props.currentUser) {
-            // localstorage
-            // if (!this.state.currentShade) {
-            //     const cartItem = {
-            //         product_id: this.props.product.id,
-            //         quantity: 1
-            //     }
-            // } else {
-            //     const cartItem = {
-            //         product_id: this.props.product.id,
-            //         quantity: 1,
-            //         shade_id: this.state.currentShade.id
-            //     }
-            // }
+        if (!this.props.currentUser) { // user is not logged in
+            let currentProduct = this.props.product
+            const cartItems = JSON.parse(localStorage.getItem('cartItems')) || []
+            let matchingItemIndex;
+            let matchingStorageItem = cartItems.filter((item, idx) => {
+                if (item.shade) {
+                    if (item.product.id === currentProduct.id && item.shade.id === this.state.currentShade.id) {
+                        matchingItemIndex = idx
+                    }
+                    return (item.product.id === currentProduct.id && item.shade.id === this.state.currentShade.id)
+                } else {
+                    if (item.product.id === currentProduct.id) {
+                        matchingItemIndex = idx
+                    }
+                    return (item.product.id === currentProduct.id)
+                }
+            })
+            
+            if (matchingStorageItem.length) { // we have this item already, update the quantity
+                let updatedItem = {
+                    product: currentProduct,
+                    quantity: matchingStorageItem[0].quantity + 1
+                }
+                if (matchingStorageItem[0].shade) {
+                    updatedItem.shade = matchingStorageItem[0].shade
+                }
+
+                cartItems[matchingItemIndex] = updatedItem
+
+            } else { // we don't have this item, we create it
+                let newItem = {
+                    product: this.props.product,
+                    quantity: 1
+                }
+                if (this.state.currentShade) {
+                    newItem.shade = this.state.currentShade
+                }
+                cartItems.push(newItem)
+            }
+            
+            localStorage.setItem('cartItems', JSON.stringify(cartItems))
         } else { // we are logged in
             if (this.props.currentCart) { // we have existing cart for this user
                 let currentProduct = this.props.product
@@ -160,7 +187,7 @@ class ProductShow extends React.Component {
                             <h5>Full Ingredients</h5>
                             <h6>{product.ingredients}</h6>
                         </div>
-                        <div className="modal-screen"></div>
+                        <div className="modal-screen" onClick={() => this.closeModal("ingredients")}></div>
                     </div>
                 </div>
             )
@@ -238,7 +265,7 @@ class ProductShow extends React.Component {
                                     <h5>Usage</h5>
                                     <h6>{product.how_to_use}</h6>
                                 </div>
-                                <div className="modal-screen"></div>
+                                <div className="modal-screen" onClick={() => this.closeModal("how-to")}></div>
                             </div>
                         </div>
                     </div>
