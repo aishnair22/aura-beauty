@@ -8,7 +8,6 @@ import { selectShadesByProduct } from '../../reducers/selectors'
 
 const mSTP = (state, ownProps) => {
     const productId = ownProps.match.params.productId;
-
     return ({
         product: state.entities.products[productId],
         productId: productId,

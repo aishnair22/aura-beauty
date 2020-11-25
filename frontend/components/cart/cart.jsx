@@ -56,7 +56,7 @@ class Cart extends React.Component {
 
         let subtotal = 0
         let itemsSection
-
+        
         if (!cartItems.length) {
             itemsSection = <div className="cart-items">
                 <h1 className="empty-cart">Your bag is currently empty.</h1>

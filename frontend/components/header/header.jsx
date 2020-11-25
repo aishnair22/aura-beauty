@@ -39,8 +39,8 @@ class Header extends React.Component {
     }
 
     render() {
-        let cartNumber = 0
         let cartItems
+        let cartNumber = 0
         
         if (this.props.currentUser) {
             cartItems = this.props.cartItems

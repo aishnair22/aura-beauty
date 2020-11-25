@@ -10,7 +10,7 @@ export const CLEAR_ERRORS = "CLEAR_ERRORS"
 const receiveCurrentUser = (user) => {
     return ({
         type: RECEIVE_CURRENT_USER,
-        user
+        user: user,
     })
 }
 

@@ -4,7 +4,8 @@ import Login from './login'
 
 const mapStateToProps = (state) => {
     return {
-        errors: state.errors.session
+        errors: state.errors.session,
+        currentCart: state.session.currentCart
     };
 };
 
