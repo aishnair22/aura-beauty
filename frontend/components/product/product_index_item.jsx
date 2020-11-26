@@ -112,19 +112,12 @@ class ProductIndexItem extends React.Component {
         } else {
             cartButtonText = "ADD TO BAG"
         }
-
-        let image
-        if (!this.props.product.photoUrls[0] || !this.props.productShades) {
-            image = <LoadingPage />
-        } else {
-            image = <img className="index-item-product-img" src={this.state.photoUrl} />
-        }
-
+     
         return (
             <div className="product-index-item">
                 <Link to={`/products/${this.props.product.name}~${this.props.product.id}`}>
                     <div className="index-item-img-caption">
-                        {image}
+                        <img className="index-item-product-img" src={this.state.photoUrl} alt="product-image" />
                         <h2>{this.state.selectedShade.name}</h2>
                     </div>
                     <h1>{this.props.product.name}</h1>
@@ -139,7 +132,7 @@ class ProductIndexItem extends React.Component {
                             active = "selected"
                         }
                         return (
-                            <img className={`carousel-swatch ${active}`} src={shade.swatchPhoto} onClick={() => this.handleShadeClick(shade)} key={shade.id} />
+                            <img className={`carousel-swatch ${active}`} src={shade.swatchPhoto} alt="swatch-image" onClick={() => this.handleShadeClick(shade)} key={shade.id} />
                         )
                     })}
                 </div>              
@@ -148,6 +141,7 @@ class ProductIndexItem extends React.Component {
 
             </div>
         )
+        
     }
 }
 

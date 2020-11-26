@@ -16,7 +16,9 @@ class Header extends React.Component {
     }
 
     componentDidMount() {
-        this.props.fetchAllCartItems()
+        if (this.props.currentUser) {
+            this.props.fetchAllCartItems()
+        }
     }
 
     handleAccount(e) {
@@ -60,27 +62,27 @@ class Header extends React.Component {
                     <Link to="/" className="dropdown-shop">SHOP</Link>
                     <div className="dropdown-content">
                         <Link to="/collections/all" className="dropdown-links" >Shop All                   
-                            <img className="downdown-img" src={window.shopAll } />
+                            <img className="downdown-img" src={window.shopAll } alt="shop-all-image"/>
                         </Link>
                         <Link to="/collections/face" className="dropdown-links" >Face
-                            <img className="downdown-img" src={window.face } />                       
+                            <img className="downdown-img" src={window.face } alt="face-image" />                       
                         </Link>
                         <Link to="/collections/eye" className="dropdown-links" >Eye
-                            <img className="downdown-img" src={window.eye } />                       
+                            <img className="downdown-img" src={window.eye} alt="eye-image"/>                       
                         </Link>
                         <Link to="/collections/lip" className="dropdown-links" >Lip
-                            <img className="downdown-img" src={window.lip } />
+                            <img className="downdown-img" src={window.lip} alt="lip-image"/>
                         </Link>
                         <Link to="/collections/tools" className="dropdown-links" >Tools
-                            <img className="downdown-img" src={window.tools } />
+                            <img className="downdown-img" src={window.tools} alt="tools-image"/>
                         </Link>
                     </div>
                 </div>
                 <h1 className="logo" onClick={this.handleLogo}>Aura Beauty</h1>
-                {/* <img className="search-icon" onClick={this.handleAccount} src={window.searchIcon} />  */}
-                <img className="account-icon" onClick={this.handleAccount} src={window.accountIcon} /> 
+                {/* <img className="search-icon" onClick={this.handleAccount} src={window.searchIcon} alt="search-icon"/>  */}
+                <img className="account-icon" onClick={this.handleAccount} src={window.accountIcon} alt="account-icon" /> 
                 <div>
-                    <img className="cart-icon" onClick={this.handleCart} src={window.cartIcon} /> 
+                    <img className="cart-icon" onClick={this.handleCart} src={window.cartIcon} alt="cart-icon" /> 
                     <h2 className="cart-caption" onClick={this.handleCart}>{cartNumber}</h2>
                 </div>
             </header>

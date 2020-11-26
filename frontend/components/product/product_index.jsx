@@ -32,7 +32,9 @@ class ProductIndex extends React.Component {
         this.props.fetchAllProducts()
         this.props.fetchCategories()
         this.props.fetchAllShades()
-        this.props.fetchAllCartItems()
+        if (this.props.currentUser) {
+            this.props.fetchAllCartItems()
+        }
     }
 
     render() {

@@ -14,7 +14,9 @@ class Cart extends React.Component {
     }
 
     componentDidMount() {
-        this.props.fetchAllCartItems()
+        if (this.props.currentUser) {
+            this.props.fetchAllCartItems()
+        }
         this.props.fetchAllShades()
         this.props.fetchAllProducts()
             .done(() => this.setState({ rendered: true })) 

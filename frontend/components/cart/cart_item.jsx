@@ -57,7 +57,7 @@ class CartItem extends React.Component {
 
             <div className="cart-item">
 
-                <img src={this.props.photoUrl} />
+                <img src={this.props.photoUrl} alt="cart-item-image"/>
 
                 <div className="cart-item-middle-section">
                     <Link to={`/products/${product.name}~${product.id}`} className="cart-item-product-name">{product.name}</Link>

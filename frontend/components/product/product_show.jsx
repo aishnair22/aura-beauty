@@ -22,7 +22,9 @@ class ProductShow extends React.Component {
         this.props.fetchCategories()
         this.props.fetchProduct(this.props.productId)
         this.props.fetchAllShades()
-        this.props.fetchAllCartItems()
+        if (this.props.currentUser) {
+            this.props.fetchAllCartItems()
+        }
     }
     
     componentWillReceiveProps(nextProps, prevState) {
@@ -168,8 +170,8 @@ class ProductShow extends React.Component {
                     <h5>{this.state.currentShade.name}</h5>  
                 </div>
             )
-            shadeImageOne = <img className={selected_one} onClick={() => this.handlePhotoClick(this.state.currentShade.productPhoto)} src={this.state.currentShade.productPhoto} />
-            shadeImageTwo = <img className={selected_two} onClick={() => this.handlePhotoClick(this.state.currentShade.swatchPhoto)} src={this.state.currentShade.swatchPhoto} />
+            shadeImageOne = <img className={selected_one} onClick={() => this.handlePhotoClick(this.state.currentShade.productPhoto)} src={this.state.currentShade.productPhoto} alt="product-shade-image" />
+            shadeImageTwo = <img className={selected_two} onClick={() => this.handlePhotoClick(this.state.currentShade.swatchPhoto)} src={this.state.currentShade.swatchPhoto} alt="swatch-image"/>
             shadeUnderline = <div className="product-name-underline"></div>
         }
 
@@ -217,14 +219,14 @@ class ProductShow extends React.Component {
                                 if (shade === this.state.currentShade) {
                                     active = "selected"
                                 }
-                                return <img key={idx} className={active} onClick={() => this.handleShadeClick(shade)} src={shade.swatchPhoto} />
+                                return <img key={idx} className={active} onClick={() => this.handleShadeClick(shade)} src={shade.swatchPhoto} alt="swatch-image"/>
                             })}
                         </div>
                         <button className="cart-button" onClick={this.addToCart} >{cartButtonText}</button>
                     </div>
 
                     <div className="product-show-img-and-captions">
-                        <img className="selected-product-photo" src={this.state.photoUrl} />
+                        <img className="selected-product-photo" src={this.state.photoUrl} alt="product-image" />
 
                         <div className="all-product-photos">
                             {shadeImageOne}
@@ -233,7 +235,7 @@ class ProductShow extends React.Component {
                                 if (photoUrl === this.state.photoUrl) {
                                     active = "selected"
                                 }              
-                                return <img className={active} onClick={() => this.handlePhotoClick(photoUrl)} src={photoUrl} key={idx}/>
+                                return <img className={active} onClick={() => this.handlePhotoClick(photoUrl)} src={photoUrl} key={idx} alt="product-image"/>
                             })}
                             {shadeImageTwo}
                         </div>
@@ -242,7 +244,7 @@ class ProductShow extends React.Component {
 
                 <div className="product-second-component">
                     <div className="product-details">
-                        <img src={this.props.product.detailsPhoto} />
+                        <img src={this.props.product.detailsPhoto} alt="product-details-image"/>
                         
                         <div className="details">
                             <h1>Details</h1>
@@ -253,7 +255,7 @@ class ProductShow extends React.Component {
                     <div className="product-ingredients-how-to">
                         {ingredients}
 
-                        <img src={this.props.product.howToUsePhoto} />
+                        <img src={this.props.product.howToUsePhoto} alt="how-to-use-image"/>
 
                         <div className="how-to">
                             <h1>How to use</h1>
