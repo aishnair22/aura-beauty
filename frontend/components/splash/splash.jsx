@@ -18,6 +18,7 @@ class Splash extends React.Component {
     }
 
     render() {
+       
         return(
             <div className="splash">
                 <div className="splash-first-component">

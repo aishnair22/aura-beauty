@@ -1,0 +1,12 @@
+.loading-page {
+    background-color: $light-pink;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        height: 200px;
+        width: 200px;
+    }
+}

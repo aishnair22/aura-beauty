@@ -1,12 +1,13 @@
 import React from 'react'
 import ProductIndexItem from "./product_index_item"
+import LoadingPage from '../loading'
 
 class ProductIndex extends React.Component {
     constructor(props) {
         super(props)
         this.handleCategory = this.handleCategory.bind(this)
         const urlCategory = this.props.match.url.split("/")
-        this.state = { selectedCategory: urlCategory[urlCategory.length - 1]}
+        this.state = { selectedCategory: urlCategory[urlCategory.length - 1] }
     
         if (this.state.selectedCategory === "all") {
             this.state.all = "selected"
@@ -36,7 +37,7 @@ class ProductIndex extends React.Component {
 
     render() {
         if (!this.props.products.length || !this.props.shades.length) {
-            return null
+            return <LoadingPage />
         }
 
         return(

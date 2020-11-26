@@ -1,11 +1,12 @@
 import React from 'react';
 import CartItem from './cart_item'
 import {Link} from 'react-router-dom'
+import LoadingPage from '../loading'
 
 class Cart extends React.Component {
     constructor(props) {
         super(props)
-        this.state = {update: "", checkedOut: ""}
+        this.state = {update: 0, checkedOut: "", rendered: false}
         this.updatedLocalStorage = this.updatedLocalStorage.bind(this)
         this.guestCheckout = this.guestCheckout.bind(this)
         this.userCheckout = this.userCheckout.bind(this)
@@ -16,10 +17,11 @@ class Cart extends React.Component {
         this.props.fetchAllCartItems()
         this.props.fetchAllShades()
         this.props.fetchAllProducts()
+            .done(() => this.setState({ rendered: true })) 
     }
 
     updatedLocalStorage() {
-        this.setState({update: "updated"})
+        this.setState({update: this.state.update + 1})
     }
 
     guestCheckout(e) {
@@ -39,6 +41,11 @@ class Cart extends React.Component {
     }
 
     render() {
+
+        if (!this.state.rendered) {
+            return <LoadingPage />
+        }
+
         let cartItems
         let buttons
         if (this.props.currentUser) {

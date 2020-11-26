@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import LoadingPage from '../loading'
 
 class CartItem extends React.Component {
     constructor(props) {
@@ -56,7 +57,7 @@ class CartItem extends React.Component {
 
             <div className="cart-item">
 
-                <img src={this.props.photoUrl}/>
+                <img src={this.props.photoUrl} />
 
                 <div className="cart-item-middle-section">
                     <Link to={`/products/${product.name}~${product.id}`} className="cart-item-product-name">{product.name}</Link>

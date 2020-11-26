@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import LoadingPage from '../loading'
 
 class ProductIndexItem extends React.Component {
     constructor(props) {
@@ -112,11 +113,18 @@ class ProductIndexItem extends React.Component {
             cartButtonText = "ADD TO BAG"
         }
 
+        let image
+        if (!this.props.product.photoUrls[0] || !this.props.productShades) {
+            image = <LoadingPage />
+        } else {
+            image = <img className="index-item-product-img" src={this.state.photoUrl} />
+        }
+
         return (
             <div className="product-index-item">
                 <Link to={`/products/${this.props.product.name}~${this.props.product.id}`}>
                     <div className="index-item-img-caption">
-                        <img className="index-item-product-img" src={this.state.photoUrl} />
+                        {image}
                         <h2>{this.state.selectedShade.name}</h2>
                     </div>
                     <h1>{this.props.product.name}</h1>

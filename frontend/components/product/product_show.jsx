@@ -1,4 +1,5 @@
 import React from 'react'
+import LoadingPage from '../loading'
 
 class ProductShow extends React.Component {
     constructor(props) {
@@ -141,7 +142,7 @@ class ProductShow extends React.Component {
 
     render() {
         if (!this.props.product) {
-            return null
+            return <LoadingPage />
         }
         const { product, shades } = this.props
 
