@@ -9,10 +9,12 @@ class ProductShow extends React.Component {
             photoUrl: "", 
             howToOpen: "", 
             ingredientsOpen: "",
-            disabled: ""
+            disabled: "",
+            loaded: false
         }
         this.handleShadeClick = this.handleShadeClick.bind(this)
         this.handlePhotoClick = this.handlePhotoClick.bind(this)
+        this.handleLoad = this.handleLoad.bind(this)
         this.openModal = this.openModal.bind(this)
         this.closeModal = this.closeModal.bind(this)
         this.addToCart = this.addToCart.bind(this)
@@ -33,6 +35,10 @@ class ProductShow extends React.Component {
         } else if (nextProps.shades.length) {
             this.setState({ photoUrl: nextProps.shades[0].productPhoto, currentShade: nextProps.shades[0] })
         }
+    }
+
+    handleLoad() {
+        this.setState({loaded: true})
     }
 
     handleShadeClick(shade) {
@@ -143,9 +149,10 @@ class ProductShow extends React.Component {
     }   
 
     render() {
-        if (!this.props.product) {
+        if (!this.props.product && !this.state.loaded) {
             return <LoadingPage />
         }
+
         const { product, shades } = this.props
 
         let shadeNameDisplay
@@ -200,7 +207,7 @@ class ProductShow extends React.Component {
         if (this.state.disabled) {
             cartButtonText = "ADDED TO BAG!"
         } else {
-            cartButtonText = `ADD TO BAG • ${ product.price }`
+            cartButtonText = `ADD TO BAG • $${ product.price }`
         }
 
         return(
@@ -226,7 +233,7 @@ class ProductShow extends React.Component {
                     </div>
 
                     <div className="product-show-img-and-captions">
-                        <img className="selected-product-photo" src={this.state.photoUrl} alt="product-image" />
+                        <img className="selected-product-photo" src={this.state.photoUrl} alt="product-image" onLoad={this.handleLoad}/>
 
                         <div className="all-product-photos">
                             {shadeImageOne}

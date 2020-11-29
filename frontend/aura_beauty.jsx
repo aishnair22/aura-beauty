@@ -19,8 +19,8 @@ document.addEventListener("DOMContentLoaded", () => {
     ReactDOM.render(<Root store={store} />, root);
 
     //testing
-    // window.store = store
-    // window.dispatch = store.dispatch
+    window.store = store
+    window.dispatch = store.dispatch
     // window.fetchAllCartItems = fetchAllCartItems
     // window.deleteCartItem = deleteCartItem
     // window.createCartItem = createCartItem

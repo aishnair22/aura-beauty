@@ -1,19 +1,25 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import LoadingPage from '../loading'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import LoadingPage from '../loading';
 
 class ProductIndexItem extends React.Component {
+    
     constructor(props) {
         super(props)
-        this.state = { photoUrl: "", selectedShade: "", disabled: ""}
+        this.state = { photoUrl: "", selectedShade: "", disabled: "", loaded: false}
         this.handleShadeClick = this.handleShadeClick.bind(this)
         this.addToCart = this.addToCart.bind(this)
+        this.handleLoad = this.handleLoad.bind(this)
+    }
+    
+    handleLoad() {
+        this.setState({loaded: true})
     }
     
     handleShadeClick(shade) {
         this.setState({ photoUrl: shade.productPhoto, selectedShade: shade})
     }
-
+    
     componentDidMount() {
         if (!this.props.productShades.length) {
             this.setState({photoUrl: this.props.product.photoUrls[0]})
@@ -106,6 +112,16 @@ class ProductIndexItem extends React.Component {
     }
     
     render() {
+        let loadingpagedisplay
+        let imagedisplay
+        if (this.state.loaded) {
+            loadingpagedisplay = "none";
+            imagedisplay = "block";
+        } else {
+            loadingpagedisplay = "block";
+            imagedisplay = "none";
+        }
+
         let cartButtonText
         if (this.state.disabled) {
             cartButtonText = "ADDED TO BAG!"
@@ -117,7 +133,8 @@ class ProductIndexItem extends React.Component {
             <div className="product-index-item">
                 <Link to={`/products/${this.props.product.name}~${this.props.product.id}`}>
                     <div className="index-item-img-caption">
-                        <img className="index-item-product-img" src={this.state.photoUrl} alt="product-image" />
+                        <img className="index-item-product-img" src={this.state.photoUrl} alt="product-image" onLoad={this.handleLoad} style={{ display: imagedisplay }}/>
+                        <LoadingPage style={loadingpagedisplay} />
                         <h2>{this.state.selectedShade.name}</h2>
                     </div>
                     <h1>{this.props.product.name}</h1>
