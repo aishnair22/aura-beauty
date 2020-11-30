@@ -7,11 +7,20 @@ import Root from "./components/root"
 document.addEventListener("DOMContentLoaded", () => {
     const root = document.getElementById("root")
     let preloadedState = undefined;
-    if (window.currentUser && window.currentCart) {
+    // window.currentUser = {
+    //     "id": <%= current_user.id %>,
+    //     "first_name": "<%= current_user.first_name %>",
+    //     "last_name": "<%= current_user.last_name %>",
+    //     "email": "<%= current_user.email %>"
+    // }
+    // window.currentCart = {
+    //     "id": "<%= current_user.cart.id %>"
+    // }
+    if (window.currentUser) {
         preloadedState = {
             session: {
                 currentUser: window.currentUser,
-                currentCart: window.currentCart
+                currentCart: window.currentUser.cart,
             }
         };
     }
