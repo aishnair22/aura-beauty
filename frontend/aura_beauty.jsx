@@ -5,26 +5,20 @@ import Root from "./components/root"
 // import { deleteCartItem, fetchAllCartItems, createCartItem, updateCartItem } from './actions/cart_item_actions'
 
 document.addEventListener("DOMContentLoaded", () => {
-    const root = document.getElementById("root")
-    let preloadedState = undefined;
-    // window.currentUser = {
-    //     "id": <%= current_user.id %>,
-    //     "first_name": "<%= current_user.first_name %>",
-    //     "last_name": "<%= current_user.last_name %>",
-    //     "email": "<%= current_user.email %>"
-    // }
-    // window.currentCart = {
-    //     "id": "<%= current_user.cart.id %>"
-    // }
+    let store
     if (window.currentUser) {
-        preloadedState = {
+        const preloadedState = {
             session: {
                 currentUser: window.currentUser,
                 currentCart: window.currentUser.cart,
             }
         };
+        store = configureStore(preloadedState)
+        delete window.currentUser
+    } else {
+        store = configureStore();
     }
-    const store = configureStore(preloadedState)
+    const root = document.getElementById("root")
     ReactDOM.render(<Root store={store} />, root);
 
     //testing
