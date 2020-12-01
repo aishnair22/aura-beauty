@@ -2,7 +2,7 @@ import React from "react"
 import ReactDOM from "react-dom"
 import configureStore from "./store/store"
 import Root from "./components/root"
-// import { deleteCartItem, fetchAllCartItems, createCartItem, updateCartItem } from './actions/cart_item_actions'
+// import { fetchAllCartItems } from './actions/cart_item_actions'
 
 document.addEventListener("DOMContentLoaded", () => {
     let store
@@ -25,8 +25,5 @@ document.addEventListener("DOMContentLoaded", () => {
     window.store = store
     window.dispatch = store.dispatch
     // window.fetchAllCartItems = fetchAllCartItems
-    // window.deleteCartItem = deleteCartItem
-    // window.createCartItem = createCartItem
-    // window.updateCartItem = updateCartItem
 })
 
