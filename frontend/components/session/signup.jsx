@@ -1,5 +1,6 @@
 import React from "react"
 import {Link} from "react-router-dom"
+import CartNumber from '../cart/cart_number'
 
 class Signup extends React.Component {
     constructor(props) {
@@ -45,8 +46,15 @@ class Signup extends React.Component {
     }
 
     render() {
+        let cartNumber
+        if (!this.props.currentUser) {
+            cartNumber = <CartNumber />
+        }
+
         return (
             <div className="signup">
+                {cartNumber}
+
                 <h2>Create Account</h2>
                 <div>{this.renderErrors()}</div>
                 <form className="form">

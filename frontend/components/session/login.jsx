@@ -1,4 +1,5 @@
 import React from "react"
+import CartNumber from '../cart/cart_number'
 
 class Login extends React.Component {
     constructor(props) {
@@ -57,10 +58,18 @@ class Login extends React.Component {
             )
         }
     }
+    
 
     render() {
+        let cartNumber
+        if (!this.props.currentUser) {
+            cartNumber = <CartNumber />
+        }
+        
         return (
             <div className="login">
+                {cartNumber}
+
                 <div className="login-side">
                     <h2>Sign In</h2>
                     <div>{this.renderErrors()}</div>

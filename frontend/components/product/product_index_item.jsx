@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import LoadingPage from '../loading';
+import CartNumber from '../cart/cart_number'
 
 class ProductIndexItem extends React.Component {
     
@@ -73,6 +74,7 @@ class ProductIndexItem extends React.Component {
             }
 
             localStorage.setItem('cartItems', JSON.stringify(cartItems))
+            this.props.rerenderParent()
         } else { // we are logged in
             if (this.props.currentCart) { // we have existing cart for this user
                 let currentProduct = this.props.product
@@ -128,9 +130,16 @@ class ProductIndexItem extends React.Component {
         } else {
             cartButtonText = "ADD TO BAG"
         }
+
+        let cartNumber
+        if (!this.props.currentUser) {
+            cartNumber = <CartNumber />
+        }
      
         return (
             <div className="product-index-item">
+                {cartNumber}
+
                 <Link to={`/products/${this.props.product.name}~${this.props.product.id}`}>
                     <div className="index-item-img-caption">
                         <img className="index-item-product-img" src={this.state.photoUrl} alt="product-image" onLoad={this.handleLoad} style={{ display: imagedisplay }}/>

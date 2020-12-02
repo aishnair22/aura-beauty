@@ -41,20 +41,19 @@ class Header extends React.Component {
     }
 
     render() {
-        let cartItems
-        let cartNumber = 0
-        
+        let loggedInCartNumber
         if (this.props.currentUser) {
-            cartItems = this.props.cartItems
-        } else {
-            cartItems = JSON.parse(localStorage.getItem('cartItems')) || []
+            let cartNumber = 0
+            let cartItems = this.props.cartItems
+            if (cartItems.length) {
+                cartItems.forEach((item) => {
+                    cartNumber += Number(item.quantity)
+                })
+            }
+            
+            loggedInCartNumber = <div className="cart-caption" onClick={this.handleCart}>{cartNumber}</div>
         }
-        
-        if (cartItems.length) {
-            cartItems.forEach((item) => {
-                cartNumber += Number(item.quantity)
-            })
-        }
+
 
         return (
             <header className="header">
@@ -83,7 +82,7 @@ class Header extends React.Component {
                 <img className="account-icon" onClick={this.handleAccount} src={window.accountIcon} alt="account-icon" /> 
                 <div>
                     <img className="cart-icon" onClick={this.handleCart} src={window.cartIcon} alt="cart-icon" /> 
-                    <h2 className="cart-caption" onClick={this.handleCart}>{cartNumber}</h2>
+                    {loggedInCartNumber}
                 </div>
             </header>
         );

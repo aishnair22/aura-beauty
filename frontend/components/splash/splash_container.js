@@ -4,7 +4,7 @@ import { fetchCategories } from '../../actions/category_actions'
 
 const mSTP = (state) => {
     return({
-
+        currentUser: state.session.currentUser
     })
 }
 

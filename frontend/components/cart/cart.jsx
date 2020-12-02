@@ -2,6 +2,7 @@ import React from 'react';
 import CartItem from './cart_item'
 import {Link} from 'react-router-dom'
 import LoadingPage from '../loading'
+import CartNumber from '../cart/cart_number'
 
 class Cart extends React.Component {
     constructor(props) {
@@ -97,7 +98,7 @@ class Cart extends React.Component {
                         }
                         let localStorageIdx = idx
 
-                        return <CartItem key={idx} updatedLocalStorage={this.updatedLocalStorage} localStorageIdx={localStorageIdx} cartItem={cartItem} cartItems={this.props.cartItems} photoUrl={photoUrl} updateCartItem={this.props.updateCartItem} deleteCartItem={this.props.deleteCartItem} />
+                        return <CartItem key={idx} updatedLocalStorage={this.updatedLocalStorage} localStorageIdx={localStorageIdx} cartItem={cartItem} cartItems={this.props.cartItems} photoUrl={photoUrl} updateCartItem={this.props.updateCartItem} deleteCartItem={this.props.deleteCartItem} currentUser={this.props.currentUser} />
                     })}
                 </ul>
             )
@@ -110,8 +111,15 @@ class Cart extends React.Component {
             shipping = 4.99
         }
 
+        let cartNumber
+        if (!this.props.currentUser) {
+            cartNumber = <CartNumber />
+        }
+
         return(
             <div className="cart">
+                {cartNumber}
+                
                 <div className="cart-header">
                     <h1>Your Bag</h1>
                     <Link to="/collections/all" className="continue-shopping">CONTINUE SHOPPING <i className="arrow-right"></i> </Link>

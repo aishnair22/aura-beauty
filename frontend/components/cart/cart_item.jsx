@@ -19,8 +19,7 @@ class CartItem extends React.Component {
 
     handleUpdateQuantity(e) {
         e.preventDefault()       
-        
-        if (this.props.cartItems.length) {
+        if (this.props.currentUser) {
             this.setState({ quantity: e.target.value }, () => this.props.updateCartItem(this.state))        
         } else {
             let cartItems = JSON.parse(localStorage.getItem('cartItems'))
@@ -33,7 +32,7 @@ class CartItem extends React.Component {
 
     handleRemoveItem(e) {
         e.preventDefault()
-        if (this.props.cartItems.length) {
+        if (this.props.currentUser) {
             this.props.deleteCartItem(this.props.cartItem.id)
         } else {
             let cartItems = JSON.parse(localStorage.getItem('cartItems'))
@@ -53,7 +52,6 @@ class CartItem extends React.Component {
         }
 
         return (                
-
             <div className="cart-item">
 
                 <img src={this.props.photoUrl} alt="cart-item-image"/>

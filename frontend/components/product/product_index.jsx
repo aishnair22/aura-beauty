@@ -6,6 +6,7 @@ class ProductIndex extends React.Component {
     constructor(props) {
         super(props)
         this.handleCategory = this.handleCategory.bind(this)
+        this.rerenderParent = this.rerenderParent.bind(this)
         const urlCategory = this.props.match.url.split("/")
         this.state = { selectedCategory: urlCategory[urlCategory.length - 1] }
     
@@ -37,13 +38,19 @@ class ProductIndex extends React.Component {
         }
     }
 
+    rerenderParent() {
+        this.forceUpdate();
+    }
+
     render() {
+        
         if (!this.props.products.length || !this.props.shades.length) {
             return <LoadingPage />
         }
 
         return(
             <div className="product-index-content">
+                
                 <h1>{this.props.categoryName}</h1>
                 <h2>CATEGORIES</h2>
                 <button className={this.state.all} onClick={() => this.handleCategory("all")}>All</button>
@@ -67,6 +74,7 @@ class ProductIndex extends React.Component {
                             currentCart={this.props.currentCart} 
                             createCartItem={this.props.createCartItem} 
                             updateCartItem={this.props.updateCartItem} 
+                            rerenderParent={this.rerenderParent}
                         />
                     })}
                 </ul>

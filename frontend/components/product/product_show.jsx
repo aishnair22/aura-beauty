@@ -1,5 +1,6 @@
 import React from 'react'
 import LoadingPage from '../loading'
+import CartNumber from '../cart/cart_number'
 
 class ProductShow extends React.Component {
     constructor(props) {
@@ -210,8 +211,15 @@ class ProductShow extends React.Component {
             cartButtonText = `ADD TO BAG • $${ product.price }`
         }
 
+        let cartNumber
+        if (!this.props.currentUser) {
+            cartNumber = <CartNumber />
+        }
+
         return(
             <div className="product-show">
+                {cartNumber}
+
                 <div className="product-first-component">
                     <div className="product-side-info">
                         <h1>{product.name}</h1>
@@ -286,8 +294,6 @@ class ProductShow extends React.Component {
                     <p className="quote">"{product.quote}"</p>
                     <h1>SELENA GOMEZ</h1>
                 </div>
-
-                {/* Reviews */}
 
             </div>
         )

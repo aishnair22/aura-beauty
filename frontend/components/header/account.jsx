@@ -1,4 +1,5 @@
 import React from 'react'
+import CartNumber from '../cart/cart_number'
 
 class Account extends React.Component {
     constructor(props) {
@@ -77,8 +78,15 @@ class Account extends React.Component {
         ) : (
             null
         )
+
+        let cartNumber
+        if (!this.props.currentUser) {
+            cartNumber = <CartNumber />
+        }
+
         return(
             <div>
+                {cartNumber}
                 {account}
             </div>
         )

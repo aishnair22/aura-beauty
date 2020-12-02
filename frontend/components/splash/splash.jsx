@@ -1,6 +1,6 @@
 import React from "react"
 import {Link} from 'react-router-dom'
-import { fetchCategories } from "../../actions/category_actions"
+import CartNumber from '../cart/cart_number'
 
 class Splash extends React.Component {
     constructor(props) {
@@ -18,9 +18,14 @@ class Splash extends React.Component {
     }
 
     render() {
+        let cartNumber
+        if (!this.props.currentUser) {
+            cartNumber = <CartNumber />
+        }
        
         return(
             <div className="splash">
+                {cartNumber}
                 <div className="splash-first-component">
                     <img src={window.splash_foundation} alt="foundation-image"/>
                     <div className="blot">
