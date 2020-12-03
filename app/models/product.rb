@@ -38,7 +38,7 @@ class Product < ApplicationRecord
 
     def self.search(query)
         if query != nil
-            return self.where("LOWER(name) LIKE ? OR LOWER(details) LIKE ? OR LOWER(description) LIKE ?", "%#{query}%", "%#{query}%", "%#{query}%")
+            return self.where("LOWER(name) ILIKE ? OR LOWER(details) ILIKE ? OR LOWER(description) ILIKE ?", "%#{query}%", "%#{query}%", "%#{query}%")            
         else 
             return Product.all
         end
