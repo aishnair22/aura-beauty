@@ -4,10 +4,15 @@ import { Link } from 'react-router-dom'
 class Header extends React.Component {
     constructor(props) {
         super(props)
-        this.state = {updated: ""}
+        this.state = {
+            updated: "",
+            query: ""
+        }
         this.handleAccount = this.handleAccount.bind(this)
         this.handleLogo = this.handleLogo.bind(this)
         this.handleCart = this.handleCart.bind(this)
+        this.handleChange = this.handleChange.bind(this)
+        this.handleSubmitQuery = this.handleSubmitQuery.bind(this)
         this.updatedLocalStorage = this.updatedLocalStorage.bind(this)
     }
 
@@ -38,6 +43,17 @@ class Header extends React.Component {
     handleCart(e) {
         e.preventDefault()
         this.props.history.push("/cart")
+    }
+
+    handleChange(e) {
+        e.preventDefault()
+        this.setState({ query: e.target.value})
+    }
+
+    handleSubmitQuery(e) {
+        e.preventDefault()
+        new Promise(() => this.props.history.push(`/search/${this.state.query}`))
+            .then(this.setState({query: ""}))
     }
 
     render() {
@@ -78,7 +94,12 @@ class Header extends React.Component {
                     </div>
                 </div>
                 <h1 className="logo" onClick={this.handleLogo}>Aura Beauty</h1>
-                {/* <img className="search-icon" onClick={this.handleAccount} src={window.searchIcon} alt="search-icon"/>  */}
+                <div className="search-bar">
+                    <img src={window.searchIcon} alt="search-icon"/> 
+                    <form onSubmit={this.handleSubmitQuery}>
+                        <input type="text" value={this.state.query} placeholder="Search" onChange={this.handleChange}/>
+                    </form>
+                </div>
                 <img className="account-icon" onClick={this.handleAccount} src={window.accountIcon} alt="account-icon" /> 
                 <div>
                     <img className="cart-icon" onClick={this.handleCart} src={window.cartIcon} alt="cart-icon" /> 

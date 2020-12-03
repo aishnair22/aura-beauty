@@ -2,7 +2,7 @@ import React from "react"
 import ReactDOM from "react-dom"
 import configureStore from "./store/store"
 import Root from "./components/root"
-// import { fetchAllCartItems } from './actions/cart_item_actions'
+import { queryProducts } from './actions/product_actions'
 
 document.addEventListener("DOMContentLoaded", () => {
     let store
@@ -24,6 +24,6 @@ document.addEventListener("DOMContentLoaded", () => {
     //testing
     window.store = store
     window.dispatch = store.dispatch
-    // window.fetchAllCartItems = fetchAllCartItems
+    window.queryProducts = queryProducts
 })
 

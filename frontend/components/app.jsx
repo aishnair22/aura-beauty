@@ -13,6 +13,7 @@ import EyeContainer from './product/eye_container'
 import ToolsContainer from './product/tools_container'
 import ProductShowContainer from './product/product_show_container'
 import CartContainer from './cart/cart_container'
+import SearchContainer from './search/search_container'
 import NotFoundPage from './not_found/not_found_page'
 import { Route, Switch } from 'react-router-dom';
 import { AuthRoute, ProtectedRoute } from '../util/route_utils'
@@ -32,9 +33,8 @@ export default () => (
             <Route exact path="/collections/eye" component={EyeContainer} />
             <Route exact path="/collections/tools" component={ToolsContainer} />
             <Route exact path="/products/:productName~:productId" component={ProductShowContainer} />
-
             <Route exact path="/cart" component={CartContainer}/>
-
+            <Route exact path="/search/:query" component={SearchContainer}/>
             <ProtectedRoute exact path="/account" component={AccountContainer}/>
             <AuthRoute exact path="/signup" component={SignupContainer} />
             <AuthRoute exact path="/login" component={LoginContainer} />

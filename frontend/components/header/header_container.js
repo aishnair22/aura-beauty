@@ -2,6 +2,7 @@ import { connect } from 'react-redux';
 import Header from './header';
 import {withRouter} from 'react-router-dom'
 import { fetchAllCartItems } from '../../actions/cart_item_actions'
+import { queryProducts } from '../../actions/product_actions'
 
 const mapStateToProps = (state) => {
     return ({
@@ -11,7 +12,8 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = (dispatch) => ({
-    fetchAllCartItems: () => dispatch(fetchAllCartItems())
+    fetchAllCartItems: () => dispatch(fetchAllCartItems()),
+    queryProducts: (query) => dispatch(queryProducts(query))
 });
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Header));

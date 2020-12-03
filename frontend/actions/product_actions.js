@@ -27,3 +27,8 @@ export const fetchProduct = (productId) => (dispatch) => {
     return ProductApiUtil.fetchProduct(productId)
         .then(product => dispatch(receiveProduct(product)))
 }
+
+export const queryProducts = (query) => (dispatch) => {
+    return ProductApiUtil.queryProducts(query)
+        .then(products => dispatch(receiveAllProducts(products)))
+}
