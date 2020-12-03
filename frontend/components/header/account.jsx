@@ -64,12 +64,12 @@ class Account extends React.Component {
                 <h1>My Account</h1>
                 <div className="account">
                     <div className="account-sidebar">
-                        {/* button that will have text "My Info" that will load on the main */}
-                        <button onClick={this.handleSubmit}>Log Out</button>
+                        <button className="my-info-btn">My Info</button>
+                        <button className="log-out-btn" onClick={this.handleSubmit}>Log Out</button>
                     </div>
                     
                     <div className="account-main">
-                        <h1>My Info</h1>
+                        <h2>My Info</h2>
                         <h3>Name: {this.props.currentUser.first_name} {this.props.currentUser.last_name}</h3>
                         <h3>Email: {this.props.currentUser.email}</h3>
                     </div>

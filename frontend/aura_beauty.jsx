@@ -2,7 +2,7 @@ import React from "react"
 import ReactDOM from "react-dom"
 import configureStore from "./store/store"
 import Root from "./components/root"
-import { queryProducts } from './actions/product_actions'
+// import { queryProducts } from './actions/product_actions'
 
 document.addEventListener("DOMContentLoaded", () => {
     let store
@@ -22,8 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
     ReactDOM.render(<Root store={store} />, root);
 
     //testing
-    window.store = store
-    window.dispatch = store.dispatch
-    window.queryProducts = queryProducts
+    // window.store = store
+    // window.dispatch = store.dispatch
+    // window.queryProducts = queryProducts
 })
 

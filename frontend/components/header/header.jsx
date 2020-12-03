@@ -74,7 +74,7 @@ class Header extends React.Component {
         return (
             <header className="header">
                 <div className="dropdown">
-                    <Link to="/" className="dropdown-shop">SHOP</Link>
+                    <Link to="/collections/all" className="dropdown-shop">SHOP</Link>
                     <div className="dropdown-content">
                         <Link to="/collections/all" className="dropdown-links" >Shop All                   
                             <img className="downdown-img" src={window.shopAll } alt="shop-all-image"/>

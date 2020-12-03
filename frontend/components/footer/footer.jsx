@@ -7,7 +7,7 @@ function Footer() {
                 <div className="footer-name">
                     by Aishwarya Nair
                 </div>
-                <a className="footer-link" href="https://github.com/aishnair22/" target="_blank">GITHUB</a>
+                <a className="footer-link" href="https://github.com/aishnair22/aura-beauty" target="_blank">GITHUB</a>
                 <a className="footer-link" href="https://www.linkedin.com/in/aishwarya-nair22/" target="_blank">LINKEDIN</a>
             </div>
             <div className="footer-logo">

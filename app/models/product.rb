@@ -31,9 +31,7 @@ class Product < ApplicationRecord
 
     #active storage associations:
     has_many_attached :photos
-
     has_one_attached :details_photo
-
     has_one_attached :how_to_use_photo
 
     def self.search(query)

@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom'
-import { fetchAllCartItems, createCartItem, updateCartItem, deleteCartItem, deleteAllCartItems } from '../../actions/cart_item_actions'
+import { fetchAllCartItems, updateCartItem, deleteCartItem, deleteAllCartItems } from '../../actions/cart_item_actions'
 import { fetchAllShades } from '../../actions/shade_actions'
 import { fetchAllProducts } from '../../actions/product_actions'
 import Cart from './cart';

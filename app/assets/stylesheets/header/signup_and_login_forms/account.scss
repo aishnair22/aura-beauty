@@ -2,14 +2,14 @@
     display: flex;
     flex-direction: column;
     background: $light-pink;
-    padding-bottom: 200px;
+    min-height: 100vh;
 }
 
 .account-all > h1 {
     font-family: $title;
     font-size: 55px;
-    margin-left: 6%;
-    margin-top: 150px;
+    margin-top: 10%;
+    margin-left: 13%;
 }
 
 .account {
@@ -19,13 +19,15 @@
 
 .account-sidebar {
     border-right: 1px solid $dark-gray; 
-    margin-left: 8%;
+    margin-left: 13%;
     margin-top: 2%;
     padding-right: 2%;
-    height: 70vh;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
 }
 
-.account-sidebar > button {
+.log-out-btn {
     background: $maroon;
     font-family: $body;
     font-size: 15px;
@@ -33,12 +35,26 @@
     border: 1px solid transparent;
     padding: 10px 15px;
     text-align: left;
-    width: 300px;
+    width: 270px;
     height: 40px;
     transition: all 0.6s ease;
 }
 
-.account-sidebar > button:hover {
+.my-info-btn {
+    background-color: $light-pink;
+    font-family: $body;
+    font-size: 15px;
+    color: $maroon;
+    border: 1px solid $maroon;
+    padding: 10px 15px;
+    text-align: left;
+    width: 270px;
+    height: 40px;
+    transition: all 0.6s ease;
+    margin-bottom: 6%;
+}
+
+.log-out-btn:hover {
     cursor: pointer;
     background-color: $light-pink;
     color: $maroon;
@@ -51,17 +67,16 @@
     margin-left: 5%;
 }
 
-.account-main > h1 {
+.account-main > h2 {
     font-family: $title;
     font-size: 55px;
-    margin-top: 2%;
-    padding-bottom: 10%;
+    margin-bottom: 12%;
 }
 
 
 .account-main > h3 {
     font-family: $body;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     padding-bottom: 10px;
 }
