@@ -55,7 +55,7 @@ class Search extends React.Component {
                 <div className="search-page">
                     <CartNumber />
                     <h5>Oops! No results found.</h5>
-                    <Link to="/collections/all" className="search-shop-all">CONTINUE SHOPPING <i className="arrow-right"></i></Link>
+                    <Link to="/" className="search-shop-all">CONTINUE SHOPPING <i className="arrow-right"></i></Link>
                 </div>
             )
         }
