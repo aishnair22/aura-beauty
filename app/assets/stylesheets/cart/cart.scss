@@ -131,9 +131,10 @@
 
 .checkout-modal {
     position: fixed;
-    top: 20%;
-    left: 25%;
-    z-index: 111;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    z-index: 150;
     background-color: $dark-pink;
     box-shadow: 0 0 0.625rem 0 rgba(192,187,180,0.5);
     display: inline-block;
@@ -193,8 +194,6 @@
 }
 
 
-
-
 .checkout-modal-screen {
     position: fixed;
     top: 0;
@@ -203,5 +202,5 @@
     right: 0;
     background-color: $light-pink;
     opacity: 1;
-    z-index: 100;
+    z-index: 115;
 }

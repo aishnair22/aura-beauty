@@ -149,7 +149,7 @@ class Cart extends React.Component {
                         </div>
                         
                         {buttons}
-
+                        
                         <div className={`modal ${this.state.checkedOut}`}>
                             <div className="checkout-modal">
                                 <span>Aura Beauty</span>
