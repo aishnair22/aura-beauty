@@ -18,9 +18,9 @@ class Search extends React.Component {
     }
     
     componentDidMount() {
+        this.props.fetchAllShades()
         this.props.queryProducts(this.props.match.params.query)
             .then(() => this.setState({loaded: true}))
-        this.props.fetchAllShades()
     }
 
     rerenderParent() {
