@@ -2,19 +2,24 @@ import React from 'react';
 import { Link } from "react-router-dom"
 import ProductIndexItem from "../product/product_index_item";
 import CartNumber from "../cart/cart_number"
+import LoadingPage from "../loading"
 
 class Search extends React.Component {
     constructor(props) {
         super(props)
+        this.state = {loaded: false}
         this.rerenderParent = this.rerenderParent.bind(this)
     }
 
-    componentWillUpdate() {
-        this.props.queryProducts(this.props.match.params.query)
+    componentWillReceiveProps(prevProps, nextProps) {
+        if (prevProps.match.params.query != this.props.match.params.query) {
+            this.props.queryProducts(prevProps.match.params.query)
+        }
     }
     
     componentDidMount() {
         this.props.queryProducts(this.props.match.params.query)
+            .then(() => this.setState({loaded: true}))
         this.props.fetchAllShades()
     }
 
@@ -23,6 +28,9 @@ class Search extends React.Component {
     }
 
     render() {
+        if (!this.state.loaded) {
+            return <LoadingPage />
+        }
 
         if (this.props.products.length) {
             return (
