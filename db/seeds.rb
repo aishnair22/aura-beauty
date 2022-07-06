@@ -31,17 +31,17 @@ foundation = Product.create!(
     category_id: face.id
 )
 
-foundation_photo1 = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/face/foundation/photos/foundation-doefoot.jpg')
+foundation_photo1 = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/face/foundation/photos/foundation-doefoot.jpg')
 foundation.photos.attach(io: foundation_photo1, filename: 'foundation-doefoot.jpg')
-foundation_photo2 = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/face/foundation/photos/foundation-arm-swatch-one.jpg')
+foundation_photo2 = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/face/foundation/photos/foundation-arm-swatch-one.jpg')
 foundation.photos.attach(io: foundation_photo2, filename: 'foundation-arm-swatch-one.jpg')
-foundation_photo3 = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/face/foundation/photos/foundation-arm-swatch-two.jpg')
+foundation_photo3 = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/face/foundation/photos/foundation-arm-swatch-two.jpg')
 foundation.photos.attach(io: foundation_photo3, filename: 'foundation-arm-swatch-two.jpg')
 
-foundation_details = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/face/foundation/foundation-details.png')
+foundation_details = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/face/foundation/foundation-details.png')
 foundation.details_photo.attach(io: foundation_details, filename: 'foundation-details.png')
 
-foundation_howto = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/face/foundation/foundation-how-to-use.jpg')
+foundation_howto = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/face/foundation/foundation-how-to-use.jpg')
 foundation.how_to_use_photo.attach(io: foundation_howto, filename: 'foundation-how-to-use.jpg')
 ####################################################################
 
@@ -56,17 +56,17 @@ concealer = Product.create!(
     category_id: face.id
 )
 
-concealer_photo1 = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/face/concealer/photos/concealer-doefoot.jpg')
+concealer_photo1 = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/face/concealer/photos/concealer-doefoot.jpg')
 concealer.photos.attach(io: concealer_photo1, filename: 'concealer-doefoot.jpg')
-concealer_photo2 = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/face/concealer/photos/concealer-arm-swatch-one.jpg')
+concealer_photo2 = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/face/concealer/photos/concealer-arm-swatch-one.jpg')
 concealer.photos.attach(io: concealer_photo2, filename: 'concealer-arm-swatch-one.jpg')
-concealer_photo3 = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/face/concealer/photos/concealer-arm-swatch-two.jpg')
+concealer_photo3 = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/face/concealer/photos/concealer-arm-swatch-two.jpg')
 concealer.photos.attach(io: concealer_photo3, filename: 'concealer-arm-swatch-two.jpg')
 
-concealer_details = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/face/concealer/concealer-details.png')
+concealer_details = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/face/concealer/concealer-details.png')
 concealer.details_photo.attach(io: concealer_details, filename: 'concealer-details.png')
 
-concealer_howto = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/face/concealer/concealer-how-to-use.jpg')
+concealer_howto = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/face/concealer/concealer-how-to-use.jpg')
 concealer.how_to_use_photo.attach(io: concealer_howto, filename: 'concealer-how-to-use.jpg')
 ####################################################################
 
@@ -81,13 +81,13 @@ blush = Product.create!(
     category_id: face.id
 )
 
-blush_photo1 = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/face/blush/photos/blush-doefoot.jpg')
+blush_photo1 = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/face/blush/photos/blush-doefoot.jpg')
 blush.photos.attach(io: blush_photo1, filename: 'blush-doefoot.jpg')
 
-blush_details = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/face/blush/blush-details.png')
+blush_details = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/face/blush/blush-details.png')
 blush.details_photo.attach(io: blush_details, filename: 'blush-details.png')
 
-blush_howto = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/face/blush/blush-how-to-use.jpg')
+blush_howto = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/face/blush/blush-how-to-use.jpg')
 blush.how_to_use_photo.attach(io: blush_howto, filename: 'blush-how-to-use.jpg')
 ####################################################################
 
@@ -102,15 +102,15 @@ highlight = Product.create!(
     category_id: face.id
 )
 
-highlight_photo1 = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/face/highlight/photos/highlight-doefoot.jpg')
+highlight_photo1 = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/face/highlight/photos/highlight-doefoot.jpg')
 highlight.photos.attach(io: highlight_photo1, filename: 'highlight-doefoot.jpg')
-highlight_photo2 = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/face/highlight/photos/highlight-arm-swatches.jpg')
+highlight_photo2 = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/face/highlight/photos/highlight-arm-swatches.jpg')
 highlight.photos.attach(io: highlight_photo2, filename: 'highlight-arm-swatches.jpg')
 
-highlight_details = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/face/highlight/highlight-details.png')
+highlight_details = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/face/highlight/highlight-details.png')
 highlight.details_photo.attach(io: highlight_details, filename: 'highlight-details.png')
 
-highlight_howto = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/face/highlight/highlight-how-to-use.jpg')
+highlight_howto = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/face/highlight/highlight-how-to-use.jpg')
 highlight.how_to_use_photo.attach(io: highlight_howto, filename: 'highlight-how-to-use.jpg')
 ####################################################################
 
@@ -125,15 +125,15 @@ mist = Product.create!(
     category_id: face.id
 )
 
-mist_photo1 = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/face/mist/photos/mist-one.jpg')
+mist_photo1 = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/face/mist/photos/mist-one.jpg')
 mist.photos.attach(io: mist_photo1, filename: 'mist-one.jpg')
-mist_photo2 = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/face/mist/photos/mist-two.jpg')
+mist_photo2 = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/face/mist/photos/mist-two.jpg')
 mist.photos.attach(io: mist_photo2, filename: 'mist-two.jpg')
 
-mist_details = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/face/mist/mist-details.png')
+mist_details = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/face/mist/mist-details.png')
 mist.details_photo.attach(io: mist_details, filename: 'mist-details.png')
 
-mist_howto = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/face/mist/mist-how-to-use.jpg')
+mist_howto = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/face/mist/mist-how-to-use.jpg')
 mist.how_to_use_photo.attach(io: mist_howto, filename: 'mist-how-to-use.jpg')
 ####################################################################
 
@@ -148,17 +148,17 @@ primer = Product.create!(
     category_id: face.id
 )
 
-primer_photo1 = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/face/primer/photos/primer-one.jpg')
+primer_photo1 = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/face/primer/photos/primer-one.jpg')
 primer.photos.attach(io: primer_photo1, filename: 'primer-one.jpg')
-primer_photo2 = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/face/primer/photos/primer-two.jpg')
+primer_photo2 = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/face/primer/photos/primer-two.jpg')
 primer.photos.attach(io: primer_photo2, filename: 'primer-two.jpg')
-primer_photo3 = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/face/primer/photos/primer-swatch.png')
+primer_photo3 = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/face/primer/photos/primer-swatch.png')
 primer.photos.attach(io: primer_photo3, filename: 'primer-swatch.png')
 
-primer_details = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/face/primer/primer-details.png')
+primer_details = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/face/primer/primer-details.png')
 primer.details_photo.attach(io: primer_details, filename: 'primer-details.png')
 
-primer_howto = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/face/primer/primer-how-to-use.jpg')
+primer_howto = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/face/primer/primer-how-to-use.jpg')
 primer.how_to_use_photo.attach(io: primer_howto, filename: 'primer-how-to-use.jpg')
 ####################################################################
 
@@ -173,17 +173,17 @@ blot = Product.create!(
     category_id: face.id
 )
 
-blot_photo1 = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/face/blot/photos/blot-one.jpg')
+blot_photo1 = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/face/blot/photos/blot-one.jpg')
 blot.photos.attach(io: blot_photo1, filename: 'blot-one.jpg')
-blot_photo2 = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/face/blot/photos/blot-two.jpg')
+blot_photo2 = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/face/blot/photos/blot-two.jpg')
 blot.photos.attach(io: blot_photo2, filename: 'blot-two.jpg')
-blot_photo3 = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/face/blot/photos/blot-three.jpg')
+blot_photo3 = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/face/blot/photos/blot-three.jpg')
 blot.photos.attach(io: blot_photo3, filename: 'blot-three.jpg')
 
-blot_details = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/face/blot/blot-details.png')
+blot_details = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/face/blot/blot-details.png')
 blot.details_photo.attach(io: blot_details, filename: 'blot-details.png')
 
-blot_howto = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/face/blot/blot-how-to-use.jpg')
+blot_howto = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/face/blot/blot-how-to-use.jpg')
 blot.how_to_use_photo.attach(io: blot_howto, filename: 'blot-how-to-use.jpg')
 ####################################################################
 
@@ -200,19 +200,19 @@ liner = Product.create!(
     category_id: eye.id
 )
 
-liner_photo1 = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/eye/liner/photos/liner-one.jpg')
+liner_photo1 = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/eye/liner/photos/liner-one.jpg')
 liner.photos.attach(io: liner_photo1, filename: 'liner-one.jpg')
-liner_photo2 = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/eye/liner/photos/liner-two.jpg')
+liner_photo2 = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/eye/liner/photos/liner-two.jpg')
 liner.photos.attach(io: liner_photo2, filename: 'liner-two.jpg')
-liner_photo3 = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/eye/liner/photos/liner-three.jpg')
+liner_photo3 = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/eye/liner/photos/liner-three.jpg')
 liner.photos.attach(io: liner_photo3, filename: 'liner-three.jpg')
-liner_photo4 = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/eye/liner/photos/liner-swatch.png')
+liner_photo4 = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/eye/liner/photos/liner-swatch.png')
 liner.photos.attach(io: liner_photo4, filename: 'liner-swatch.png')
 
-liner_details = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/eye/liner/liner-details.png')
+liner_details = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/eye/liner/liner-details.png')
 liner.details_photo.attach(io: liner_details, filename: 'liner-details.png')
 
-liner_howto = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/eye/liner/liner-how-to-use.jpg')
+liner_howto = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/eye/liner/liner-how-to-use.jpg')
 liner.how_to_use_photo.attach(io: liner_howto, filename: 'liner-how-to-use.jpg')
 ####################################################################
 
@@ -227,15 +227,15 @@ brow_pencil = Product.create!(
     category_id: eye.id
 )
 
-brow_pencil_photo1 = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/eye/brow/photos/brow-one.jpg')
+brow_pencil_photo1 = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/eye/brow/photos/brow-one.jpg')
 brow_pencil.photos.attach(io: brow_pencil_photo1, filename: 'brow-one.jpg')
-brow_pencil_photo2 = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/eye/brow/photos/brow-two.jpg')
+brow_pencil_photo2 = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/eye/brow/photos/brow-two.jpg')
 brow_pencil.photos.attach(io: brow_pencil_photo2, filename: 'brow-two.jpg')
 
-brow_pencil_details = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/eye/brow/brow-details.png')
+brow_pencil_details = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/eye/brow/brow-details.png')
 brow_pencil.details_photo.attach(io: brow_pencil_details, filename: 'brow-details.png')
 
-brow_pencil_howto = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/eye/brow/brow-how-to-use.jpg')
+brow_pencil_howto = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/eye/brow/brow-how-to-use.jpg')
 brow_pencil.how_to_use_photo.attach(io: brow_pencil_howto, filename: 'brow-how-to-use.jpg')
 ####################################################################
 
@@ -252,15 +252,15 @@ lip_balm = Product.create!(
     category_id: lip.id
 )
 
-lip_balm_photo1 = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/lip/balm/photos/lip-balm-one.jpg')
+lip_balm_photo1 = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/lip/balm/photos/lip-balm-one.jpg')
 lip_balm.photos.attach(io: lip_balm_photo1, filename: 'lip-balm-one.jpg')
-lip_balm_photo2 = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/lip/balm/photos/lip-balm-arm-swatches.jpg')
+lip_balm_photo2 = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/lip/balm/photos/lip-balm-arm-swatches.jpg')
 lip_balm.photos.attach(io: lip_balm_photo2, filename: 'lip-balm-arm-swatches.jpg')
 
-lip_balm_details = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/lip/balm/lip-balm-details.png')
+lip_balm_details = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/lip/balm/lip-balm-details.png')
 lip_balm.details_photo.attach(io: lip_balm_details, filename: 'lip-balm-details.png')
 
-lip_balm_howto = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/lip/balm/lip-balm-how-to-use.jpg')
+lip_balm_howto = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/lip/balm/lip-balm-how-to-use.jpg')
 lip_balm.how_to_use_photo.attach(io: lip_balm_howto, filename: 'lip-balm-how-to-use.jpg')
 ####################################################################
 
@@ -275,15 +275,15 @@ lip_cream = Product.create!(
     category_id: lip.id
 )
 
-lip_cream_photo1 = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/lip/liquid/photos/lip-cream-doefoot.jpg')
+lip_cream_photo1 = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/lip/liquid/photos/lip-cream-doefoot.jpg')
 lip_cream.photos.attach(io: lip_cream_photo1, filename: 'lip-cream-doefoot.jpg')
-lip_cream_photo2 = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/lip/liquid/photos/lip-cream-arm-swatches.jpg')
+lip_cream_photo2 = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/lip/liquid/photos/lip-cream-arm-swatches.jpg')
 lip_cream.photos.attach(io: lip_cream_photo2, filename: 'lip-cream-arm-swatches.jpg')
 
-lip_cream_details = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/lip/liquid/lip-cream-details.png')
+lip_cream_details = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/lip/liquid/lip-cream-details.png')
 lip_cream.details_photo.attach(io: lip_cream_details, filename: 'lip-cream-details.png')
 
-lip_cream_howto = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/lip/liquid/lip-cream-how-to-use.jpg')
+lip_cream_howto = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/lip/liquid/lip-cream-how-to-use.jpg')
 lip_cream.how_to_use_photo.attach(io: lip_cream_howto, filename: 'lip-cream-how-to-use.jpg')
 ####################################################################
 
@@ -300,15 +300,15 @@ foundation_brush = Product.create!(
     category_id: tools.id
 )
 
-foundation_brush_photo1 = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/tools/foudation+brush/photos/foundation-brush-one.jpg')
+foundation_brush_photo1 = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/tools/foudation+brush/photos/foundation-brush-one.jpg')
 foundation_brush.photos.attach(io: foundation_brush_photo1, filename: 'foundation-brush-one.jpg')
-foundation_brush_photo2 = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/tools/foudation+brush/photos/foundation-brush-two.jpg')
+foundation_brush_photo2 = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/tools/foudation+brush/photos/foundation-brush-two.jpg')
 foundation_brush.photos.attach(io: foundation_brush_photo2, filename: 'foundation-brush-two.jpg')
 
-foundation_brush_details = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/tools/foudation+brush/foundation-brush-details.png')
+foundation_brush_details = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/tools/foudation+brush/foundation-brush-details.png')
 foundation_brush.details_photo.attach(io: foundation_brush_details, filename: 'foundation-brush-details.png')
 
-foundation_brush_howto = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/tools/foudation+brush/foundation-brush-how-to-use.jpg')
+foundation_brush_howto = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/tools/foudation+brush/foundation-brush-how-to-use.jpg')
 foundation_brush.how_to_use_photo.attach(io: foundation_brush_howto, filename: 'foundation-brush-how-to-use.jpg')
 ####################################################################
 
@@ -323,15 +323,15 @@ concealer_brush = Product.create!(
     category_id: tools.id
 )
 
-concealer_brush_photo1 = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/tools/concealer+brush/photos/concealer-brush-one.jpg')
+concealer_brush_photo1 = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/tools/concealer+brush/photos/concealer-brush-one.jpg')
 concealer_brush.photos.attach(io: concealer_brush_photo1, filename: 'concealer-brush-one.jpg')
-concealer_brush_photo2 = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/tools/concealer+brush/photos/concealer-brush-two.jpg')
+concealer_brush_photo2 = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/tools/concealer+brush/photos/concealer-brush-two.jpg')
 concealer_brush.photos.attach(io: concealer_brush_photo2, filename: 'concealer-brush-two.jpg')
 
-concealer_brush_details = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/tools/concealer+brush/concealer-brush-details.png')
+concealer_brush_details = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/tools/concealer+brush/concealer-brush-details.png')
 concealer_brush.details_photo.attach(io: concealer_brush_details, filename: 'concealer-brush-details.png')
 
-concealer_brush_howto = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/tools/concealer+brush/concealer-brush-how-to-use.jpg')
+concealer_brush_howto = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/tools/concealer+brush/concealer-brush-how-to-use.jpg')
 concealer_brush.how_to_use_photo.attach(io: concealer_brush_howto, filename: 'concealer-brush-how-to-use.jpg')
 ####################################################################
 
@@ -346,15 +346,15 @@ sponge = Product.create!(
     category_id: tools.id
 )
 
-sponge_photo1 = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/tools/sponge/photos/sponge-one.jpg')
+sponge_photo1 = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/tools/sponge/photos/sponge-one.jpg')
 sponge.photos.attach(io: sponge_photo1, filename: 'sponge-one.jpg')
-sponge_photo2 = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/tools/sponge/photos/sponge-two.jpg')
+sponge_photo2 = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/tools/sponge/photos/sponge-two.jpg')
 sponge.photos.attach(io: sponge_photo2, filename: 'sponge-two.jpg')
 
-sponge_details = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/tools/sponge/sponge-details.png')
+sponge_details = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/tools/sponge/sponge-details.png')
 sponge.details_photo.attach(io: sponge_details, filename: 'sponge-details.png')
 
-sponge_howto = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/product+images/tools/sponge/sponge-how-to-use.jpg')
+sponge_howto = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/product+images/tools/sponge/sponge-how-to-use.jpg')
 sponge.how_to_use_photo.attach(io: sponge_howto, filename: 'sponge-how-to-use.jpg')
 ####################################################################
 
@@ -363,49 +363,49 @@ sponge.how_to_use_photo.attach(io: sponge_howto, filename: 'sponge-how-to-use.jp
 # foundation:
 f_100W = Shade.create!(name: "100W", product_id: foundation.id)
 
-f_100W_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-100W-swatch.png')
+f_100W_swatch = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-100W-swatch.png')
 f_100W.swatch_photo.attach(io: f_100W_swatch, filename: 'F-100W-swatch.png')
-f_100W_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-100W-product.jpg')
+f_100W_product = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-100W-product.jpg')
 f_100W.product_photo.attach(io: f_100W_product, filename: 'F-100W-product.jpg')
 ####################################################################
 
 f_180W = Shade.create!(name: "180W", product_id: foundation.id)
 
-f_180W_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-180W-product.jpg')
+f_180W_product = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-180W-product.jpg')
 f_180W.product_photo.attach(io: f_180W_product, filename: 'F-180W-product.jpg')
-f_180W_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-180W-swatch.png')
+f_180W_swatch = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-180W-swatch.png')
 f_180W.swatch_photo.attach(io: f_180W_swatch, filename: 'F-180W-swatch.png')
 ####################################################################
 
 f_260N = Shade.create!(name: "260N", product_id: foundation.id)
 
-f_260N_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-260N-product.jpg')
+f_260N_product = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-260N-product.jpg')
 f_260N.product_photo.attach(io: f_260N_product, filename: 'F-260N-product.jpg')
-f_260N_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-260N-swatch.png')
+f_260N_swatch = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-260N-swatch.png')
 f_260N.swatch_photo.attach(io: f_260N_swatch, filename: 'F-260N-swatch.png')
 ####################################################################
 
 f_340C = Shade.create!(name: "340C", product_id: foundation.id)
 
-f_340C_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-340C-product.jpg')
+f_340C_product = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-340C-product.jpg')
 f_340C.product_photo.attach(io: f_340C_product, filename: 'F-340C-product.jpg')
-f_340C_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-340C-swatch.png')
+f_340C_swatch = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-340C-swatch.png')
 f_340C.swatch_photo.attach(io: f_340C_swatch, filename: 'F-340C-swatch.png')
 ####################################################################
 
 f_460W = Shade.create!(name: "460W", product_id: foundation.id)
 
-f_460W_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-460W-product.jpg')
+f_460W_product = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-460W-product.jpg')
 f_460W.product_photo.attach(io: f_460W_product, filename: 'F-460W-product.jpg')
-f_460W_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-460W-swatch.png')
+f_460W_swatch = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-460W-swatch.png')
 f_460W.swatch_photo.attach(io: f_460W_swatch, filename: 'F-460W-swatch.png')
 ####################################################################
 
 f_570N = Shade.create!(name: "570N", product_id: foundation.id)
 
-f_570N_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-570N-product.jpg')
+f_570N_product = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-570N-product.jpg')
 f_570N.product_photo.attach(io: f_570N_product, filename: 'F-570N-product.jpg')
-f_570N_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-570N-swatch.png')
+f_570N_swatch = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/face/foundation/F-570N-swatch.png')
 f_570N.swatch_photo.attach(io: f_570N_swatch, filename: 'F-570N-swatch.png')
 ####################################################################
 
@@ -413,49 +413,49 @@ f_570N.swatch_photo.attach(io: f_570N_swatch, filename: 'F-570N-swatch.png')
 # concealer:
 c_100W = Shade.create!(name: "100W", product_id: concealer.id)
 
-c_100W_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-100W-product.jpg')
+c_100W_product = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-100W-product.jpg')
 c_100W.product_photo.attach(io: c_100W_product, filename: 'C-100W-product.jpg')
-c_100W_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-100W-swatch.png')
+c_100W_swatch = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-100W-swatch.png')
 c_100W.swatch_photo.attach(io: c_100W_swatch, filename: 'C-100W-swatch.png')
 ####################################################################
 
 c_180W = Shade.create!(name: "180W", product_id: concealer.id)
 
-c_180W_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-180W-product.jpg')
+c_180W_product = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-180W-product.jpg')
 c_180W.product_photo.attach(io: c_180W_product, filename: 'C-180W-product.jpg')
-c_180W_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-180W-swatch.png')
+c_180W_swatch = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-180W-swatch.png')
 c_180W.swatch_photo.attach(io: c_180W_swatch, filename: 'C-180W-swatch.png')
 ####################################################################
 
 c_260N = Shade.create!(name: "260N", product_id: concealer.id)
 
-c_260N_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-260N-product.jpg')
+c_260N_product = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-260N-product.jpg')
 c_260N.product_photo.attach(io: c_260N_product, filename: 'C-260N-product.jpg')
-c_260N_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-260N-swatch.png')
+c_260N_swatch = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-260N-swatch.png')
 c_260N.swatch_photo.attach(io: c_260N_swatch, filename: 'C-260N-swatch.png')
 ####################################################################
 
 c_340C = Shade.create!(name: "340C", product_id: concealer.id)
 
-c_340C_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-340C-product.jpg')
+c_340C_product = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-340C-product.jpg')
 c_340C.product_photo.attach(io: c_340C_product, filename: 'C-340C-product.jpg')
-c_340C_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-340C-swatch.png')
+c_340C_swatch = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-340C-swatch.png')
 c_340C.swatch_photo.attach(io: c_340C_swatch, filename: 'C-340C-swatch.png')
 ####################################################################
 
 c_460W = Shade.create!(name: "460W", product_id: concealer.id)
 
-c_460W_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-460W-product.jpg')
+c_460W_product = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-460W-product.jpg')
 c_460W.product_photo.attach(io: c_460W_product, filename: 'C-460W-product.jpg')
-c_460W_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-460W-swatch.png')
+c_460W_swatch = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-460W-swatch.png')
 c_460W.swatch_photo.attach(io: c_460W_swatch, filename: 'C-460W-swatch.png')
 ####################################################################
 
 c_570N = Shade.create!(name: "570N", product_id: concealer.id)
 
-c_570N_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-570N-product.jpg')
+c_570N_product = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-570N-product.jpg')
 c_570N.product_photo.attach(io: c_570N_product, filename: 'C-570N-product.jpg')
-c_570N_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-570N-swatch.png')
+c_570N_swatch = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/face/concealer/C-570N-swatch.png')
 c_570N.swatch_photo.attach(io: c_570N_swatch, filename: 'C-570N-swatch.png')
 ####################################################################
 
@@ -463,33 +463,33 @@ c_570N.swatch_photo.attach(io: c_570N_swatch, filename: 'C-570N-swatch.png')
 # blush:
 bliss = Shade.create!(name: "Bliss", product_id: blush.id)
 
-bliss_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/blush/bliss-product.jpg')
+bliss_product = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/face/blush/bliss-product.jpg')
 bliss.product_photo.attach(io: bliss_product, filename: 'bliss-product.jpg')
-bliss_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/blush/bliss-swatch.png')
+bliss_swatch = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/face/blush/bliss-swatch.png')
 bliss.swatch_photo.attach(io: bliss_swatch, filename: 'bliss-swatch.png')
 ####################################################################
 
 faith = Shade.create!(name: "Faith", product_id: blush.id)
 
-faith_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/blush/faith-product.jpg')
+faith_product = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/face/blush/faith-product.jpg')
 faith.product_photo.attach(io: faith_product, filename: 'faith-product.jpg')
-faith_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/blush/faith-swatch.png')
+faith_swatch = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/face/blush/faith-swatch.png')
 faith.swatch_photo.attach(io: faith_swatch, filename: 'faith-swatch.png')
 ####################################################################
 
 grateful = Shade.create!(name: "Grateful", product_id: blush.id)
 
-grateful_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/blush/grateful-product.jpg')
+grateful_product = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/face/blush/grateful-product.jpg')
 grateful.product_photo.attach(io: grateful_product, filename: 'grateful-product.jpg')
-grateful_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/blush/grateful-swatch.png')
+grateful_swatch = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/face/blush/grateful-swatch.png')
 grateful.swatch_photo.attach(io: grateful_swatch, filename: 'grateful-swatch.png')
 ####################################################################
 
 happy = Shade.create!(name: "Happy", product_id: blush.id)
 
-happy_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/blush/happy-product.jpg')
+happy_product = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/face/blush/happy-product.jpg')
 happy.product_photo.attach(io: happy_product, filename: 'happy-product.jpg')
-happy_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/blush/happy-swatch.png')
+happy_swatch = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/face/blush/happy-swatch.png')
 happy.swatch_photo.attach(io: happy_swatch, filename: 'happy-swatch.png')
 ####################################################################
 
@@ -497,33 +497,33 @@ happy.swatch_photo.attach(io: happy_swatch, filename: 'happy-swatch.png')
 # highlight:
 enlighten = Shade.create!(name: "Enlighten", product_id: highlight.id)
 
-enlighten_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/highlight/enlighten-product.jpg')
+enlighten_product = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/face/highlight/enlighten-product.jpg')
 enlighten.product_photo.attach(io: enlighten_product, filename: 'enlighten-product.jpg')
-enlighten_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/highlight/enlighten-swatch.png')
+enlighten_swatch = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/face/highlight/enlighten-swatch.png')
 enlighten.swatch_photo.attach(io: enlighten_swatch, filename: 'enlighten-swatch.png')
 ####################################################################
 
 enchant = Shade.create!(name: "Enchant", product_id: highlight.id)
 
-enchant_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/highlight/enchant-product.jpg')
+enchant_product = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/face/highlight/enchant-product.jpg')
 enchant.product_photo.attach(io: enchant_product, filename: 'enchant-product.jpg')
-enchant_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/highlight/enchant-swatch.png')
+enchant_swatch = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/face/highlight/enchant-swatch.png')
 enchant.swatch_photo.attach(io: enchant_swatch, filename: 'enchant-swatch.png')
 ####################################################################
 
 outshine = Shade.create!(name: "Outshine", product_id: highlight.id)
 
-outshine_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/highlight/outshine-product.jpg')
+outshine_product = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/face/highlight/outshine-product.jpg')
 outshine.product_photo.attach(io: outshine_product, filename: 'outshine-product.jpg')
-outshine_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/highlight/outshine-swatch.png')
+outshine_swatch = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/face/highlight/outshine-swatch.png')
 outshine.swatch_photo.attach(io: outshine_swatch, filename: 'outshine-swatch.png')
 ####################################################################
 
 captivate = Shade.create!(name: "Captivate", product_id: highlight.id)
 
-captivate_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/highlight/captivate-product.jpg')
+captivate_product = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/face/highlight/captivate-product.jpg')
 captivate.product_photo.attach(io: captivate_product, filename: 'captivate-product.jpg')
-captivate_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/face/highlight/captivate-swatch.png')
+captivate_swatch = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/face/highlight/captivate-swatch.png')
 captivate.swatch_photo.attach(io: captivate_swatch, filename: 'captivate-swatch.png')
 ####################################################################
 
@@ -531,41 +531,41 @@ captivate.swatch_photo.attach(io: captivate_swatch, filename: 'captivate-swatch.
 # lip_balm:
 honor = Shade.create!(name: "Honor", product_id: lip_balm.id)
 
-honor_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/lip/balm/honor-product.jpg')
+honor_product = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/lip/balm/honor-product.jpg')
 honor.product_photo.attach(io: honor_product, filename: 'honor-product.jpg')
-honor_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/lip/balm/honor-swatch.png')
+honor_swatch = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/lip/balm/honor-swatch.png')
 honor.swatch_photo.attach(io: honor_swatch, filename: 'honor-swatch.png')
 ####################################################################
 
 blessed = Shade.create!(name: "Blessed", product_id: lip_balm.id)
 
-blessed_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/lip/balm/blessed-product.jpg')
+blessed_product = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/lip/balm/blessed-product.jpg')
 blessed.product_photo.attach(io: blessed_product, filename: 'blessed-product.jpg')
-blessed_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/lip/balm/blessed-swatch.png')
+blessed_swatch = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/lip/balm/blessed-swatch.png')
 blessed.swatch_photo.attach(io: blessed_swatch, filename: 'blessed-swatch.png')
 ####################################################################
 
 empathy = Shade.create!(name: "Empathy", product_id: lip_balm.id)
 
-empathy_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/lip/balm/empathy-product.jpg')
+empathy_product = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/lip/balm/empathy-product.jpg')
 empathy.product_photo.attach(io: empathy_product, filename: 'empathy-product.jpg')
-empathy_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/lip/balm/empathy-swatch.png')
+empathy_swatch = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/lip/balm/empathy-swatch.png')
 empathy.swatch_photo.attach(io: empathy_swatch, filename: 'empathy-swatch.png')
 ####################################################################
 
 appreciate = Shade.create!(name: "Appreciate", product_id: lip_balm.id)
 
-appreciate_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/lip/balm/appreciate-product.jpg')
+appreciate_product = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/lip/balm/appreciate-product.jpg')
 appreciate.product_photo.attach(io: appreciate_product, filename: 'appreciate-product.jpg')
-appreciate_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/lip/balm/appreciate-swatch.png')
+appreciate_swatch = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/lip/balm/appreciate-swatch.png')
 appreciate.swatch_photo.attach(io: appreciate_swatch, filename: 'appreciate-swatch.png')
 ####################################################################
 
 compliment = Shade.create!(name: "Compliment", product_id: lip_balm.id)
 
-compliment_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/lip/balm/compliment-product.jpg')
+compliment_product = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/lip/balm/compliment-product.jpg')
 compliment.product_photo.attach(io: compliment_product, filename: 'compliment-product.jpg')
-compliment_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/lip/balm/compliment-swatch.png')
+compliment_swatch = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/lip/balm/compliment-swatch.png')
 compliment.swatch_photo.attach(io: compliment_swatch, filename: 'compliment-swatch.png')
 ####################################################################
 
@@ -573,49 +573,49 @@ compliment.swatch_photo.attach(io: compliment_swatch, filename: 'compliment-swat
 # lip_cream: 
 daring = Shade.create!(name: "Daring", product_id: lip_cream.id)
 
-daring_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/lip/liquid/daring-product.jpg')
+daring_product = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/lip/liquid/daring-product.jpg')
 daring.product_photo.attach(io: daring_product, filename: 'daring-product.jpg')
-daring_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/lip/liquid/daring-swatch.png')
+daring_swatch = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/lip/liquid/daring-swatch.png')
 daring.swatch_photo.attach(io: daring_swatch, filename: 'daring-swatch.png')
 ####################################################################
 
 heroic = Shade.create!(name: "Heroic", product_id: lip_cream.id)
 
-heroic_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/lip/liquid/heroic-product.jpg')
+heroic_product = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/lip/liquid/heroic-product.jpg')
 heroic.product_photo.attach(io: heroic_product, filename: 'heroic-product.jpg')
-heroic_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/lip/liquid/heroic-swatch.png')
+heroic_swatch = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/lip/liquid/heroic-swatch.png')
 heroic.swatch_photo.attach(io: heroic_swatch, filename: 'heroic-swatch.png')
 ####################################################################
 
 strengthen = Shade.create!(name: "Strengthen", product_id: lip_cream.id)
 
-strengthen_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/lip/liquid/strengthen-product.jpg')
+strengthen_product = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/lip/liquid/strengthen-product.jpg')
 strengthen.product_photo.attach(io: strengthen_product, filename: 'strengthen-product.jpg')
-strengthen_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/lip/liquid/strengthen-swatch.png')
+strengthen_swatch = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/lip/liquid/strengthen-swatch.png')
 strengthen.swatch_photo.attach(io: strengthen_swatch, filename: 'strengthen-swatch.png')
 ####################################################################
 
 ascend = Shade.create!(name: "Ascend", product_id: lip_cream.id)
 
-ascend_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/lip/liquid/ascend-product.jpg')
+ascend_product = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/lip/liquid/ascend-product.jpg')
 ascend.product_photo.attach(io: ascend_product, filename: 'ascend-product.jpg')
-ascend_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/lip/liquid/ascend-swatch.png')
+ascend_swatch = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/lip/liquid/ascend-swatch.png')
 ascend.swatch_photo.attach(io: ascend_swatch, filename: 'ascend-swatch.png')
 ####################################################################
 
 inspire = Shade.create!(name: "Inspire", product_id: lip_cream.id)
 
-inspire_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/lip/liquid/inspire-product.jpg')
+inspire_product = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/lip/liquid/inspire-product.jpg')
 inspire.product_photo.attach(io: inspire_product, filename: 'inspire-product.jpg')
-inspire_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/lip/liquid/inspire-swatch.png')
+inspire_swatch = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/lip/liquid/inspire-swatch.png')
 inspire.swatch_photo.attach(io: inspire_swatch, filename: 'inspire-swatch.png')
 ####################################################################
 
 fearless = Shade.create!(name: "Fearless", product_id: lip_cream.id)
 
-fearless_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/lip/liquid/fearless-product.jpg')
+fearless_product = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/lip/liquid/fearless-product.jpg')
 fearless.product_photo.attach(io: fearless_product, filename: 'fearless-product.jpg')
-fearless_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/lip/liquid/fearless-swatch.png')
+fearless_swatch = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/lip/liquid/fearless-swatch.png')
 fearless.swatch_photo.attach(io: fearless_swatch, filename: 'fearless-swatch.png')
 ####################################################################
 
@@ -623,32 +623,32 @@ fearless.swatch_photo.attach(io: fearless_swatch, filename: 'fearless-swatch.png
 # brow_pencil:
 soft_black = Shade.create!(name: "Soft Black", product_id: brow_pencil.id)
 
-soft_black_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/eye/brow/soft-black-product.jpg')
+soft_black_product = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/eye/brow/soft-black-product.jpg')
 soft_black.product_photo.attach(io: soft_black_product, filename: 'soft-black-product.jpg')
-soft_black_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/eye/brow/soft-black-swatch.png')
+soft_black_swatch = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/eye/brow/soft-black-swatch.png')
 soft_black.swatch_photo.attach(io: soft_black_swatch, filename: 'soft-black-swatch.png')
 ####################################################################
 
 deep_brown = Shade.create!(name: "Deep Brown", product_id: brow_pencil.id)
 
-deep_brown_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/eye/brow/deep-brown-product.jpg')
+deep_brown_product = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/eye/brow/deep-brown-product.jpg')
 deep_brown.product_photo.attach(io: deep_brown_product, filename: 'deep-brown-product.jpg')
-deep_brown_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/eye/brow/deep-brown-swatch.png')
+deep_brown_product = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/eye/brow/deep-brown-swatch.png')
 deep_brown.swatch_photo.attach(io: deep_brown_product, filename: 'deep-brown-swatch.png')
 ####################################################################
 
 warm_brown = Shade.create!(name: "Warm Brown", product_id: brow_pencil.id)
 
-warm_brown_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/eye/brow/warm-brown-product.jpg')
+warm_brown_product = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/eye/brow/warm-brown-product.jpg')
 warm_brown.product_photo.attach(io: warm_brown_product, filename: 'warm-brown-product.jpg')
-warm_brown_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/eye/brow/warm-brown-swatch.png')
+warm_brown_swatch = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/eye/brow/warm-brown-swatch.png')
 warm_brown.swatch_photo.attach(io: warm_brown_swatch, filename: 'warm-brown-swatch.png')
 ####################################################################
 
 soft_blonde = Shade.create!(name: "Soft Blonde", product_id: brow_pencil.id)
 
-soft_blonde_product = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/eye/brow/soft-blonde-product.jpg')
+soft_blonde_product = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/eye/brow/soft-blonde-product.jpg')
 soft_blonde.product_photo.attach(io: soft_blonde_product, filename: 'soft-blonde-product.jpg')
-soft_blonde_swatch = open('https://aura-beauty-seeds.s3-us-west-1.amazonaws.com/shade+images/eye/brow/soft-blonde-swatch.png')
+soft_blonde_swatch = open('https://aura-beauty-prod.s3-us-west-1.amazonaws.com/shade+images/eye/brow/soft-blonde-swatch.png')
 soft_blonde.swatch_photo.attach(io: soft_blonde_swatch, filename: 'soft-blonde-swatch.png')
 ####################################################################
