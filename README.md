@@ -5,9 +5,7 @@
 
 Aura Beauty is a cosmetic web store inspired by Rare Beauty, a brand dedicated to reducing mental health stigma.
 
-Live site: [Aura Beauty](https://aura-beauty.herokuapp.com/#/)
-
-** Note: Aura Beauty is not mobile friendly yet! **
+[Aura Beauty](https://aura-beauty.herokuapp.com/#/) ** END OF SUPPORT **
 
 ## Technologies Used
 
